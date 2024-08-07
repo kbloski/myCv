@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ustaiwnie kodowania dla strony -->
+        <meta charset="UTF-8">
+        <!-- rozciagniecie strony na 100% szerokosc obszaru ekranu , przy czym strona nadale bedzie miala mozliwosc skalowania -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- podlaczenie pliku stylizujacego strone  -->
+        <link rel="stylesheet" href="style/style.css">
+        <title>Animacja złożona</title>
+
+    <style>
+      .div {
+        position: absolute;
+        animation: move 3s infinite;
+      }
+
+      @keyframes move {
+        0% {
+          transform: rotate(5deg);
+        }
+        /* 30% {
+          transform: rotate(0deg); */
+        /* } */
+        25% {
+          transform: rotate(-30deg);
+        }
+        50% {
+          transform: rotate(30deg);
+        }
+        75% {
+          transform: rotate(-30deg);
+        }
+        100% {
+          transform: rotate(30deg);
+        }
+
+    }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="div">Tekst ruchomy</div>
+  </body>
+</html>
