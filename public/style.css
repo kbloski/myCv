@@ -1,0 +1,14 @@
+body {
+    padding: 40px;
+}
+
+.container { 
+    box-sizing: border-box;
+    box-shadow: 0 0 20px black;
+} 
+
+.curses li {
+    color: rgb(145, 123, 0);
+    font-weight: bolder;
+    font-style: italic;
+}
