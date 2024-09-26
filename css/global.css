@@ -17,9 +17,10 @@ body {
 
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 30% 0;
 }
+
 
 .document {
     max-width: 1200px;
@@ -44,9 +45,10 @@ h3 {
     background: radial-gradient(rgb(58, 58, 58), rgb(0, 0, 0) , rgb(0, 0, 0));
     color: rgb(255, 255, 255);
     border: 4px dashed white;
+    box-shadow: 0 0 10px black;
 }
+
 #download-badge button:hover {
-    border: 4px solid white;
-    /* background: radial-gradient(rgb(151, 151, 151), rgb(51, 51, 51) , rgb(0, 0, 0)); */
-    /* color: black; */
+    border: 4px dotted yellowgreen;
+    box-shadow: 0 0 20px yellowgreen;
 }
