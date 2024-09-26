@@ -31,3 +31,22 @@ img {
 h3 {
     padding: 10px;
 }
+
+#download-badge {
+    position: absolute;
+    right: 20px;
+    top: -50px;
+}
+
+#download-badge button {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(rgb(58, 58, 58), rgb(0, 0, 0) , rgb(0, 0, 0));
+    color: rgb(255, 255, 255);
+    border: 4px dashed white;
+}
+#download-badge button:hover {
+    border: 4px solid white;
+    /* background: radial-gradient(rgb(151, 151, 151), rgb(51, 51, 51) , rgb(0, 0, 0)); */
+    /* color: black; */
+}
