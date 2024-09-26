@@ -44,8 +44,15 @@ class Personal {
         }
         this.languageElement.appendChild( languagesList );
 
-        this.emailElement.innerHTML = this.email;
-        this.phoneElement.innerHTML = `tel: ${this.phone}`;
+        const link = document.createElement('a');
+        link.href = `mailto:${this.email}`;
+        link.innerText = this.email;
+        this.emailElement.appendChild( link );
+        
+        const link2 = document.createElement('a');
+        link2.href = `tel:${this.phone}`;
+        link2.innerText = `tel: ${this.phone}`;
+        this.phoneElement.appendChild(link2) 
     }
 }
 
