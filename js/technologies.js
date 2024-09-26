@@ -9,7 +9,7 @@ class TechnologiesController {
         };
         this.progress = {
             list: [],
-            classList: ["badge", "bg-warning", "p-2", "m-1"],
+            classList: ["badge", "bg-warning",'text-black', "p-2", "m-1"],
         };
     }
 
