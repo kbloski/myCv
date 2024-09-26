@@ -44,7 +44,7 @@ const myProject = new ProjectControler();
 const projects = [
     {
         name: "photographer-website",
-        description: "Projekt prywany, w którym wykorzystałem schemat monorepo",
+        description: "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
         link: "https://github.com/kbloski/photographer-website",
     }
 ]
