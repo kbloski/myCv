@@ -8,10 +8,11 @@
     box-sizing: border-box;
     font-family: 'RobotoBold';
     font-weight: 700;
+    word-wrap: break-word;
 }
 
 body {
-    padding: 4rem;
+    padding-top: 4rem;
     margin: auto;
 }
 
