@@ -27,6 +27,12 @@ img {
     max-width: 1200px;
     margin: auto;
     box-shadow: 0px 0px 10px black;
+    
+}
+
+#information {
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
@@ -37,7 +43,7 @@ h3 {
 #download-badge {
     position: absolute;
     right: 20px;
-    top: -50px;
+    top: 0 ;
 }
 
 #download-badge button {
