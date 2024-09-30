@@ -44,7 +44,7 @@ const myProject = new ProjectControler();
 const projects = [
     {
         name: "photographer-website",
-        description: "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
+        description: "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript. Wgląd tylko do kodu aplikacji.",
         link: "https://github.com/kbloski/photographer-website",
     }
 ]
