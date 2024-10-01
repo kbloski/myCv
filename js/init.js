@@ -19,7 +19,6 @@ function loadingScript(src) {
 }
 
 const scripts = [
-    'todolist.js',
     'technologies.js',
     'personal.js',
     'project.js',
