@@ -45,7 +45,12 @@ const projects = [
     {
         name: "photographer-website",
         description: "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript. Wgląd tylko do kodu aplikacji.",
-        link: "https://github.com/kbloski/photographer-website",
+        link: "https://github.com/kbloski/photographer-website/",
+    },
+    {
+        name: "todo-task-list",
+        description: "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami, technologie: HTML, CSS, JS",
+        link: "https://kbloski.github.io/todoList/",
     }
 ]
 
