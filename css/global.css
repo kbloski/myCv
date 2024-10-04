@@ -1,60 +1,269 @@
-@font-face {
-    font-family: 'RobotoBold';
-    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --color-light: rgb(255, 195, 45);
+    --color-second-light: rgb(245, 245, 245);
+    --color-dark: black;
+    --color-second-dark: rgb(173, 173, 173);
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'RobotoBold';
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
     word-wrap: break-word;
 }
 
 body {
-    padding-top: 4rem;
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(209, 209, 209);
 }
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+}
+
+h1 span{
+    font-weight: 900;
+}
+
 
 img {
     width: 100%;
     height: auto;
-    border-radius: 30% 0;
 }
 
-
-.document {
-    max-width: 1200px;
-    margin: auto;
-    box-shadow: 0px 0px 10px black;
-    
+header {
+    box-shadow: 0 0 20px black;
+    display: block;
+    align-items: last baseline;
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 30px;
+    padding-bottom: 0;
+    flex-wrap: wrap;
 }
 
-#information {
-    max-width: 1200px;
+main { 
+    width: 100%;
+    position: relative;
+}
+
+.container {
     margin: 0 auto;
+    padding: 0;
+    height: auto;
+    max-width: 1200px;
+    position: relative;
 }
 
-h3 {
-    padding: 10px;
-}
-
-#download-badge {
+.container::after {
+    background: white;
+    border-left: solid 200px var(--color-light);
+    border-right: solid 50px var(--color-light);
+    outline: solid 50px rgba(218, 165, 32, 0.753);
+    content: '';
+    height: 100%;
+    overflow: hidden;
     position: absolute;
-    right: 20px;
-    top: 0 ;
+    width: 50px;
+    top: 0;
+    right: 20%;
+    transform: skewX(-30deg);
+    z-index: -1;
 }
 
-#download-badge button {
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background: radial-gradient(rgb(58, 58, 58), rgb(0, 0, 0) , rgb(0, 0, 0));
-    color: rgb(255, 255, 255);
-    border: 4px dashed white;
+nav {
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-list li:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.baner {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.baner::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    box-shadow: inset 0 0 20px black;
+}
+
+.baner::before {
+    content: '';
+    right: -15%;
+    top: 0;
+    background: black;
+    width: 45%;
+    height: 500px;
+    position: absolute;
+    transform: skewX(-30deg);
+    border-left: solid 80px var(--color-light);
+    outline: solid 40px rgba(255, 255, 255, 0.849);
+}
+
+.baner-caption {
+    aspect-ratio: 1 /1 ;
+    height: 50%;
+    top: 50%;
+    right: 10%;
+    background: white;
+    position: absolute;
+    transform: translateY(-50%);
+    align-items: center;
     box-shadow: 0 0 10px black;
 }
 
-#download-badge button:hover {
-    border: 4px dotted yellowgreen;
-    box-shadow: 0 0 20px yellowgreen;
+.baner-caption::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.baner-caption-body {
+    position: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.baner-caption-body div {
+    text-align: center;
+    font-size: 50px;   
+}
+
+.baner-caption-body div:nth-child(1){
+    font-weight: 800;
+}
+
+.btn-read-more {
+    background: var(--color-light);
+    border: 0;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+}
+
+#section-about-me {
+    width: 100%;
+    padding: 10px;
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+}
+
+#section-about-me > div {
+    width: 50%;
+}
+
+.about-me {
+    border-radius: 10px;
+    background: var(--color-second-light);
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    position: relative;
+}
+
+.about-me > img {
+    border-radius: 20px;
+    box-shadow: 0 0 8px black;
+}
+
+.about-me > h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#my-technologies {
+    padding: 20px;
+}
+
+#my-technologies > div {
+    background: rgba(0, 0, 0, 0.13);
+}
+
+#my-technologies > div > h3 {
+    background: var(--color-dark);
+    padding: 10px;
+    color: white;
+}
+
+#technologies, #in-progress {
+    padding: 0 0 20px 20px;
+}
+
+.projects {
+    background: var(--color-second-dark);
+    margin-top: 200px;
+}
+
+#my-projects {
+    width: 100%;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#my-projects li {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background: var(--color-light);
+    border-radius: 10px;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.384);
+    border: 5px solid goldenrod;
+    transform: translateY(-30%);
+}
+
+footer {
+    min-height: 200px;
+    background: var(--color-second-dark);
 }

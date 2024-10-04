@@ -4,19 +4,16 @@ class ProjectControler {
 
     createProjectElement({ name, description, link }) {
         const listElement = document.createElement("li");
-        listElement.classList = "d-flex row list-group-item";
 
-        const nameElement = document.createElement("div");
-        nameElement.classList = 'col-3'
+        const nameElement = document.createElement("h3");
         nameElement.innerText = name;
 
-        const descriptionElement = document.createElement("div");
-        descriptionElement.classList = 'col-7'
+        const descriptionElement = document.createElement("p");
         descriptionElement.innerText = description;
 
         const linkElement = document.createElement("a");
-        linkElement.classList = 'col-2'
         linkElement.href = link;
+
         linkElement.innerText = "See More...";
         linkElement.target = '_blank'
 
@@ -28,15 +25,9 @@ class ProjectControler {
     }
 
     render() {
-        const list = document.createElement('ul');
-        list.classList = 'list-group';
-
-
         for (const project of this.projectsList) {
-            list.appendChild(project);
+            this.projectElement.appendChild(project);
         }
-
-        this.projectElement.appendChild( list )
     }
 }
 const myProject = new ProjectControler();
@@ -51,10 +42,17 @@ const projects = [
         name: "todo-task-list",
         description: "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami, technologie: HTML, CSS, JS",
         link: "https://kbloski.github.io/todoList/",
-    }
+    },
+    {
+        name: "user-role-managment",
+        description: "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie: HTML, CSS, TypeScript, NextJs, AppRouter",
+        link: "https://github.com/kbloski/userManagment",
+    },
+
 ]
 
 for(const project of projects){
+    console.log(project)
     myProject.createProjectElement(project);
 }
 

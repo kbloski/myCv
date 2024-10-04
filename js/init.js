@@ -22,12 +22,12 @@ const scripts = [
     'technologies.js',
     'personal.js',
     'project.js',
-    'courses.js',
-    'clause.js',
-    'credentials.js',
-    'certificates.js',
-    'education.js',
-    'interests.js'
+    // 'courses.js',
+    // 'clause.js',
+    // 'credentials.js',
+    // 'certificates.js',
+    // 'education.js',
+    // 'interests.js'
 ];
 
 async function init() {
