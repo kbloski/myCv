@@ -217,23 +217,24 @@ nav {
     margin: 20px 0;
 }
 
-#my-technologies {
+#more-information {
     padding: 20px;
 }
 
-#my-technologies > div {
+#more-information > div {
     background: rgba(0, 0, 0, 0.13);
 }
 
-#my-technologies > div > h3 {
+#more-information > div > div {
+    padding: 0 0 20px 20px;
+}
+
+#more-information > div > h3 {
     background: var(--color-dark);
     padding: 10px;
     color: white;
 }
 
-#technologies, #in-progress {
-    padding: 0 0 20px 20px;
-}
 
 .projects {
     background: var(--color-second-dark);

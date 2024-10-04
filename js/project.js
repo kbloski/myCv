@@ -46,7 +46,7 @@ const projects = [
     {
         name: "user-role-managment",
         description: "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie: HTML, CSS, TypeScript, NextJs, AppRouter",
-        link: "https://github.com/kbloski/userManagment",
+        link: "https://usermanagment-role.netlify.app/",
     },
 
 ]
