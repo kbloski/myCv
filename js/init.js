@@ -19,15 +19,9 @@ function loadingScript(src) {
 }
 
 const scripts = [
-    'technologies.js',
     'personal.js',
-    'project.js',
-    // 'courses.js',
-    // 'clause.js',
-    // 'credentials.js',
-    // 'certificates.js',
-    // 'education.js',
-    // 'interests.js'
+    'technologies.js',
+    'projects.js'
 ];
 
 async function init() {

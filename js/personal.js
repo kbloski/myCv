@@ -1,68 +1,42 @@
-console.log('123')
-
-class Personal {
-    nameElement = document.getElementById("name");
-    surnameElement = document.getElementById("surname");
-    addressElement = document.getElementById("address");
-    aboutMeElement = document.getElementById("about-me");
-    languageElement = document.getElementById('languages')
-    emailElement = document.getElementById('email')
-    phoneElement = document.getElementById('phone')
-
-    constructor() {
-        this.name = "Kamil";
-        this.surname = "Błoński";
-        this.address = "Jodłowa 194A, 39-225 (Podkarpackie)";
-        this.aboutMe = "About me";
-        this.email = "kblonski02@gmail.com";
-        this.phone = "798154959";
-        this.languages = [
-            {
-                name: 'Polski',
-                description: 'Ojczysty'
-            },
-            {
-                name: 'Angielski',
-                description: 'Dokumentacja'
-            },
-        ]
-    }
-
-    setAboutMe(text) {
-        this.aboutMe = text;
-    }
-
-    render() {
-        this.nameElement.innerText = this.name;
-        (this.surnameElement.innerText = this.surname),
-            (this.addressElement.innerText = this.address);
-        this.aboutMeElement.innerHTML = this.aboutMe;
-        
-        const languagesList = document.createElement('div');
-        for(const language of this.languages){
-            const liElement = document.createElement('div');
-            liElement.innerText = `${language.name} - ${language.description}`;
-            languagesList.appendChild( liElement );
-        }
-        this.languageElement.appendChild( languagesList );
-
-        const link = document.createElement('a');
-        link.href = `mailto:${this.email}`;
-        link.innerText = this.email;
-        this.emailElement.appendChild( link );
-        
-        const link2 = document.createElement('a');
-        link2.href = `tel:${this.phone}`;
-        link2.innerText = `${this.phone}`;
-        this.phoneElement.appendChild(link2) 
-    }
+function createLink(text, url, classList){
+    const link = document.createElement('a');
+    link.innerText = text ?? 'Link created',
+    link.href = url ?? '#',
+    link.classList = classList ?? '';
+    return link;
 }
 
-const personal = new Personal();
+document.getElementById('about-me').innerText = "Jestem junior programistą, który chce dążyc do rozwoju jako fullstack-developer. Szukam współpracy z firmą, która ceni kreatywność i nowe technologie, aby tworzyć nowoczesne rozwiązania i realizować ambitne projekty.";
 
-personal.setAboutMe(
-    "Jestem junior programistą, który chce dążyc do rozwoju jako fullstack-developer. Szukam współpracy z firmą, która ceni kreatywność i nowe technologie, aby tworzyć nowoczesne rozwiązania i realizować ambitne projekty."
-);
+const personal = {name: 'Kamil', surname: 'Błoński'}
+document.getElementById('name').innerText = `${personal.name} ${personal.surname}`;
 
-personal.render();
+const address = 'Jodłowa 194A, 39-225 (woj. Podkarpackie)'
+document.getElementById('address').innerText = address;
 
+const phone = '798154959'
+const phoneLink = createLink(phone, `tel:${phone}`)
+document.getElementById('phone').appendChild( phoneLink)
+
+const email = 'kblonski02@gmail.com'
+const emailLink = createLink(email, `mailto:${email}`)
+document.getElementById('email').appendChild(emailLink);
+
+const languagesList = [
+    { name: 'Polski', description: 'Ojczysty' },
+    { name: 'Angielski', description: 'Dokumentacja'},
+]
+for( const language of languagesList){
+    const li = document.createElement('li');
+    li.innerText = `${language.name} - ${language.description}`
+    document.getElementById('languages').appendChild(li);
+}
+
+const credentialList = [
+    { name: 'Prawojazdy', description: 'A2, B'}
+]
+for (const credential of credentialList){
+    const liElement = document.createElement('li');
+    liElement.innerText = `${credential.name} - ${credential.description}`
+    document.getElementById('credentials').appendChild(liElement)
+}

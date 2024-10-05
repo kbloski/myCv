@@ -11,94 +11,55 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-wrap: wrap;
     word-wrap: break-word;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: rgb(209, 209, 209);
-}
-
-h1 {
-    margin: 0;
-    font-weight: 400;
-}
-
-h1 span{
-    font-weight: 900;
-}
-
 
 img {
     width: 100%;
     height: auto;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(209, 209, 209);
+}
+.brand {
+    margin: 0;
+    font-weight: 400;
+}
+.brand span{
+    font-weight: 900;
+}
 header {
-    box-shadow: 0 0 20px black;
-    display: block;
     align-items: last baseline;
     background: var(--color-light);
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    padding: 30px;
+    padding: 1rem;
     padding-bottom: 0;
     flex-wrap: wrap;
 }
-
-main { 
-    width: 100%;
-    position: relative;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0;
-    height: auto;
-    max-width: 1200px;
-    position: relative;
-}
-
-.container::after {
-    background: white;
-    border-left: solid 200px var(--color-light);
-    border-right: solid 50px var(--color-light);
-    outline: solid 50px rgba(218, 165, 32, 0.753);
-    content: '';
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    width: 50px;
-    top: 0;
-    right: 20%;
-    transform: skewX(-30deg);
-    z-index: -1;
-}
-
 nav {
     height: 100%;
 }
-
 .nav-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
-
 .nav-list li {
-    margin-left: 20px;
-    margin-top: 20px;
+     margin: 20px 0 0 20px; 
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     position: relative;
     cursor: pointer;
 }
-
 .nav-list li:hover::after {
     content: '';
     width: 100%;
@@ -108,14 +69,12 @@ nav {
     left: 0;
     top: 100%;
 }
-
 .baner {
     width: 100%;
     max-height: 500px;
     overflow: hidden;
     position: relative;
 }
-
 .baner::after {
     content: ' ';
     width: 100%;
@@ -125,7 +84,6 @@ nav {
     position: absolute;
     box-shadow: inset 0 0 20px black;
 }
-
 .baner::before {
     content: '';
     right: -15%;
@@ -138,7 +96,6 @@ nav {
     border-left: solid 80px var(--color-light);
     outline: solid 40px rgba(255, 255, 255, 0.849);
 }
-
 .baner-caption {
     aspect-ratio: 1 /1 ;
     height: 50%;
@@ -150,7 +107,6 @@ nav {
     align-items: center;
     box-shadow: 0 0 10px black;
 }
-
 .baner-caption::before {
     content: '';
     position: absolute;
@@ -160,23 +116,23 @@ nav {
     transform: rotate(45deg);
     z-index: -1;
 }
-
 .baner-caption-body {
     position: block;
     width: 100%;
     height: 100%;
     padding: 20px;
 }
-
 .baner-caption-body div {
     text-align: center;
     font-size: 50px;   
+    /* 
+    Dorobić media
+    font-size: 35px;   
+     */
 }
-
 .baner-caption-body div:nth-child(1){
     font-weight: 800;
 }
-
 .btn-read-more {
     background: var(--color-light);
     border: 0;
@@ -184,61 +140,96 @@ nav {
     width: 100%;
     padding: 10px;
 }
+main { 
+    width: 100%;
+    position: relative;
+}
+.container {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.container::after {
+    background: white;
+    border-left: solid 200px var(--color-light);
+    border-right: solid 50px var(--color-light);
+    outline: solid 50px rgba(218, 165, 32, 0.753);
+    content: '';
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 35%;
+    transform: skewX(-30deg);
+    z-index: -1;
+}
 
-#section-about-me {
+
+.personal-information {
     width: 100%;
     padding: 10px;
-    padding-top: 100px;
-    position: relative;
+    padding: 100px 0;
     display: flex;
 }
 
-#section-about-me > div {
+.personal-information > div {
+    padding: 0 10px;
     width: 50%;
 }
 
 .about-me {
-    border-radius: 10px;
     background: var(--color-second-light);
     border-radius: 5px;
-    margin: 20px auto;
+    margin: 0 auto;
     width: 80%;
-    padding: 20px;
-    position: relative;
+    padding: 30px;
 }
 
-.about-me > img {
+.profile-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
     border-radius: 20px;
     box-shadow: 0 0 8px black;
 }
-
 .about-me > h2 {
     text-align: center;
-    margin: 20px 0;
 }
 
-#more-information {
-    padding: 20px;
+.information {
+    margin-top: 20px;
 }
-
-#more-information > div {
-    background: rgba(0, 0, 0, 0.13);
+.information-body {
+    background: rgba(0, 0, 0, 0.233);
+    padding: 1rem;
 }
-
-#more-information > div > div {
-    padding: 0 0 20px 20px;
-}
-
-#more-information > div > h3 {
+.information-title {
+    font-size: 1.5rem;
+    font-weight: bold;
     background: var(--color-dark);
-    padding: 10px;
     color: white;
+    margin: 0;
+    padding: 1rem;
 }
-
 
 .projects {
-    background: var(--color-second-dark);
-    margin-top: 200px;
+    background:   var(--color-second-dark);
+    margin-top: 100px;
+    position: relative;
+}
+
+.projects::before {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0));
+    top: -100px;
+    left: 0;
+    position: absolute;
 }
 
 #my-projects {
@@ -255,16 +246,22 @@ nav {
 #my-projects li {
     text-align: center;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     width: 300px;
     background: var(--color-light);
     border-radius: 10px;
     box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.384);
     border: 5px solid goldenrod;
-    transform: translateY(-30%);
+    transform: translateY(-50px);
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 footer {
     min-height: 200px;
     background: var(--color-second-dark);
+    padding: 20px;
 }
