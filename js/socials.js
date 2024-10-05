@@ -1,15 +1,13 @@
-const socialsList = [
-    { name: 'GitHub', link: 'https://github.com/kbloski' },
-]
+const socialsList = [{ name: "GitHub", link: "https://github.com/kbloski" }];
 for (const social of socialsList) {
-    const li = document.createElement('li');
-    const a = document.createElement('a')
+  const li = document.createElement("li");
+  const a = document.createElement("a");
 
-    a.innerText = social.name;
-    a.href = social.link;
-    a.target = '_blank'
+  a.innerText = social.name;
+  a.href = social.link;
+  a.target = "_blank";
 
-    li.appendChild(a);
+  li.appendChild(a);
 
-    document.getElementById('socials').appendChild(li)
+  document.getElementById("socials").appendChild(li);
 }
