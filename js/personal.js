@@ -18,7 +18,7 @@ const phone = '798154959'
 const phoneLink = createLink(phone, `tel:${phone}`)
 document.getElementById('phone').appendChild( phoneLink)
 
-const email = 'kblonski02@gmail.com'
+export const email = 'kblonski02@gmail.com'
 const emailLink = createLink(email, `mailto:${email}`)
 document.getElementById('email').appendChild(emailLink);
 

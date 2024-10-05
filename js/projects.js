@@ -28,6 +28,7 @@ for( const project of projectsList){
     description.innerText = project.description;
     link.innerText = 'See more...';
     link.href = project.link;
+    link.target = '_blank'
 
     li.appendChild(title);
     li.appendChild(description);

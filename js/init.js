@@ -4,6 +4,7 @@ function loadingScript(src) {
     return new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = src;
+        script.type = 'module'
 
         // Dodajemy skrypt do dokumentu
         document.getElementsByTagName('body')[0].appendChild(script);
@@ -21,7 +22,8 @@ function loadingScript(src) {
 const scripts = [
     'personal.js',
     'technologies.js',
-    'projects.js'
+    'projects.js',
+    'form_contact.js'
 ];
 
 async function init() {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/global.css" />
     <script src="./js/init.js" type="module" defer></script>
+
 </head>
+
 <body>
     <header>
         <h1 class="brand">MOTO<span>STUDIO</span></h1>
@@ -22,7 +25,6 @@
         </nav>
     </header>
     <div class="baner">
-        <div class="baner-background"></div>
         <img src="./images/baner.png" alt="baner">
         <div class="baner-caption">
             <div class="baner-caption-body">
@@ -33,7 +35,7 @@
         </div>
     </div>
     <main>
-        <div class="container">
+        <div class="container first-background-style">
             <div class="personal-information">
                 <div class="about-me">
                     <img src="./images/profil_picture.jpg" class="profile-img">
@@ -44,8 +46,8 @@
                     <div class="information">
                         <div class="information-title">Dane Personalne</div>
                         <div class="information-body">
-                            <div id="name"></div> 
-                            
+                            <div id="name"></div>
+
                             <address id="address"></address>
                             <br>Email <span id="email"></span>
                             <br>Phone <span id="phone"></span>
@@ -81,10 +83,23 @@
         <div class="projects">
             <ul id="my-projects"></ul>
         </div>
+        </section>
+        <section>
+            <div class="container center">
+                <form id="form-contact" class="form-contact">
+                    <div class="form-title">Formularz kontaktowy</div>
+                    <label for="form-subject" class="form-label">Subject</label>
+                    <input type="text" id="form-subject" minlength="3" required class="form-control">
+                    <label for="form-body" class="form-label">Body</label>
+                    <textarea type="text" id="form-body" class="form-control"></textarea>
+                    <button type="submit" class="form-label">Wyślij</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <!-- <footer> -->
-        Kontakt
-    <!-- </footer> -->
-    
+    <footer>
+        Footer strony
+    </footer>
 </body>
+
 </html>
