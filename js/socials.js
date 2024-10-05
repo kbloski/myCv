@@ -10,12 +10,12 @@ for (const social of socialsList) {
     a.innerText = social.name;
     a.href = social.link;
     a.target = '_blank'
-    img.src = ".\\images\\icons\\link.png";
-    console.log(img.src)
-    img.ariaHidden = true;
-    img.classList.add('link-icon')
+    // img.src = ".\\images\\icons\\link.png";
+    // console.log(img.src)
+    // img.ariaHidden = true;
+    // img.classList.add('link-icon')
 
-    li.appendChild(img);
+    // li.appendChild(img);
     li.appendChild(a);
 
     document.getElementById('socials').appendChild(li)

@@ -11,7 +11,7 @@ const projectsList = [
     },
     {
         name: "photographer-website - ONLY CODE REVIEW",
-        description: "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript. Wgląd tylko do kodu aplikacji.",
+        description: "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
         link: "https://github.com/kbloski/photographer-website/",
     },
 ]
