@@ -25,7 +25,8 @@ const scripts = [
     'projects.js',
     'form_contact.js',
     'footer.js',
-    'socials.js'
+    'socials.js',
+    'scrollTop.js'
 ];
 
 async function init() {

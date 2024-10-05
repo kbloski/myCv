@@ -13,12 +13,14 @@
     font-family: 'Roboto', sans-serif;
     text-wrap: wrap;
     word-wrap: break-word;
+    scroll-behavior: smooth;
 }
 
 img {
     width: 100%;
     height: auto;
 }
+
 
 body {
     margin: 0;
@@ -27,6 +29,40 @@ body {
     min-height: 100vh;
     background-color: rgb(209, 209, 209);
 }
+
+.hidden {
+    display: none;
+}
+
+.scroll-btn{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--color-light) ;
+    bottom: 0;
+    color: white;
+    display: none;
+    margin: 50px;
+    position: fixed;
+    right: 0;
+    width: 70px;
+    z-index: 100;
+}
+
+.scroll-btn::before{
+    content: '' ;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: rgb(80, 80, 80);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 4px black;
+}
+
 
 header {
     align-items: last baseline;
@@ -49,6 +85,11 @@ header {
 
 nav {
     height: 100%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
 }
 
 .nav-list {
@@ -184,14 +225,14 @@ main {
 }
 
 
-.personal-information {
+#personal-information {
     width: 100%;
     padding: 10px;
     padding: 100px 0;
     display: flex;
 }
 
-.personal-information>div {
+#personal-information > div {
     padding: 0 20px;
     width: 50%;
 }
@@ -217,10 +258,6 @@ main {
     box-shadow: 0 0 8px black;
 }
 
-.about-me>h2 {
-    text-align: center;
-}
-
 .information {
     margin-top: 20px;
 }
@@ -228,6 +265,7 @@ main {
 .information-body {
     background: rgba(0, 0, 0, 0.233);
     padding: 1rem;
+    font-weight: 500;
 }
 
 .information-title {
@@ -316,7 +354,7 @@ main {
 
 .form-contact {
     min-width: 50%;
-    margin: 0 auto;
+    margin: 100px auto;
     margin: 100px;
     background: white;
     padding: 50px;
@@ -398,14 +436,29 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-    .personal-information {
+    header {
+        justify-content: start;
+    }
+
+    .brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list {
+        display: block;
+    }
+    
+    .nav-list li {
+        font-size: 16px;
+    }
+
+    #personal-information {
         flex-wrap: wrap;
     }
 
-    .personal-information>div {
+    #personal-information>div {
         width: 100%;
-        /* background: black; */
-        /* padding: 0 10px; */
     }
 
     .form-contact {

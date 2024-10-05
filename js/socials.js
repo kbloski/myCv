@@ -9,6 +9,7 @@ for (const social of socialsList) {
 
     a.innerText = social.name;
     a.href = social.link;
+    a.target = '_blank'
     img.src = ".\\images\\icons\\link.png";
     console.log(img.src)
     img.ariaHidden = true;
