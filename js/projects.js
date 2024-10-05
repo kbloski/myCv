@@ -16,12 +16,12 @@ const projectsList = [
     },
 ]
 
-for( const project of projectsList){
+for (const project of projectsList) {
     const li = document.createElement('li');
 
-    const title =  document.createElement('div');
-    const description =  document.createElement('p');
-    const link =  document.createElement('a');
+    const title = document.createElement('div');
+    const description = document.createElement('p');
+    const link = document.createElement('a');
 
     title.innerText = project.name;
     title.classList = 'project-title'

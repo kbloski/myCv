@@ -42,25 +42,30 @@ header {
     margin: 0;
     font-weight: 400;
 }
-.brand span{
+
+.brand span {
     font-weight: 900;
 }
+
 nav {
     height: 100%;
 }
+
 .nav-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
+
 .nav-list li {
-     margin: 20px 0 0 20px; 
+    margin: 20px 0 0 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
     position: relative;
     cursor: pointer;
 }
+
 .nav-list li:hover::after {
     content: '';
     width: 100%;
@@ -69,7 +74,7 @@ nav {
     position: absolute;
     left: 0;
     top: 100%;
-} 
+}
 
 .baner {
     width: 100%;
@@ -77,6 +82,7 @@ nav {
     overflow: hidden;
     position: relative;
 }
+
 .baner::after {
     content: ' ';
     width: 100%;
@@ -86,6 +92,7 @@ nav {
     position: absolute;
     box-shadow: inset 0 0 20px black;
 }
+
 .baner::before {
     content: '';
     right: -15%;
@@ -98,8 +105,9 @@ nav {
     border-left: solid 80px var(--color-light);
     outline: solid 40px rgba(255, 255, 255, 0.849);
 }
+
 .baner-caption {
-    aspect-ratio: 1 /1 ;
+    aspect-ratio: 1 /1;
     height: 50%;
     top: 50%;
     right: 10%;
@@ -109,6 +117,7 @@ nav {
     align-items: center;
     box-shadow: 0 0 10px black;
 }
+
 .baner-caption::before {
     content: '';
     position: absolute;
@@ -118,18 +127,21 @@ nav {
     transform: rotate(45deg);
     z-index: -1;
 }
+
 .baner-caption-body {
     position: block;
     width: 100%;
     height: 100%;
     padding: 20px;
 }
+
 .baner-caption-body div {
     text-align: center;
-    font-size: 50px;   
+    font-size: 50px;
 
 }
-.baner-caption-body div:nth-child(1){
+
+.baner-caption-body div:nth-child(1) {
     font-weight: 800;
 }
 
@@ -140,10 +152,12 @@ nav {
     width: 100%;
     padding: 10px;
 }
-main { 
+
+main {
     width: 100%;
     position: relative;
 }
+
 .container {
     margin: 0 auto;
     padding: 0;
@@ -152,6 +166,7 @@ main {
     position: relative;
     overflow: hidden;
 }
+
 .first-background-style::after {
     background: white;
     border-left: solid 200px var(--color-light);
@@ -176,7 +191,7 @@ main {
     display: flex;
 }
 
-.personal-information > div {
+.personal-information>div {
     padding: 0 20px;
     width: 50%;
 }
@@ -188,7 +203,7 @@ main {
     padding: 30px;
 }
 
-.about-me > div {
+.about-me>div {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -202,17 +217,19 @@ main {
     box-shadow: 0 0 8px black;
 }
 
-.about-me > h2 {
+.about-me>h2 {
     text-align: center;
 }
 
 .information {
     margin-top: 20px;
 }
+
 .information-body {
     background: rgba(0, 0, 0, 0.233);
     padding: 1rem;
 }
+
 .information-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -223,7 +240,7 @@ main {
 }
 
 .projects {
-    background:   var(--color-second-dark);
+    background: var(--color-second-dark);
     margin-top: 100px;
     position: relative;
 }
@@ -385,7 +402,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .personal-information > div {
+    .personal-information>div {
         width: 100%;
         /* background: black; */
         /* padding: 0 10px; */

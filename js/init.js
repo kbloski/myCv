@@ -30,7 +30,7 @@ const scripts = [
 
 async function init() {
     for (const script of scripts) {
-        await loadingScript( __scriptFolder + script);
+        await loadingScript(__scriptFolder + script);
     }
 }
 init();
