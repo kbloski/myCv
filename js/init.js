@@ -23,7 +23,9 @@ const scripts = [
     'personal.js',
     'technologies.js',
     'projects.js',
-    'form_contact.js'
+    'form_contact.js',
+    'footer.js',
+    'socials.js'
 ];
 
 async function init() {

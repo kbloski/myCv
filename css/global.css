@@ -177,16 +177,21 @@ main {
 }
 
 .personal-information > div {
-    padding: 0 10px;
+    padding: 0 20px;
     width: 50%;
 }
 
 .about-me {
-    background: var(--color-second-light);
     border-radius: 5px;
     margin: 0 auto;
     width: 80%;
     padding: 30px;
+}
+
+.about-me > div {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .profile-img {
@@ -223,12 +228,32 @@ main {
     position: relative;
 }
 
+.projects-head {
+    background-color: gray;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.856);
+}
+
 .projects::before {
     content: '';
     width: 100%;
     height: 50px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0));
     top: -100px;
+    left: 0;
+    position: absolute;
+}
+
+.projects::after {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0));
+    bottom: 0;
     left: 0;
     position: absolute;
 }
@@ -266,6 +291,7 @@ main {
     font-weight: bold;
 }
 
+
 .center {
     display: flex;
     justify-content: center;
@@ -278,6 +304,7 @@ main {
     background: white;
     padding: 50px;
     position: relative;
+    box-shadow: 0 0 16px black;
 }
 
 .form-contact::before {
@@ -317,7 +344,60 @@ textarea.form-control {
 
 
 footer {
+    box-shadow: inset 0px 10px 20px -10px black;
     min-height: 200px;
     background: var(--color-second-dark);
     padding: 20px;
+}
+
+.footer-title {
+    padding: 10px 0;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#socials {
+    list-style: none;
+    margin-left: 30px;
+}
+
+#socials li {
+    font-size: 24px;
+    display: block;
+    position: relative;
+}
+
+
+.link-icon {
+    height: 24px;
+    width: auto;
+    padding: 0 10px;
+    top: 50%;
+    left: 0px;
+    position: absolute;
+    transform: translateY(-50%) translateX(-100%);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .personal-information {
+        flex-wrap: wrap;
+    }
+
+    .personal-information > div {
+        width: 100%;
+        /* background: black; */
+        /* padding: 0 10px; */
+    }
+
+    .form-contact {
+        min-width: 50%;
+        margin: 0 auto;
+        margin: 10px;
+        background: white;
+        padding: 50px;
+        position: relative;
+        box-shadow: 0 0 16px black;
+    }
 }

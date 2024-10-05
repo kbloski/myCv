@@ -38,9 +38,11 @@
         <div class="container first-background-style">
             <div class="personal-information">
                 <div class="about-me">
-                    <img src="./images/profil_picture.jpg" class="profile-img">
-                    <h2>ABOUT ME</h2>
-                    <p id="about-me"></p>
+                    <div>
+                        <img src="./images/profil_picture.jpg" class="profile-img">
+                        <h2>ABOUT ME</h2>
+                        <p id="about-me"></p>
+                    </div>
                 </div>
                 <div class="information-list">
                     <div class="information">
@@ -80,11 +82,14 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
-            <ul id="my-projects"></ul>
-        </div>
         </section>
         <section>
+            <div class="projects-head">Moje projekty</div>
+            <div class="projects">
+                <ul id="my-projects"></ul>
+            </div>
+        </section>
+        <section class="contact">
             <div class="container center">
                 <form id="form-contact" class="form-contact">
                     <div class="form-title">Formularz kontaktowy</div>
@@ -98,7 +103,16 @@
         </section>
     </main>
     <footer>
-        Footer strony
+        <div class="container">
+        <section>
+            <div class="footer-title">Socials:</div>
+            <ul id="socials"></ul>
+        </section>
+        <section>
+                <div class="footer-title">Klauzule</div>
+                <p id="clauses"></p>
+            </section>
+        </div>
     </footer>
 </body>
 
