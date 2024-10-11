@@ -21,12 +21,11 @@ const courses = [
     },
 ];
 
-
-for(const cours of courses){
-    const li = document.createElement('li');
+for (const cours of courses) {
+    const li = document.createElement("li");
     li.classList.add("courses-list-item");
 
-    const innerHtmlLi = `
+    li.innerHTML = `
         <span>
             <span>${cours.name}</span>
             
@@ -35,7 +34,5 @@ for(const cours of courses){
         <a href='${cours.link}'>View certificate</a>
     `;
 
-    li.innerHTML = innerHtmlLi;
-
-    document.getElementById("courses-list").appendChild( li )
+    document.getElementById("courses-list").appendChild(li);
 }
