@@ -1,6 +1,6 @@
 const scrollToTopBtn = document.createElement("button");
 scrollToTopBtn.classList = "scroll-btn";
-scrollToTopBtn.innerText = "GO TO UP";
+scrollToTopBtn.innerText = "TO TOP";
 const body = document
   .getElementsByTagName("body")[0]
   .appendChild(scrollToTopBtn);

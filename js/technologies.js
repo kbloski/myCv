@@ -14,7 +14,7 @@ for (const tech of technologies) {
   document.getElementById("technologies").appendChild(li);
 }
 
-const inProgressTechnologies = ["React", "NextJs", "Bootstrap5"];
+const inProgressTechnologies = ["React", "NextJs", "Bootstrap5","Vue3"];
 for (const tech of inProgressTechnologies) {
   const li = document.createElement("li");
   li.innerText = tech;
