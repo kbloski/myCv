@@ -1,12 +1,14 @@
 const technologies = [
-  "Git / GitHub",
-  "HTML & CSS",
+  "Vue3",
+  "HTML5 & CSS3",
   "JavaScript",
+  "Git / GitHub",
   "TypeScript",
   "NodeJS",
   "ExpressJs",
   "Sequelize",
   "SQL (MySQL)",
+
 ];
 for (const tech of technologies) {
   const li = document.createElement("li");
@@ -14,7 +16,12 @@ for (const tech of technologies) {
   document.getElementById("technologies").appendChild(li);
 }
 
-const inProgressTechnologies = ["React", "NextJs", "Bootstrap5","Vue3"];
+const inProgressTechnologies = 
+[
+  "React", 
+  "NextJs", 
+  "Bootstrap5",
+];
 for (const tech of inProgressTechnologies) {
   const li = document.createElement("li");
   li.innerText = tech;
