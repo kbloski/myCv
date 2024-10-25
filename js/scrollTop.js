@@ -31,4 +31,5 @@ function setProgressBar() {
             )`;
 
   scrollToTopBtn.style.background = bg;
+  scrollToTopBtn.style.cursor = 'pointer';
 }
