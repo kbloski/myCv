@@ -19,7 +19,7 @@ for (const tech of technologies) {
 const inProgressTechnologies = 
 [
   "React", 
-  "NextJs", 
+  // "NextJs", 
   "Bootstrap5",
 ];
 for (const tech of inProgressTechnologies) {
