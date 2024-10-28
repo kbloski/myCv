@@ -8,6 +8,7 @@ const technologies = [
   "ExpressJs",
   "Sequelize",
   "SQL (MySQL)",
+  "Python"
 
 ];
 for (const tech of technologies) {
