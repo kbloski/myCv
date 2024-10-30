@@ -1,5 +1,10 @@
 const courses = [
     {
+        name: "Vue - The Complete Guide (incl. Router & Composition API)",
+        hours: "30 godzin",
+        link: "https://www.udemy.com/certificate/UC-397ddca6-3a80-4d1d-a116-ffe71cdb7891/",
+    },
+    {
         name: "Next.js 14 od podstaw. Pełen kurs",
         hours: "9 godzin",
         link: "https://www.udemy.com/certificate/UC-758b1c19-2dfc-42ab-870c-8c090a4deca6/",
