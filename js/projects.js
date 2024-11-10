@@ -33,6 +33,5 @@ for (const project of projectsList) {
     <p>${project.description}</p>
     <a href='${project.link}' target='_blank'>See more...</a>
   `;
-
     document.getElementById("my-projects").appendChild(li);
 }
