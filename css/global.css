@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "Roboto", sans-serif;
     text-wrap: wrap;
     word-wrap: break-word;
@@ -387,6 +388,10 @@ main {
     background: rgba(0, 0, 0, 0.699);
     position: absolute;
     z-index: -1;
+}
+
+#send-information {
+    /* display: none; */
 }
 
 .form-title {
