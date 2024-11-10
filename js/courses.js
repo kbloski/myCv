@@ -1,6 +1,6 @@
 const courses = [
     {
-        name: "Vue - The Complete Guide (incl. Router & Composition API)",
+        name: "Vue3 - The Complete Guide (incl. Router & Composition API)",
         hours: "32 godzin",
         link: "https://www.udemy.com/certificate/UC-397ddca6-3a80-4d1d-a116-ffe71cdb7891/",
     },
