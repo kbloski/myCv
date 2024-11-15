@@ -1,45 +1,54 @@
-.profil-photo {
+.border-profile-fade {
     position: relative;
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.border-profile-fade::before ,
+.border-profile-fade::after {
+    position: absolute;
+    background: linear-gradient(
+        var(--angle-border),
+
+        rgba(0,0,0,0.2) 0%,
+        var(--color-light) 10%,
+        var(--color-light) 33%,
+        rgba(0,0,0,0.2)33%,
+        rgba(0,0,0,0.2) 66%,
+        var(--color-light) 10%,
+        rgba(0,0,0,0.2) 99%
+        
+        );
+    animation: angle-rotate 10s infinite linear;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.border-profile-fade::after
+ {
+    filter: blur(1.4rem);
+}
+
+
+.profil-photo {
     width: 17vw;
+    height: 17vw;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
-    margin: 10px;
-    z-index: 1;
+    display: block;
 }
 
 .profil-photo > img {
     transform: translateY(-10%);
     background-color: black;
-}
-.border-fade {
-    position: relative;
-}
-
-.border-fade::before ,
-.border-fade::after {
-    position: absolute;
-    background: linear-gradient(
-        var(--angle-border),
-
-        rgba(0,0,0,0) 0%,
-        var(--color-light) 33%,
-        rgba(0,0,0,0)33%,
-        var(--color-light) 66%, 
-        rgba(0,0,0,0) 66%,
-        var(--color-light) 90%,
-        rgba(0,0,0,0) 99%
-        
-        );
-    animation: angle-rotate 10s infinite linear;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-}
-
-.border-fade::after {
-    filter: blur(8px);
+    display: block;
 }

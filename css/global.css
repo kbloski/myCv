@@ -1,9 +1,9 @@
 :root {
-    --color-light: rgb(0, 255, 255) ;
+    --color-light: rgb(0, 255, 255);
     --color-dark: #1c292b;
 
-    --background-color-light: rgb(0, 77, 77) ;
-    --background-color-dark: rgb(14, 14, 14) ;
+    --background-color-light: rgb(0, 77, 77);
+    --background-color-dark: rgb(14, 14, 14);
 }
 
 * {
@@ -15,29 +15,33 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: White;
-
 }
 
 body {
-    background: 
-    linear-gradient(
-        to top right, 
-            var(--background-color-light),
-            var(--background-color-dark),
-            var(--background-color-light)
+    background: linear-gradient(
+        to top right,
+        var(--background-color-light),
+        var(--background-color-dark),
+        var(--background-color-light)
     );
-    margin: 0;
-    padding: 0;
     width: 100vw;
+    max-width: 1200px;
     min-height: 100vh;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.block {
+.section-block {
+    padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
+.section-block > * {
+    margin: 1rem;
+}
+
 
 img {
     width: 100%;
@@ -48,9 +52,8 @@ img {
     padding: 2rem;
 }
 
-
 @property --angle-border {
-    syntax: '<angle>';
+    syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
@@ -58,8 +61,16 @@ img {
 @keyframes angle-rotate {
     from {
         --angle-border: 0deg;
-    } to {
+    }
+    to {
         --angle-border: 360deg;
     }
-    
 }
+
+
+#technologies, 
+#in-progress-technologies {
+    /* display: flex; */
+    list-style-type: none;
+}
+

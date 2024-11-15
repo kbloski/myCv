@@ -1,8 +1,8 @@
 .base-card {
-    margin: 0 auto;
+    margin: 2rem;
     padding: 2rem;
-    margin-top: 100px;
-    max-width: 80vh;
+    /* max-width: 80vh; */
+    width: 80vh;
     background: var(--color-dark);
     position: relative;
 }
@@ -27,7 +27,7 @@
     translate: -50% -50%;
     z-index: -1;
     padding: .5rem;
-    animation: angle-rotate 3s linear infinite;
+    animation: angle-rotate 10s linear infinite;
     
 }
 
