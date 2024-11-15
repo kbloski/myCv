@@ -67,6 +67,10 @@ img {
     }
 }
 
+#name,
+#second-title {
+    text-align: center;
+}
 
 #technologies, 
 #in-progress-technologies {
