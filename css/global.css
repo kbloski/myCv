@@ -1,15 +1,24 @@
 :root {
     --color-light: rgb(0, 255, 255) ;
-    --color-dark: rgb(0, 0, 0);
+    --color-dark: #1c292b;
 
     --background-color-light: rgb(0, 77, 77) ;
     --background-color-dark: rgb(14, 14, 14) ;
 }
 
-body, html {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: White;
-    box-sizing: border-box;
+
+}
+
+body {
     background: 
     linear-gradient(
         to top right, 
