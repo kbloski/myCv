@@ -1,127 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamil Błoński CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/other_css/cv_studio.css" />
-    <script src="./js/init.js" type="module" defer></script>
-
+    <title>cv-kamil-błoński</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/profile_picture.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <script src="../js/init.js" defer></script>
 </head>
-
 <body>
-    <div id="scroll-to-top"></div>
-    <header>
-        <h1 class="brand">MYCV<span>PROJECT</span></h1>
-        <nav>
-            <ul class="nav-list">
-                <li>Home</li>
-                <li><a href="#personal-information">About-Me</a></li>
-                <li><a href="./public/kamil_blonski_cv_simple-min.pdf"
-                        download="kamil_blonski_cv_simple-min">Download-Cv</a></li>
-                <li><a href="#courses-list">Courses</a></li>
-                <li><a href="#form-contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="baner">
-        <img src="./images/baner.png" alt="baner">
-        <div class="baner-caption">
-            <div class="baner-caption-body">
-                <div>MYCV</div>
-                <div>PROJECT</div> 
-                <button class="btn-read-more">READ MORE</button>
+    <section class="section-block">
+        <div></div>
+        <div class="border-profile-fade">
+            <div class="profil-photo">
+                <img src="./images/profile_2_transparent_background.png">
             </div>
+        </div>
+    </section>
+    <h1>
+        <div id="name"></div>
+    </h1>
+    <h2 id="second-title">
+        Junior frontend developer
+    </h2>
+    <div class="section-socials">
+        <ul id="socials">
+            <li>
+                <a href="./public/kamil_blonski_cv_simple-min.pdf" download="kamil_blonski_cv_simple-min">Download CV</a>
+            </li>
+        </ul>
+    </div>
+    <section class="section-block">
+        <div class="base-card">
+            <h3 class="base-title">About me</h3>
+            <p id="about-me"></p>
+        </div>
+    </section>
+    <section id="section-personal">
+        <div>
+            <div class="base-title">
+                Adress 
+            </div>
+            <div id="address"></div>
+        </div>
+        <div>
+            <div class="base-title">
+                Kontakt
+            </div>
+            <div id="email"></div>
+            <div id="phone"></div>
+        </div>
+        <div>
+            <div class="base-title">
+                Języki 
+            </div>
+            <ul id="languages"></ul>
+        </div>
+        <div>
+            <div class="base-title">
+                Uprawnienia 
+            </div>
+            <div id="credentials"></div>
         </div>
     </div>
-    <main>
-        <div class="container first-background-style">
-            <div id="personal-information">
-                <div class="about-me">
-                    <div>
-                        <img src="./images/profil_picture.jpg" class="profile-img">
-                        <h2>ABOUT ME</h2>
-                        <p id="about-me"></p>
-                    </div>
-                </div>
-                <div class="information-list">
-                    <div class="information">
-                        <div class="information-title">Dane Personalne</div>
-                        <div class="information-body">
-                            <div id="name"></div>
+   
+    </section>
+    <section class="section-block">
+        <div class="base-card">
+            <h3 class="base-title">Technologie</h3>
+            <ul id="technologies"></ul>
+            <h3 class="base-title">Uczę się </h3>
+            <ul id="in-progress-technologies"></ul>
+        </div>
+    </section>
+    
+    <div>
+        <h3 class="base-title">Moje projekty</h3>
+        <ul id="my-projects"></ul>
+    </div>
+    <section class="section-block">
+        <div class="base-card">
+            <h3 class="base-title">Kursy i szkolenia odbyte</h3>
+            <ul id="courses-list"></ul>
+        </div>
+    </section>
+    <div>
+        <h4 class="base-title">Klauzule</h4>
+        <p id="clauses"></p>
+    </div> 
 
-                            <address id="address"></address>
-                            <br>Email <span id="email"></span>
-                            <br>Phone <span id="phone"></span>
-                        </div>
-                    <div class="information">
-                        <div class="information-title">Używam Technologii</div>
-                        <div class="information-body">
-                            <ul id="technologies"></ul>
-                        </div>
-                    </div>
-                    <div class="information">
-                        <div class="information-title">Uczę się</div>
-                        <div class="information-body">
-                            <ul id="in-progress-technologies"></ul>
-                        </div>
-                    </div>
-                    <div class="information">
-                        <div class="information-title">Języki</div>
-                        <div class="information-body">
-                            <ul id="languages"></ul>
-                        </div>
-                    </div>
-                    <div class="information">
-                        <div class="information-title">Licencje</div>
-                        <div class="information-body">
-                            <ul id="credentials"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <section>
-            <div class="projects-head">Moje projekty</div>
-            <div class="projects">
-                <ul id="my-projects"></ul>
-            </div>
-        </section>
-        <section>
-            <div class="courses-head">Ukończone kursy</div>
-            <div class="container">
-                <ul id="courses-list"></ul>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="container center">
-                <form id="form-contact" class="form-contact">
-                    <div class="form-title">Formularz kontaktowy</div>
-                    <label for="form-subject" class="form-label">Subject</label>
-                    <input type="text" id="form-subject" minlength="3" required class="form-control">
-                    <label for="form-body" class="form-label">Body</label>
-                    <textarea type="text" id="form-body" class="form-control"></textarea>
-                    <button type="submit" class="form-label" id="contact-button">Wyślij</button>
-                    <p id="send-information"></p>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <section>
-                <div class="footer-title">Socials:</div>
-                <ul id="socials"></ul>
-            </section>
-            <section>
-                <div class="footer-title">Klauzule</div>
-                <p id="clauses"></p>
-            </section>
-        </div>
-    </footer>
 </body>
 </html>

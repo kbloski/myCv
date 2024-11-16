@@ -1,6 +1,6 @@
 .base-card {
-    margin: 2rem;
-    padding: 2rem;
+    /* margin: 2rem; */
+    padding: 1rem;
     /* max-width: 80vh; */
     width: 90%;
     background: var(--color-dark);

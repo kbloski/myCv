@@ -5,14 +5,14 @@ function createLink(text, url, classList) {
     (link.classList = classList ?? "");
   return link;
 }
-
-document.getElementById("about-me").innerText =
-  "Jestem junior programistą, który chce dążyc do rozwoju jako fullstack-developer. Szukam współpracy z firmą, która ceni kreatywność i nowe technologie, aby tworzyć nowoczesne rozwiązania i realizować ambitne projekty.";
-
 const personal = { name: "Kamil", surname: "Błoński" };
 document.getElementById(
   "name"
 ).innerText = `${personal.name} ${personal.surname}`;
+
+document.getElementById("about-me").innerText =
+  "Jestem junior programistą, który chce dążyc do rozwoju jako fullstack-developer. Szukam współpracy z firmą, która ceni kreatywność i nowe technologie, aby tworzyć nowoczesne rozwiązania i realizować ambitne projekty.";
+
 
 const address = "Jodłowa 194A, 39-225 (woj. Podkarpackie)";
 document.getElementById("address").innerText = address;

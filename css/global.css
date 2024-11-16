@@ -28,14 +28,14 @@ body {
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .section-block {
     padding: 1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -80,19 +80,20 @@ a {
     justify-content: space-evenly;
 }
 
-#socials * > a {
-    text-decoration: none;
+#section-personal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#socials > * {
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--color-light);
-    backdrop-filter: blur(8px);
-} 
+#section-personal > * {
+    padding: .5rem;
+}
 
+#languages,
+#credentials {
+    list-style: none;
+}
 
 #technologies, 
 #in-progress-technologies {
@@ -144,7 +145,8 @@ a {
 
 
 @media screen and (max-width: 425px) {
-    .section-block {
-        display: block;
-    }
+    #section-personal{
+    display: block;
+}
+
 }
