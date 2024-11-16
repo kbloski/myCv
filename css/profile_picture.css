@@ -39,8 +39,8 @@
 
 
 .profil-photo {
-    width: 17vw;
-    height: 17vw;
+    width: 300px;
+    height: 300px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -51,4 +51,10 @@
     transform: translateY(-10%);
     background-color: black;
     display: block;
+}
+@media screen and (max-width: 800px) {
+    .profil-photo {
+        width: 70vw;
+        height: 70vw;
+    }
 }
