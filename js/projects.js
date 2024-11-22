@@ -3,7 +3,7 @@ const projectsList = [
         name: "WeatherApp - in progress",
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
-        link: "https://github.com/kbloski/weatherApp",
+        link: "https://demo-weater-app.netlify.app/home",
     },
     {
         name: "SpendWise - code review",
