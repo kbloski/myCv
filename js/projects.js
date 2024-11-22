@@ -31,7 +31,6 @@ const projectsList = [
     },
 ];
 
-
 for (const project of projectsList) {
     const li = document.createElement("li");
 
