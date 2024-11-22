@@ -18,7 +18,7 @@ const projectsList = [
         link: "https://github.com/kbloski/photographer-website/",
     },
     {
-        name: "User role managment system in NextJs",
+        name: "User role managment system in NextJs", 
         description:
             "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie: HTML, CSS, TypeScript, NextJs, AppRouter",
         link: "https://usermanagment-role.netlify.app/",
