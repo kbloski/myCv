@@ -2,19 +2,19 @@ const projectsList = [
     {
         name: "WeatherApp - in progress",
         description:
-        "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
-        link: "https://github.com/kbloski/SpendWise",
+            "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
+        link: "https://github.com/kbloski/weatherApp",
     },
     {
         name: "SpendWise - code review",
         description:
-        "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
+            "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
         link: "https://github.com/kbloski/SpendWise",
     },
     {
         name: "photographer-website - code review",
         description:
-        "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
+            "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
         link: "https://github.com/kbloski/photographer-website/",
     },
     {
