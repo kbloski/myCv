@@ -23,12 +23,13 @@ const scripts = [
     "personal.js",
     "technologies.js",
     "projects.js",
-    "form_contact.js",
     "footer.js",
     "socials.js",
-    "scrollTop.js",
+    "summary.js",
     "courses.js",
-    "contact_form.js"
+    "contact_form.js",
+    "scrollTop.js",
+    "form_contact.js",
 ];
 
 async function init() {

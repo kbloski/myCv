@@ -22,3 +22,7 @@ img {
 .scroll-btn {
   display: none;
 }
+
+#socials {
+  margin-left: 2rem;
+}
