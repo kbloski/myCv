@@ -33,6 +33,10 @@ img {
   position: absolute;
 }
 
+.additional-info li {
+  padding-bottom: 1rem;
+}
+
 .profile-photo {
   border-radius: 50%;
   margin: 0 auto;
@@ -92,4 +96,8 @@ img {
   display: flex;
   justify-content: space-between;
   padding-bottom: .2rem;
+}
+
+.clauses > li {
+  margin-bottom: 1rem;
 }

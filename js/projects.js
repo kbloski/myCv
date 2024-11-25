@@ -5,7 +5,8 @@ const projectsList = [
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
         links: [
-            createLink("app", "https://demo-weater-app.netlify.app")
+            createLink("code-review", "https://github.com/kbloski/weatherApp"),
+            createLink("page", "https://demo-weater-app.netlify.app"),
         ],
     },
     {
@@ -31,20 +32,30 @@ const projectsList = [
     },
     {
         name: "Role Managment",
-        technologies: ["nextJs", "react", "ts", "node", "express", 'html', 'css'],
+        technologies: [
+            "nextJs",
+            "react",
+            "ts",
+            "node",
+            "express",
+            "html",
+            "css",
+        ],
         description:
             "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie",
         links: [
-            createLink('app', "https://usermanagment-role.netlify.app/"),
-        ]
+            createLink("code-review", "https://github.com/kbloski/userManagment"),
+            createLink("page", "https://usermanagment-role.netlify.app/"),
+        ],
     },
     {
         name: "TODO Task List",
-        technologies: ["html", 'css', 'js'],
+        technologies: ["html", "css", "js"],
         description:
             "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",
         links: [
-            createLink('app',"https://kbloski.github.io/todoList/")
+            createLink("code-review", "https://github.com/kbloski/todoList"),
+            createLink("page", "https://kbloski.github.io/todoList/"),
         ],
     },
 ];

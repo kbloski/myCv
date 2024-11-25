@@ -1,7 +1,6 @@
 :root {
     --color-light: rgb(0, 238, 255);
     --color-dark: #1c292b;
-
     --background-color-light: rgb(0, 77, 77);
     --background-color-dark: rgb(14, 14, 14);
 }
@@ -13,40 +12,42 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     margin: 0;
     padding: 0;
-
-    flex-wrap: wrap;
-    word-wrap: break-word;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(
+    max-width: 100vh;
+}
+
+.container {
+    width: 100vw;
+    height: 110vh;
+    background-color: gray;
+}
+
+/* body { */
+    /* background-color: black; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* background: linear-gradient(
         to top right,
         var(--background-color-light),
         var(--background-color-dark),
         var(--background-color-light)
-    );
-}
+    ); */
+/* } */
 
 
-.container {
-    padding: 1rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: 1rem auto;
-    min-height: 100vh;
-}
-
-a {
-    color: var(--color-light);
-} 
-
+/* 
 img {
     width: 100%;
     height: auto;
-} 
-@property --angle-border {
+} */
+
+/* a {
+    color: var(--color-light);
+} */
+
+/* @property --angle-border {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
@@ -60,17 +61,25 @@ img {
         --angle-border: 360deg;
     }
 }
-.d-block ,
-.d-flex
-{
-    margin-top: 1.5rem;  
-} 
 
-.fullname,
+
+.container {
+    max-width: 1200px;
+    min-height: 110vh;
+} */
+
+/* .fullname,
 .second-title {
     text-align: center;
 }
 
+.d-block ,
+.d-flex
+{
+    
+} */
+
+/* 
 .d-flex {
     display: flex;
 }
@@ -80,21 +89,26 @@ img {
     justify-content: space-evenly;
     list-style: none;
 }
-    
+
+
+
+
+
 .personal-info{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .personal-info > div {
-    margin: .2rem;
+    margin: 1rem 0;
 }
 
 .personal-info ul {
     list-style: none;
 }
 
+            
 .technologies, 
 .technologies-in-progress {
     display: flex;
@@ -114,22 +128,22 @@ img {
     background-color: rgba(137, 43, 226, 0.295);
 }
 
+
 .projects {
-    padding: 1rem;
+    list-style: none;
 }
 
-.projects > ul > li {
+.projects > li {
     margin-bottom: 1rem;
 }
 
-.projects ul {
+.projects > li > ul {
     list-style: none;
 }
 
 .project-title{
     font-size: 20px;
-    text-transform: capitalize;
-    font-style: italic;
+    text-transform: uppercase;
 }
 
 .project-technologies {
@@ -159,25 +173,8 @@ img {
     justify-content: space-between;
 }
 
-.diplomas,
-.clauses
- {
-    padding-left: 1rem;
-    list-style: square;
+.courses li > *:first-child  {
+    width: 70%;
 }
 
-.diplomas > li {
-    margin-bottom: .5rem;
-}
-
-.diploma-result {
-    color: var(--color-light);
-}
-
-.clauses {
-    list-style: georgian;
-}
-
-.clauses > li {
-    margin-bottom: .5rem;
-}
+ */
