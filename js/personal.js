@@ -1,6 +1,6 @@
 const personal = { name: "Kamil", surname: "Błoński" };
-const address = "Jodłowa 194A, 39-225 (woj. Podkarpackie)";
 const internship = "Junior Frontend Developer";
+const address = "Jodłowa 194A, 39-225 (woj. Podkarpackie)";
 const aboutMe =
     "Jestem junior programistą, który chce zacząć przygodę z programowaniem. Szukam współpracy z firmą, która ceni kreatywność i nowe technologie, aby tworzyć nowoczesne rozwiązania i realizować ambitne projekty.";
 const contactInfo = {
@@ -13,6 +13,13 @@ const contactInfo = {
         value: "kblonski02@gmail.com",
     },
 };
+const educationsArr = [
+    {
+        name: "ZSNR 4 im. Mikołaja Kopernika w Dębicy",
+        years: "(2019r. / 2024r.)",
+    },
+];
+
 const credentials = {
     prawojazdy: "B, A2",
 };
@@ -86,6 +93,19 @@ function initContact() {
     }
 }
 
+function initEducations(){
+  const ulElements = document.querySelectorAll(`[data-id='educations']`);
+
+  for(const ulEl of ulElements){
+    for(const edu of educationsArr){
+      const li = document.createElement('li');
+      li.innerHTML = `${edu.years} - ${edu.name}`
+
+      ulEl.appendChild( li)
+    }
+  }
+}
+
 function initNames() {
     const namesElement = document.querySelectorAll('[data-id="fullname"]');
     for (const el of namesElement) {
@@ -103,7 +123,8 @@ function initInternship() {
 initAboutMe();
 initAddress();
 initContact();
-initCredentials();
+initCredentials()
+initEducations();
 initInternship();
 initNames();
 initLanguages();
