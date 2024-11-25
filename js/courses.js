@@ -26,18 +26,38 @@ const courses = [
     },
 ];
 
-for (const cours of courses) {
-    const li = document.createElement("li");
-    li.classList.add("courses-list-item");
+function initCourses(){
+    const elementsUl = document.querySelectorAll(`[data-id='courses']`)
 
-    li.innerHTML = `
-        <span>
-            <span>${cours.name}</span>
-            
-            <span>( ${cours.hours} )</span>
-        </span>
-        <a href='${cours.link}'>View certificate</a>
-    `;
+    for(const ulEl of elementsUl){
+        for(const course of courses){
+            const liEl = document.createElement('li');
 
-    document.getElementById("courses-list").appendChild(li);
+            liEl.innerHTML = `
+                <div class='course-title'>${course.name}</div>
+                <div class='course-hours'>${course.hours}</div>
+                <a href=${course.link}>Certificate</a>
+            `
+
+            ulEl.appendChild( liEl)
+        }
+    }
 }
+
+initCourses();
+
+// for (const cours of courses) {
+//     const li = document.createElement("li");
+//     li.classList.add("courses-list-item");
+
+//     li.innerHTML = `
+//         <span>
+//             <span>${cours.name}</span>
+            
+//             <span>( ${cours.hours} )</span>
+//         </span>
+//         <a href='${cours.link}'>View certificate</a>
+//     `;
+
+//     document.getElementById("courses-list").appendChild(li);
+// }
