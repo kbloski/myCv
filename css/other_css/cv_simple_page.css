@@ -1,5 +1,12 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
 }
 
 img {
@@ -7,22 +14,37 @@ img {
   height: auto;
 }
 
-#my-projects > li {
+.profile-photo {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profile-photo > img {
+  transform: translateY(-60px);
+}
+
+.fullname, .internship {
+  text-align: center;
+}
+
+.base-title {
+  margin: 1rem 0 0 2rem;
+  padding: .2rem 0;
   margin-bottom: 1rem;
+  font-size: large;
+  font-weight: bold;
+  position: relative;
 }
 
-#my-projects > li > p {
-  padding: 0;
-  margin: 0;
-}
-
-.profile-img {
-}
-
-.scroll-btn {
-  display: none;
-}
-
-#socials {
-  margin-left: 2rem;
+.base-title::before {
+  background: linear-gradient(to right, black, transparent);
+  content: '';
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  position: absolute;
 }

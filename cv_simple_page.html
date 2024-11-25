@@ -1,112 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kamil Błoński CV</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    /> 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamil Błoński CV</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css//other_css/cv_simple_page.css" />
+  <script src="./js/init.js" type="module" defer></script>
+  <script src="./js/for-simple-page/create_pdf_file.js" defer></script>
+</head>
+<body id="page-content">
+<button class="download-cv">DOWNLOAD CV</button>
 
-    <link rel="stylesheet" href="./css//other_css/cv_simple_page.css" />
-    <script src="./js/init.js" type="module" defer></script>
-    <script src="./js/for-simple-page/create_pdf_file.js" defer></script>
-  </head>
-  <body id="page-content">
-    <div>
-      <button class="download-cv">DOWNLOAD CV</button>
-    </div>
-    <div class="container p-2 bg-light">
-      <header>
-        <div class="row">
-          <h1>Aktualne dane i wygląd cv jest na tej stronie</h1>
-          <h2>
-            <a href="https://kbloski.github.io/myCv/"
-              >https://kbloski.github.io/myCv/</a
-            >
-          </h2>
-          <h3>Widoczne cv to wersja uproszczona</h3>
+<header>
+  <div>
+    <h3>Przed zapoznaniem się z CV przeczytaj!</h3>
+    <ul data-id="additional-information"></ul>
+  </div>
+</header>
+<main>
+  <hr>
+  <div class="profile-photo">
+    <img src="./images/profile_2.jpg" aria-hidden="true" class="profile-img" />
+  </div>
+  <h1 data-id="fullname" class="fullname"></h1>
+  <h2 data-id="internship" class="internship"></h2>
+  <p data-id="about-me" class="about-me"></p>
+  <section>
+    <div class="base-title">Kontakt</div>
+    <ul data-id="contact"></ul>
+    <div data-id="address"></div>
+  </section>
+  <section>
+    <div class="base-title">Więcej o mnie</div>
+    <ul data-id="credentials"></ul>
+    <ul data-id="languages"></ul>
+  </section>
+  <section>
+    <div class="base-title">Technologie, które znam</div>
+    <ul data-idid="technologies"></ul>
+  </section>
+  
+</main>
+              
+            <div>
+              Używam technologii
+            </div>
+            <div>
+              Uczę się
+              <ul id="in-progress-technologies"></ul>
+            </div>
+            <div>
+              Języki
+              <ul id="languages"></ul>
+            </div>
+            <div>
+              Inne:
+              <ul id="credentials"></ul>
+            </div>
+          </div>
         </div>
-      </header>
-      <main>
-        <section>
-          <div class="row">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <div>
-                <img
-                  src="./images/profile_2.jpg"
-                  aria-hidden="true"
-                  class="profile-img"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <section class="row pb-2">
-                <h3>Informacje dodatkowe</h3>
-                <div class="cv_summary"></div>
-              </section>
-              <div>
-                <h2>O mnie</h2>
-                <p id="about-me"></p>
-              </div>
-              <div>
-                <h2>Dane</h2>
-              </div>
-              <div id="name"></div>
-              Email <span id="email"></span> Phone <span id="phone"></span>
-              <address id="address"></address>
-
-              <div>
-                Używam technologii
-                <ul id="technologies"></ul>
-              </div>
-              <div>
-                Uczę się
-                <ul id="in-progress-technologies"></ul>
-              </div>
-              <div>
-                Języki
-                <ul id="languages"></ul>
-              </div>
-              <div>
-                Inne:
-                <ul id="credentials"></ul>
-              </div>
-            </div>
+        <div class="row">
+          <h2>Moje projekty</h2>
+          <div>
+            <ul id="my-projects"></ul>
           </div>
-          <div class="row">
-            <h2>Moje projekty</h2>
-            <div>
-              <ul id="my-projects"></ul>
-            </div>
+        </div>
+        <div class="row">
+          <h2>Jedne z źródłeł, w których nabywałem wiedzy</h2>
+          <div>
+            <ul id="courses-list"></ul>
           </div>
-          <div class="row">
-            <h2>Jedne z źródłeł, w których nabywałem wiedzy</h2>
-            <div>
-              <ul id="courses-list"></ul>
-            </div>
-          </div>
-        </section>
-        <section class="row">
-           <h3>Socials</h3>
-          <ul id="socials"></ul>
-        </section>
-      </main>
-      <footer>
-        <h3 class="footer-title">Klauzule</h3>
-        <p id="clauses"></p>
-      </footer>
-    </div>
-  </body>
+        </div>
+      </section>
+      <section class="row">
+          <h3>Socials</h3>
+        <ul id="socials"></ul>
+      </section>
+    </main>
+    <footer>
+      <h3 class="footer-title">Klauzule</h3>
+      <p id="clauses"></p>
+    </footer>
+  </div>
+</body>
 </html>
