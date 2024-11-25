@@ -19,7 +19,6 @@ const educationsArr = [
         years: "(2019r. / 2024r.)",
     },
 ];
-
 const credentials = {
     prawojazdy: "B, A2",
 };
@@ -27,6 +26,8 @@ const languages = {
     polski: "Ojczysty",
     angielski: "Dokumentacja, A1/A2",
 };
+// const interests = ["Czytanie książek", "Projektowanie 3D", "Druk 3D"];
+
 
 function initLanguages(){
     const elementsUl = document.querySelectorAll('[data-id="languages"]');

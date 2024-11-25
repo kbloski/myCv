@@ -21,12 +21,13 @@ function loadingScript(src) {
 
 const scripts = [
     "additional_information.js",
-    "personal.js",
-    "technologies.js",
-    "projects.js",
-    "socials.js",
     "courses.js",
     "clauses.js",
+    "diplomas.js",
+    "projects.js",
+    "personal.js",
+    "socials.js",
+    "technologies.js",
     // "contact_form.js",
     // "scrollTop.js",
     // "form_contact.js",

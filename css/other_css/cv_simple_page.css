@@ -87,3 +87,9 @@ img {
 .courses li{
   padding-bottom: 1rem;
 }
+
+.diplomas li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: .2rem;
+}
