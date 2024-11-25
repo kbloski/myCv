@@ -11,7 +11,7 @@ function addInformationToList(){
 }
 
 const informationList = [
-    "Chętnie zgodzę się na okres próbnego bez wynagrodzenia (max 2 miesiące), a po jego zakończeniu poczekam na decyzję co do podjęcia współpracy lub jej braku.",
+    "Chętnie zgodzę się na okres próbnego bez wynagrodzenia (max 1-2 miesiące), a po jego zakończeniu poczekam na decyzję co do podjęcia współpracy lub jej braku.",
 
     `Ten plik pdf nieostylowana wersja mojej strony internetowej z cv, która znajduje się pod tym linkiem: 
     <a href='https://kbloski.github.io/myCv/'>
