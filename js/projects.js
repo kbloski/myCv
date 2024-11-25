@@ -1,53 +1,88 @@
 const projectsList = [
     {
         name: "Weather App - in progress",
+        technologies: ["vue3"],
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
-        link: "https://demo-weater-app.netlify.app",
+        links: [
+            createLink("app", "https://demo-weater-app.netlify.app")
+        ],
     },
     {
-        name: "SpendWise - code review",
+        name: "Spend Wise",
+        technologies: ["vue3", "node", "express", "ts", "js"],
         description:
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
-        link: "https://github.com/kbloski/SpendWise",
+        links: [
+            createLink("code-review", "https://github.com/kbloski/SpendWise"),
+        ],
     },
     {
-        name: "photographer-website - code review",
+        name: "Photographer Prototype App",
+        technologies: ["nextJs", "react", "ts", "node", "express"],
         description:
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
-        link: "https://github.com/kbloski/photographer-website/",
+        links: [
+            createLink(
+                "code-review",
+                "https://github.com/kbloski/photographer-website/"
+            ),
+        ],
     },
     {
-        name: "User role managment system in NextJs", 
+        name: "Role Managment",
+        technologies: ["nextJs", "react", "ts", "node", "express", 'html', 'css'],
         description:
-            "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie: HTML, CSS, TypeScript, NextJs, AppRouter",
-        link: "https://usermanagment-role.netlify.app/",
+            "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie",
+        links: [
+            createLink('app', "https://usermanagment-role.netlify.app/"),
+        ]
     },
     {
-        name: "Todo task list",
+        name: "TODO Task List",
+        technologies: ["html", 'css', 'js'],
         description:
-            "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami, technologie: HTML, CSS, JS",
-        link: "https://kbloski.github.io/todoList/",
+            "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",
+        links: [
+            createLink('app',"https://kbloski.github.io/todoList/")
+        ],
     },
 ];
 
-function addLink( title, link){
-    return {
-        title,
-        link
+function createLink( title, link){
+    return { title, link }
+}
+
+function initProjects(){
+    const elementsUl = document.querySelectorAll(`[data-id='projects']`);
+    for(const ulEl of elementsUl){
+        for( const project of projectsList){
+            const liEl = document.createElement('li');
+
+            let htmlLinks = ''
+            for(const l of project.links){
+                htmlLinks+= `
+                    <li>
+                        <a href='${l.link}'>${l.title}</a>
+                    </li>
+                `
+            }
+            
+            let htmlTechnologies  = ''
+            for(const tech of project.technologies){
+                htmlTechnologies += `<li>${tech}</li>`
+            }
+
+            liEl.innerHTML = `
+                <div class='project-title'>${project.name}</div>
+                <ul class='project-technologies'>${ htmlTechnologies}</ul>
+                <div class='project-description'>${project.description}</div>
+                <ul class='project-links'>${htmlLinks}</ul>
+            `;
+
+            ulEl.appendChild(liEl);
+        }
     }
 }
 
-
-// function init
-
-// for (const project of projectsList) {
-//     const li = document.createElement("li");
-
-//     li.innerHTML = `
-//     <div class='project-title'>${project.name}</div>
-//     <p>${project.description}</p>
-//     <a href='${project.link}' target='_blank'>See more...</a>
-//   `;
-//     document.getElementById("my-projects").appendChild(li);
-// }
+initProjects();

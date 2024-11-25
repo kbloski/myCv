@@ -14,22 +14,6 @@ img {
   height: auto;
 }
 
-.profile-photo {
-  border-radius: 50%;
-  margin: 0 auto;
-  max-width: 500px;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-}
-
-.profile-photo > img {
-  transform: translateY(-60px);
-}
-
-.fullname, .internship {
-  text-align: center;
-}
-
 .base-title {
   margin: 1rem 0 0 2rem;
   padding: .2rem 0;
@@ -48,3 +32,55 @@ img {
   width: 100%;
   position: absolute;
 }
+
+.profile-photo {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profile-photo > img {
+  transform: translateY(-60px);
+}
+
+.fullname, .internship {
+  text-align: center;
+}
+
+.projects,
+.projects .project-technologies,
+.projects .project-links
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects > li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.projects .project-title {
+  background-color: aliceblue;
+  padding: .2rem;
+}
+
+.projects .project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .2rem;
+}
+.projects .project-technologies li {
+  margin-right: .2rem;
+  text-transform: capitalize;
+}
+
+.project-links li a{
+  margin-left: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
