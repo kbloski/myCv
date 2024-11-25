@@ -31,13 +31,23 @@ const projectsList = [
     },
 ];
 
-for (const project of projectsList) {
-    const li = document.createElement("li");
-
-    li.innerHTML = `
-    <div class='project-title'>${project.name}</div>
-    <p>${project.description}</p>
-    <a href='${project.link}' target='_blank'>See more...</a>
-  `;
-    document.getElementById("my-projects").appendChild(li);
+function addLink( title, link){
+    return {
+        title,
+        link
+    }
 }
+
+
+// function init
+
+// for (const project of projectsList) {
+//     const li = document.createElement("li");
+
+//     li.innerHTML = `
+//     <div class='project-title'>${project.name}</div>
+//     <p>${project.description}</p>
+//     <a href='${project.link}' target='_blank'>See more...</a>
+//   `;
+//     document.getElementById("my-projects").appendChild(li);
+// }

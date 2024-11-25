@@ -1,30 +1,46 @@
 const technologies = [
-  "Vue3",
-  "HTML5 & CSS3",
-  "JavaScript",
-  "Git / GitHub",
-  "TypeScript",
-  "NodeJS",
-  "ExpressJs",
-  "Sequelize",
-  "SQL (MySQL)",
-  "Python"
-
+    "Vue3",
+    "HTML5 & CSS3",
+    "JavaScript",
+    "Git / GitHub",
+    "TypeScript",
+    "NodeJS",
+    "ExpressJs",
+    "Sequelize",
+    "SQL (MySQL)",
+    "Python",
 ];
-for (const tech of technologies) {
-  const li = document.createElement("li");
-  li.innerText = tech;
-  document.getElementById("technologies").appendChild(li);
+
+const technologiesInProgress = [
+    "SCSS",
+    // "React",
+    // "NextJs",
+    // "Bootstrap5",
+];
+
+function initTechnologies() {
+    const elementsUl = document.querySelectorAll(`[data-id='technologies']`);
+    for (const el of elementsUl) {
+        for (const tech of technologies) {
+            const liEl = document.createElement("li");
+            liEl.innerHTML = tech;
+            el.appendChild(liEl);
+        }
+    }
 }
 
-const inProgressTechnologies = 
-[
-  "React", 
-  // "NextJs", 
-  "Bootstrap5",
-];
-for (const tech of inProgressTechnologies) {
-  const li = document.createElement("li");
-  li.innerText = tech;
-  document.getElementById("in-progress-technologies").appendChild(li);
+function initTechnologiesInProgress() {
+    const elementsUl = document.querySelectorAll(
+        `[data-id='technologies-in-progress']`
+    );
+    for (const el of elementsUl) {
+        for (const tech of technologiesInProgress) {
+            const liEl = document.createElement("li");
+            liEl.innerHTML = tech;
+            el.appendChild(liEl);
+        }
+    }
 }
+
+initTechnologies();
+initTechnologiesInProgress();
