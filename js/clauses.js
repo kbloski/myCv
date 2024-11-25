@@ -4,6 +4,7 @@ const clauses = [
 
 function initClauses(){
   const elementsUl = document.querySelectorAll(`[data-id='clauses']`)
+
   for(const ulEl of elementsUl){
     for(const clause of clauses){
       const liEl = document.createElement('li');
