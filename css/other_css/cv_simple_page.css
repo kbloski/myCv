@@ -41,10 +41,6 @@ img {
   overflow: hidden;
 }
 
-.profile-photo > img {
-  /* transform: translateY(-60px); */
-}
-
 .fullname, .internship {
   text-align: center;
 }

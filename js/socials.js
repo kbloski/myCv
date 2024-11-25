@@ -5,15 +5,19 @@ const socialsList = [
         link: "https://www.linkedin.com/in/kamil-b%C5%82o%C5%84ski-1958b4297/",
     },
 ];
-for (const social of socialsList) {
-  const li = document.createElement("li");
-  const a = document.createElement("a");
 
-  a.innerText = social.name;
-  a.href = social.link;
-  a.target = "_blank";
+function initSocials(){
+  const elementsUl = document.querySelectorAll(`[data-id='socials']`);
 
-  li.appendChild(a);
-
-  document.getElementById("socials").appendChild(li);
+  for(const ulEl of elementsUl){
+    for(const social of socialsList){
+      const liEl = document.createElement('li');
+      liEl.innerHTML = `
+        <a href=${social.link}>${social.name}</a>
+      `
+      ulEl.appendChild(liEl)
+    }
+  }
 }
+
+initSocials();
