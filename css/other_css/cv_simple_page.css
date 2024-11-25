@@ -71,7 +71,8 @@ img {
 .projects .project-technologies {
   display: flex;
   flex-wrap: wrap;
-  padding: .2rem;
+  margin: .2rem;
+  margin-left: 1rem;
 }
 .projects .project-technologies li {
   margin-right: .2rem;
