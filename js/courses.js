@@ -1,5 +1,10 @@
 const courses = [
     {
+        name: "Kurs Sass (Tylko część z sass)",
+        hours: "3 godziny",
+        link: "https://www.udemy.com/certificate/UC-b15c9685-bb9c-4fa2-844f-46d649002e2b/",
+    },
+    {
         name: "Vue3 - The Complete Guide (incl. Router & Composition API)",
         hours: "32 godzin",
         link: "https://www.udemy.com/certificate/UC-397ddca6-3a80-4d1d-a116-ffe71cdb7891/",
