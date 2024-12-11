@@ -1,7 +1,17 @@
 const projectsList = [
     {
-        name: "Weather App - in progress",
-        technologies: ["vue3"],
+        name: "TranslatorDemo - in progress",
+        technologies: ["vue3", '+api'],
+        description:
+            "Aplikacja frontend wykonana w vue korzystająca z publicznego api do tłumaczenia języków.",
+        links: [
+            createLink("code-review", "https://github.com/kbloski/translator"),
+            createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
+        ],
+    },
+    {
+        name: "Weather App",
+        technologies: ["vue3", '+api'],
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
         links: [
@@ -44,7 +54,10 @@ const projectsList = [
         description:
             "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie",
         links: [
-            createLink("code-review", "https://github.com/kbloski/userManagment"),
+            createLink(
+                "code-review",
+                "https://github.com/kbloski/userManagment"
+            ),
             createLink("page", "https://usermanagment-role.netlify.app/"),
         ],
     },
