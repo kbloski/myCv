@@ -1,5 +1,6 @@
 const technologies = [
     "Vue3",
+    "VueX",
     "HTML5 & CSS3",
     "JavaScript",
     "Git / GitHub",
