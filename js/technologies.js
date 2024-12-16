@@ -2,17 +2,19 @@ const technologies = [
     "Vue3",
     "HTML5 & CSS3",
     "JavaScript",
-    "Git / GitHub",
+    "SCSS",
     "TypeScript",
     "NodeJS",
     "ExpressJs",
     "Sequelize",
+    "Git / GitHub",
     "SQL (MySQL)",
     "Python",
 ];
 
 const technologiesInProgress = [
-    "SCSS",
+    'Vuetify'
+    // 'pinia'
     // "React",
     // "NextJs",
     // "Bootstrap5",
