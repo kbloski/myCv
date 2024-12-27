@@ -1,7 +1,20 @@
 const projectsList = [
     {
-        name: "TranslatorDemo - in progress",
-        technologies: ["vue3", '+api'],
+        name: "Vuetify TodoList",
+        technologies: ["vue3", "vuetify"],
+        description:
+            "Aplikacja frontend wykonana w vue z frameworkiem vuetify.",
+        links: [
+            createLink(
+                "code-review",
+                "https://github.com/kbloski/vuetify-todolist"
+            ),
+            // createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
+        ],
+    },
+    {
+        name: "TranslatorDemo",
+        technologies: ["vue3", "+api"],
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do tłumaczenia języków.",
         links: [
@@ -11,7 +24,7 @@ const projectsList = [
     },
     {
         name: "Weather App",
-        technologies: ["vue3", '+api'],
+        technologies: ["vue3", "+api"],
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
         links: [
