@@ -1,6 +1,6 @@
 const projectsList = [
     {
-        name: "Vuetify TodoList",
+        name: "Vuetify TodoList - In progress",
         technologies: ["vue3", "vuetify"],
         description:
             "Aplikacja frontend wykonana w vue z frameworkiem vuetify.",
