@@ -24,7 +24,7 @@ const credentials = {
 };
 const languages = {
     polski: "Ojczysty",
-    angielski: "Dokumentacja, A1/A2",
+    angielski: "Dokumentacja, A2",
 };
 // const interests = ["Czytanie książek", "Projektowanie 3D", "Druk 3D"];
 
