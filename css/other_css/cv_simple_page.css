@@ -89,7 +89,12 @@ img {
 }
 
 .experience li {
-  
+  margin-top: 1rem;
+}
+
+.experience .company {
+    font-weight: bold;
+    font-style: italic;
 }
 
 .courses li{

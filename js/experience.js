@@ -1,7 +1,8 @@
 const experiences = [
     {
         company: "IDEAL WORK GERMANY SP. Z O.O.",
-        description: "Pracodawca zagraniczny - GLS GENERAL LOGISTICS SYSTEMS GERMANY GMBH",
+        description:
+            "Pracodawca zagraniczny - GLS GENERAL LOGISTICS SYSTEMS GERMANY GMBH",
         address: "CO. OHG, GLS-GERMANY-STRABE 1-7, 36286 NEUENSTEIN, NIEMCY",
         position: "Magazynier",
         period: {
@@ -21,34 +22,35 @@ const experiences = [
     },
     {
         company: "FHU Ematik Mateusz Nosal",
-        description: '"Twoja przyszłość tu i teraz"',
+        description: "Twoja przyszłość tu i teraz. 160 godzin.",
         address: "Brzostek 39-230, ul. Rynek 38",
         position: "Stażysta",
-        period: {
-            start: "10-10-2022",
-            end: undefined,
-        },
+        // period: {
+        //     start: "10-10-2022",
+        //     end: undefined,
+        // },
     },
 ];
 
 init();
 
-function init(){
-
+function init() {
     try {
-        const experiencesLists = document.querySelectorAll('[data-id=experience]')
-    
-        for( const list of experiencesLists){
-            for(const experience of experiences){
-                let inputTemplate = '';
+        const experiencesLists = document.querySelectorAll(
+            "[data-id=experience]"
+        );
 
-                inputTemplate += 
-                    !experience.period ? ""
-                    : `<div>${experience.period.start} - ${experience.period.end}</div>`;
+        for (const list of experiencesLists) {
+            for (const experience of experiences) {
+                let inputTemplate = "";
 
                 inputTemplate += !experience.company
                     ? ""
-                    : `<div>Company: ${experience.company}</div>`;
+                    : `<div class='company'>Company: ${experience.company}</div>`;
+
+                inputTemplate += !experience.period
+                    ? ""
+                    : `<div>Work period: ${experience.period.start} - ${experience.period.end}</div>`;
 
                 inputTemplate += !experience.position
                     ? ""
@@ -63,10 +65,9 @@ function init(){
                     : `<div>Description: ${experience.description}</div>`;
 
                 list.innerHTML += `<li>${inputTemplate}</li>`;
-
             }
         }
-    } catch (err){
-        console.error(err)
+    } catch (err) {
+        console.error(err);
     }
 }
