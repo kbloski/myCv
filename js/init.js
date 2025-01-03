@@ -28,6 +28,7 @@ const scripts = [
     "personal.js",
     "socials.js",
     "technologies.js",
+    'experience.js'
     // "scrollTop.js",
 ];
 
