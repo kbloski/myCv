@@ -46,7 +46,7 @@ function init() {
 
                 inputTemplate += !experience.company
                     ? ""
-                    : `<div class='company'>Company: ${experience.company}</div>`;
+                    : `<div class='company-title'>Company: ${experience.company}</div>`;
 
                 inputTemplate += !experience.period
                     ? ""

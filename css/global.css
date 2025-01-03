@@ -153,6 +153,22 @@ img {
     text-transform: capitalize;
 }
 
+.experience {
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.experience li {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--color-light);
+
+}
+
+.experience .company-title {
+    color: var(--color-light)
+}
+
 .courses > *{
     margin-top: 1rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.192);
