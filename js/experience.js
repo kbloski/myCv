@@ -2,7 +2,11 @@ const experiences = [
     {
         company: "IDEAL WORK GERMANY SP. Z O.O.",
         description:
-            "Pracodawca zagraniczny - GLS GENERAL LOGISTICS SYSTEMS GERMANY GMBH",
+            `
+                Praca w sortowni paczek kurierskich.
+                Pracodawca zagraniczny: 
+                GLS GENERAL LOGISTICS SYSTEMS GERMANY GMBH
+            `,
         address: "CO. OHG, GLS-GERMANY-STRABE 1-7, 36286 NEUENSTEIN, NIEMCY",
         position: "Magazynier",
         period: {
@@ -12,19 +16,19 @@ const experiences = [
     },
     {
         company: "Dubeco B.V.",
-        description: "Zbiór borówki",
-        address: "Mortel 27, 6088 AH te Roggel",
-        position: "Pracownik sezonowy",
         period: {
             start: "10-07-2023",
             end: "31-08-2023",
         },
+        address: "Mortel 27, 6088 AH te Roggel",
+        position: "Pracownik szczytowy",
+        description: "Zbiory borówki amerykańskiej",
     },
     {
         company: "FHU Ematik Mateusz Nosal",
-        description: "Twoja przyszłość tu i teraz. 160 godzin.",
         address: "Brzostek 39-230, ul. Rynek 38",
         position: "Stażysta",
+        description: "Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",
         // period: {
         //     start: "10-10-2022",
         //     end: undefined,
@@ -62,7 +66,7 @@ function init() {
 
                 inputTemplate += !experience.description
                     ? ""
-                    : `<div>Description: ${experience.description}</div>`;
+                    : `<div class='description'>Description: ${experience.description}</div>`;
 
                 list.innerHTML += `<li>${inputTemplate}</li>`;
             }

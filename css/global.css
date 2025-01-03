@@ -169,11 +169,25 @@ img {
     color: var(--color-light)
 }
 
+.experience .description {
+    color: rgba(255,255,255, 0.7)
+}
+
 .courses > *{
     margin-top: 1rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.192);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.courses .course-title {
+    flex-grow: 2;
+}
+
+.courses .course-hours {
+    margin-right: 1rem;
+    padding-right: .5rem;
+    
 }
 
 .diplomas,

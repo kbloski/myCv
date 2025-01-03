@@ -21,7 +21,7 @@ const courses = [
     },
     {
         name: 'Kurs "Git od podstaw dla każdego"',
-        hours: "4 godziny 30 minut",
+        hours: "4,5 godziny",
         link: "https://www.udemy.com/certificate/UC-60824cbf-e03d-494c-b52c-f32c46c2c940/",
     },
     {
