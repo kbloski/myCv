@@ -1,6 +1,7 @@
 const technologies = [
     "Vue3",
     "VueX",
+    "Pinia",
     "HTML5 & CSS3",
     "JavaScript",
     "SCSS",
