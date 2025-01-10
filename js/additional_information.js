@@ -11,12 +11,12 @@ function addInformationToList(){
 }
 
 const informationList = [
-    "Chętnie zgodzę się na okres próbny bez wynagrodzenia (1 miesiąc), a po jego zakończeniu poczekam na decyzję co do podjęcia współpracy lub jej braku.",
-
-    `Ten plik pdf nieostylowana wersja mojej strony internetowej z cv, która znajduje się pod tym linkiem: 
+    "W razie potrzeby jestem gotów podjąć bezpłatny staż na okres 2-3 miesięcy w celu zdobycia doświadczenia i rozwoju zawodowego.",
+    "Rozważam także możliwość zmiany miejsca zamieszkania, aby wykonywać pracę w trybie stacjonarnym.",
+    `Tutaj jest moja strona portfolio: 
     <a href='https://kbloski.github.io/myCv/'>
         https://kbloski.github.io/myCv/
-    </a> zachęcam do odwiedzenia jej.`,
+    </a> zachęcam do zapoznania się z nią.`,
 ];
 
 addInformationToList()

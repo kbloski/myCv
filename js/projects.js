@@ -1,7 +1,7 @@
 const projectsList = [
     {
         name: "Vuetify TodoList - In progress",
-        technologies: ["vue3", "vuetify", 'pinia'],
+        technologies: ["vue3", "vuetify", "pinia"],
         description:
             "Aplikacja frontend pomagająca w wykonywaniu codziennych obowiązków. Wykonana w vue z frameworkiem vuetify.",
         links: [
@@ -19,7 +19,7 @@ const projectsList = [
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do tłumaczenia języków.",
         links: [
             createLink("code-review", "https://github.com/kbloski/translator"),
-            createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
+            createLink("Website", "https://helpful-blini-7dd5ac.netlify.app/"),
         ],
     },
     {
@@ -29,7 +29,7 @@ const projectsList = [
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
         links: [
             createLink("code-review", "https://github.com/kbloski/weatherApp"),
-            createLink("page", "https://demo-weater-app.netlify.app"),
+            createLink("Website", "https://demo-weater-app.netlify.app"),
         ],
     },
     {
@@ -71,7 +71,7 @@ const projectsList = [
                 "code-review",
                 "https://github.com/kbloski/userManagment"
             ),
-            createLink("page", "https://usermanagment-role.netlify.app/"),
+            createLink("Website", "https://usermanagment-role.netlify.app/"),
         ],
     },
     {
@@ -81,7 +81,7 @@ const projectsList = [
             "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",
         links: [
             createLink("code-review", "https://github.com/kbloski/todoList"),
-            createLink("page", "https://kbloski.github.io/todoList/"),
+            createLink("Website", "https://kbloski.github.io/todoList/"),
         ],
     },
 ];

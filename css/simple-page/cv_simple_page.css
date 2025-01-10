@@ -14,6 +14,24 @@ img {
   height: auto;
 }
 
+.download-cv {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  aspect-ratio: 4/1;
+  width: 100px;
+  border-radius: 0 0 10px 10px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.download-cv:hover {
+  background-color: gray;
+  content: 'Download';
+}
+
 .base-title {
   margin: 1rem 0 0 2rem;
   padding: .2rem 0;
