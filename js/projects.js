@@ -1,6 +1,6 @@
 const projectsList = [
     {
-        name: "Vuetify TodoList - In progress",
+        name: "TodoList with vuetify",
         technologies: ["vue3", "vuetify", "pinia"],
         description:
             "Aplikacja frontend pomagająca w wykonywaniu codziennych obowiązków. Wykonana w vue z frameworkiem vuetify.",
@@ -13,7 +13,7 @@ const projectsList = [
         ],
     },
     {
-        name: "TranslatorDemo",
+        name: "Translator",
         technologies: ["vue3", "+api"],
         description:
             "Aplikacja frontend wykonana w vue korzystająca z publicznego api do tłumaczenia języków.",
@@ -33,7 +33,7 @@ const projectsList = [
         ],
     },
     {
-        name: "Spend Wise",
+        name: "Spend wise (fullstack project)",
         technologies: ["vue3", "node", "express", "ts", "js"],
         description:
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
@@ -42,7 +42,7 @@ const projectsList = [
         ],
     },
     {
-        name: "Photographer Prototype App",
+        name: "Photographer wbebsite (fullstack project)",
         technologies: ["nextJs", "react", "ts", "node", "express"],
         description:
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
@@ -75,7 +75,7 @@ const projectsList = [
         ],
     },
     {
-        name: "TODO Task List",
+        name: "Simple TodoList",
         technologies: ["html", "css", "js"],
         description:
             "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",

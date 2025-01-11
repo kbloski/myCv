@@ -2,10 +2,12 @@ const personal = { name: "Kamil", surname: "Błoński" };
 const internship = "Junior Frontend Developer";
 const address = "Jodłowa 194A, 39-225 (woj. Podkarpackie)";
 
-const aboutMe = `
-Jestem uczniem, który niedawno ukończył technikum informatyczne, gdzie zdobyłem solidne podstawy programowania. Choć mój kierunek był związany z informatyką w szerszym zakresie, to właśnie programowanie darzę szczególną sympatią i pasją. Poza szkołą rozwijam swoje umiejętności, realizując hobbystyczne projekty, ucząc się nowych technologii oraz regularnie uczestnicząc w kursach i szkoleniach.
+const aboutMe = `Jestem absolwentem technikum informatycznego, gdzie zdobyłem solidne podstawy programowania. Choć mój kierunek obejmował szeroki zakres zagadnień informatycznych, to właśnie programowanie szczególnie mnie fascynuje. Po ukończeniu szkoły kontynuuję rozwój umiejętności, realizując hobbystyczne projekty, ucząc się nowych technologii oraz regularnie uczestnicząc w kursach i szkoleniach.
 
-Chciałbym rozpocząć swoją pierwszą pracę, aby zdobyć cenne doświadczenie i dalej się rozwijać. Jestem osobą ambitną, otwartą na nowe wyzwania i gotową do nauki oraz pracy.`;
+</br>
+</br>
+
+Obecnie jestem gotowy, by rozpocząć swoją pierwszą pracę w branży IT. Jestem osobą ambitną, otwartą na wyzwania i szybko przyswajającą wiedzę. Zależy mi na zdobywaniu cennego doświadczenia, które pozwoli mi dalej się rozwijać i wnosić wartość do zespołu, z którym będę współpracować.`;
 
 const contactInfo = {
     phone: {
@@ -28,9 +30,16 @@ const credentials = {
 };
 const languages = {
     polski: "Ojczysty",
-    angielski: "Dokumentacja, A2. ( Dobrze radzę sobie z dokumentacją )",
+    angielski: "Dokumentacja, A2.",
 };
-// const interests = ["Czytanie książek", "Projektowanie 3D", "Druk 3D"];
+const hobbies = [
+    "Programowanie",
+    "Motocykle ",
+    "Projektowanie 3D", 
+    "Druk 3D",
+    "Gry strategiczne i logiczne",
+    "Czytanie książek", 
+];
 
 
 function initLanguages(){
@@ -125,6 +134,17 @@ function initInternship() {
     }
 }
 
+function initHobbies(){
+    const elements = document.querySelectorAll(`[data-id='hobbies']`)
+    for( const el of elements){
+        console.log(el)
+        for(const hobby of hobbies){
+            el.innerHTML += `<li>${hobby}</li>`
+        }
+    }
+}
+
+initHobbies();
 initAboutMe();
 initAddress();
 initContact();

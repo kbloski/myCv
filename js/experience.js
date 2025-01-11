@@ -25,7 +25,7 @@ const experiences = [
         description: "Zbiory borówki amerykańskiej",
     },
     {
-        company: "FHU Ematik Mateusz Nosal",
+        company: "FHU Ematik Mateusz Nosal (serwis komputerowy)",
         address: "Brzostek 39-230, ul. Rynek 38",
         position: "Stażysta",
         description: "Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",

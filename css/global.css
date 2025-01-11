@@ -86,10 +86,12 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 2rem 0;
 }
 
 .personal-info > div {
-    margin: .2rem;
+    padding: .2rem;
+    min-width: 50%;
 }
 
 .personal-info ul {
