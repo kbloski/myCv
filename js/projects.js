@@ -1,5 +1,15 @@
 const projectsList = [
     {
+        name: "ReactQuiz",
+        technologies: ["react"],
+        description:
+            "Aplikacja reactowa, która daje możliwość sprawdzenia swojej wiedzy na temat react.",
+        links: [
+            createLink("code-review", "https://github.com/kbloski/ReactQuiz"),
+            // createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
+        ],
+    },
+    {
         name: "TodoList with vuetify",
         technologies: ["vue3", "vuetify", "pinia"],
         description:
@@ -74,16 +84,16 @@ const projectsList = [
             createLink("Website", "https://usermanagment-role.netlify.app/"),
         ],
     },
-    {
-        name: "Simple TodoList",
-        technologies: ["html", "css", "js"],
-        description:
-            "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",
-        links: [
-            createLink("code-review", "https://github.com/kbloski/todoList"),
-            createLink("Website", "https://kbloski.github.io/todoList/"),
-        ],
-    },
+    // {
+    //     name: "Simple TodoList",
+    //     technologies: ["html", "css", "js"],
+    //     description:
+    //         "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",
+    //     links: [
+    //         createLink("code-review", "https://github.com/kbloski/todoList"),
+    //         createLink("Website", "https://kbloski.github.io/todoList/"),
+    //     ],
+    // },
 ];
 
 function createLink( title, link){

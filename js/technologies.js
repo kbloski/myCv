@@ -1,4 +1,5 @@
 const technologies = [
+    "React",
     "Vue3",
     "VueX",
     'Vuetify',
@@ -16,7 +17,7 @@ const technologies = [
 ];
 
 const technologiesInProgress = [
-    "React",
+    "React (advanced)",
     // 'pinia'
     // "NextJs",
     // "Bootstrap5",
