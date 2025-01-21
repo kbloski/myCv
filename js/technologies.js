@@ -1,5 +1,7 @@
 const technologies = [
     "React",
+    "Redux",
+    "Reaxct - ContextAPI",
     "Vue3",
     "VueX",
     'Vuetify',

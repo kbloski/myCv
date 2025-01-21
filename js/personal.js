@@ -30,7 +30,7 @@ const credentials = {
 };
 const languages = {
     polski: "Ojczysty",
-    angielski: "Dokumentacja, A2.",
+    angielski: "A2/B1",
 };
 const hobbies = [
     "Programowanie",
