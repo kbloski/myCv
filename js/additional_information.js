@@ -11,7 +11,7 @@ function addInformationToList(){
 }
 
 const informationList = [
-    "W razie potrzeby jestem gotów podjąć bezpłatny staż na okres 2-3 miesięcy w celu zdobycia doświadczenia i rozwoju zawodowego.",
+    "W razie potrzeby jestem gotów podjąć bezpłatny staż na okres 1-3 miesięcy w celu zdobycia doświadczenia i rozwoju zawodowego.",
     "Rozważam także możliwość zmiany miejsca zamieszkania, aby wykonywać pracę w trybie stacjonarnym.",
     `Tutaj jest moja strona portfolio: 
     <a href='https://kbloski.github.io/myCv/'>
