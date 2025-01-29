@@ -1,21 +1,21 @@
 const technologies = [
     "React",
     "Redux",
-    "React/ContextAPI",
+    // "React/ContextAPI",
     "Vue3",
-    "VueX",
-    'Vuetify',
+    // "VueX",
+    // 'Vuetify',
     "Pinia",
     "HTML5 & CSS3",
     "JavaScript",
     "SCSS",
     "TypeScript",
     "NodeJS",
-    "ExpressJs",
-    "Sequelize",
+    "Express",
+    // "Sequelize",
     "Git / GitHub",
-    "SQL (MySQL)",
-    "Python",
+    // "SQL (MySQL)",
+    // "Python",
 ];
 
 const technologiesInProgress = [
