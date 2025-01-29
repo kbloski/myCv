@@ -14,14 +14,14 @@ const technologies = [
     "Express",
     // "Sequelize",
     "Git / GitHub",
-    // "SQL (MySQL)",
-    // "Python",
+    // MySQL",
+    "Python",
+    'VSC',
 ];
 
 const technologiesInProgress = [
     "React (advanced)",
-    // 'pinia'
-    // "NextJs",
+    // Docker
     // "Bootstrap5",
 ];
 
