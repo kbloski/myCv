@@ -1,4 +1,6 @@
 const technologies = [
+    "Wordpress",
+    "PrestaShop",
     "React",
     "Redux",
     // "React/ContextAPI",
