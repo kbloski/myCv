@@ -52,7 +52,7 @@ const projectsList = [
         ],
     },
     {
-        name: "Photographer wbebsite (fullstack project)",
+        name: "Photographer website (fullstack project)",
         technologies: ["nextJs", "react", "ts", "node", "express"],
         description:
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
