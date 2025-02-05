@@ -2,12 +2,7 @@ const personal = { name: "Kamil", surname: "Błoński" };
 const internship = "Junior Frontend Developer";
 const address = "Jodłowa 194A, 39-225 (woj. Podkarpackie)";
 
-const aboutMe = `Jestem absolwentem technikum informatycznego, gdzie zdobyłem solidne podstawy programowania. Choć mój kierunek obejmował szeroki zakres zagadnień informatycznych, to właśnie programowanie szczególnie mnie fascynuje. Po ukończeniu szkoły kontynuuję rozwój umiejętności, realizując hobbystyczne projekty, ucząc się nowych technologii oraz regularnie uczestnicząc w kursach i szkoleniach.
-
-</br>
-</br>
-
-Obecnie jestem gotowy, by rozpocząć swoją pierwszą pracę w branży IT. Jestem osobą ambitną, otwartą na wyzwania i szybko przyswajającą wiedzę. Zależy mi na zdobywaniu cennego doświadczenia, które pozwoli mi dalej się rozwijać i wnosić wartość do zespołu, z którym będę współpracować.`;
+const aboutMe = `Jestem młodym, ambitnym programistą z pasją do tworzenia kodu. Choć w szkole mieliśmy podstawy programowania, większość umiejętności zdobyłem samodzielnie, realizując własne projekty i zgłębiając nowe technologie. Chcę podjąć pracę jako programista jeszcze przed studiami, aby zdobyć praktyczne doświadczenie. Jestem otwarty na naukę i gotów poświęcić pierwszy miesiąc lub dwa na pracę bez wynagrodzenia, by udowodnić swoje umiejętności i wartość dla zespołu.`;
 
 const contactInfo = {
     phone: {
