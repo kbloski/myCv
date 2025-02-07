@@ -10,81 +10,71 @@
   <script src="./js/for-simple-page/create_pdf_file.js" defer></script>
 </head>
 <body id="page-content">
-<button class="download-cv">Download</button>
+  
+<div class="a4-sheet">
+  <button class="download-cv">Download</button>
+  <!-- <header>
+    <div>
+      <h3>Otwarty na:</h3>
+      <ul data-id="additional-information" class="additional-info"></ul>
+    </div>
+  </header> -->
+  <div class="sheet-sidebar">
+      <div class="profile-photo">
+        <img src="./images/profile_2.jpg" aria-hidden="true" class="profile-img" />
+      </div>
+      <section>
+        <h4>Social links</h4>
+        <ul data-id="socials"></ul>
+        <h4>Kontakt</h4>
+        <ul data-id="contact"></ul>
+        <h4>Miejsce zamieszkania:</h4>
+        <div data-id="address"></div>
+        <h4>Edukacja:</h4>
+        <ul data-id="educations"></ul>
+        <h4>Uprawnienia:</h4>
+        <ul data-id="credentials"></ul>
+        <h4>Języki:</h4>
+        <ul data-id="languages"></ul>
+        <h4>Zainteresowania</h4>
+        <ul data-id="hobbies" class="interested"></ul>
+        <h4>Dyplomy</h4>
+        <ul data-id="diplomas" class="diplomas"></ul>
+      <section>
+  </div>
+  <div class="sheet-content">
+      <h1 data-id="fullname" class="fullname"></h1>
+      <h2 data-id="internship" class="internship"></h2>
+      <p data-id="about-me" class="about-me"></p>
+      <section>
+        <div class="base-title">Technologie</div>
+        <h5>Znam</h5>
+        <ul data-id="technologies"></ul>
+        <h5>Uczę się</h5>
+        <ul data-id="technologies-in-progress"></ul>
+      </section>
 
-<header>
-  <div>
-    <h3>Otwarty na:</h3>
-    <ul data-id="additional-information" class="additional-info"></ul>
+      <section>
+        <div class="base-title">Doświadczenie zawodowe</div>
+        <ul data-id="experience" class="experience"></ul>
+      </section>
+      <section>
+        <div class="base-title">Kursy</div>
+        <ul data-id="courses" class="courses"></ul>
+      </section>
   </div>
-</header>
-<main>
-  <hr>
-  <div class="profile-photo">
-    <img src="./images/profile_2.jpg" aria-hidden="true" class="profile-img" />
+</div>
+<div class="a4-sheet">
+  <div class="sheet-sidebar">
+    <div class="base-title">Klauzule</div>
+    <ul data-id="clauses" class="clauses"></ul>
   </div>
-  <h1 data-id="fullname" class="fullname"></h1>
-  <h2 data-id="internship" class="internship"></h2>
-  <p data-id="about-me" class="about-me"></p>
-  <section>
+  <div class="sheet-content">
     <section>
-      <div class="base-title">Socials</div>
-      <ul data-id="socials"></ul>
-    </section>
-    <section>
-      <div class="base-title">Kontakt</div>
-      <ul data-id="contact"></ul>
-    </section>
-    <div class="base-title">Więcej o mnie</div>
-    <h5>Miejsce zamieszkania:</h5>
-    <ul>
-      <li data-id="address"></li>
-    </ul>
-    <h5>Edukacja:</h5>
-    <ul data-id="educations"></ul>
-    <h5>Uprawnienia:</h5>
-    <ul data-id="credentials"></ul>
-    <h5>Języki:</h5>
-    <ul data-id="languages"></ul>
-  </section>  
-  <section>
-  <div class="base-title">Zainteresowania</div>
-    <ul data-id="hobbies" class="interested">
-      <!-- <li>Programowanie i technologie</li>
-      <li>Fotografia</li>
-      <li>Góry i trekking</li>
-      <li>Gra na gitarze</li>
-      <li>Gry strategiczne</li> -->
-    </ul>
-  </section>
-  <section>
-    <div class="base-title">Technologie</div>
-    <h5>Znam</h5>
-    <ul data-id="technologies"></ul>
-    <h5>Uczę się</h5>
-    <ul data-id="technologies-in-progress"></ul>
-  </section>
-  <section>
-    <div class="base-title">Moje projekty</div>
-    <ul data-id="projects" class="projects"></ul>
-  </section>
-  <section>
-    <div class="base-title">Tutaj pracowałem</div>
-    <ul data-id="experience" class="experience"></ul>
-  </section>
-  <section>
-    <div class="base-title">Niektóre, z kursów które uczkończyłem</div>
-    <!-- <div class="base-title">Tutaj staram się pogłębiać swoją wiedzę</div> -->
-    <ul data-id="courses" class="courses"></ul>
-  </section>
-  <section>
-    <div class="base-title">Dyplomy</div>
-    <ul data-id="diplomas" class="diplomas"></ul>
-  </section>
-</main>
-<footer>
-  <div class="base-title">Klauzule</div>
-  <ul data-id="clauses" class="clauses"></ul>
-</footer>
+          <div class="base-title">Moje prywatne projekty</div>
+          <ul data-id="projects" class="projects"></ul>
+      </section>
+  </div>
+</div>
 </body>
 </html>

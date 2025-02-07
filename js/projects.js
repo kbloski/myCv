@@ -1,15 +1,5 @@
 const projectsList = [
     {
-        name: "ReactQuiz",
-        technologies: ["react"],
-        description:
-            "Aplikacja reactowa, która daje możliwość sprawdzenia swojej wiedzy na temat react.",
-        links: [
-            createLink("code-review", "https://github.com/kbloski/ReactQuiz"),
-            // createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
-        ],
-    },
-    {
         name: "TodoList with vuetify",
         technologies: ["vue3", "vuetify", "pinia"],
         description:
@@ -49,6 +39,16 @@ const projectsList = [
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
         links: [
             createLink("code-review", "https://github.com/kbloski/SpendWise"),
+        ],
+    },
+    {
+        name: "ReactQuiz",
+        technologies: ["react"],
+        description:
+            "Aplikacja reactowa, która daje możliwość sprawdzenia swojej wiedzy na temat react.",
+        links: [
+            createLink("code-review", "https://github.com/kbloski/ReactQuiz"),
+            // createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
         ],
     },
     {
