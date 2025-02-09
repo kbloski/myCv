@@ -14,6 +14,10 @@ img {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 .a4-sheet {
   margin: 0 auto;
   width: 210mm;
