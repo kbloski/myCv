@@ -23,6 +23,7 @@ const technologies = [
 
 const technologiesInProgress = [
     "React (advanced)",
+    "NextJs"
     // Docker
     // "Bootstrap5",
 ];
