@@ -1,12 +1,13 @@
 const technologies = [
     // "Wordpress",
     // "PrestaShop",
+    "NextJs",
     "React",
     "Redux",
     // "React/ContextAPI",
     "Vue3",
     // "VueX",
-    'Vuetify',
+    "Vuetify",
     "Pinia",
     "HTML5 & CSS3",
     "JavaScript",
@@ -18,12 +19,12 @@ const technologies = [
     "Git / GitHub",
     // MySQL",
     "Python",
-    'VSC',
+    "VSC",
 ];
 
 const technologiesInProgress = [
     "React (advanced)",
-    "NextJs"
+   
     // Docker
     // "Bootstrap5",
 ];
