@@ -1,101 +1,13 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamil Błoński</title>
-    <link rel="stylesheet" href="./css/global.css"/>
-    <link rel="stylesheet" href="./css/profile_picture.css" />
-    <link rel="stylesheet" href="./css/base-styles.css" />
-    <link rel="stylesheet" href="./css/modal.css"></link>
-    <script src="./js/init.js" defer></script>
-</head>
-<body>
-<div class="container">
-    <header>
-        <div class="d-block">
-            <section class="container-photo-profile">
-                <div class="profile-box">
-                    <div class="profil-photo">
-                        <img src="./images/profile_2_transparent_background.png"></img>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="d-block">
-            <h1 data-id="fullname" class="fullname"></h1>
-            <h2 data-id="internship" class="second-title"></h2>
-        </div>
-    </header>
-    <main>
-        <div class="d-block">
-            <ul data-id="socials" class="socials">
-                <li>
-                    <a href="./public/kamil_blonski_cv_simple-min.pdf" download="kamil_blonski_cv_simple-min">Download CV</a>
-                </li>
-            </ul>
-        </div>
-        <div class="d-block">
-            <div class="base-card">
-                <div class="base-title">About me</div>
-                <div data-id="about-me" class="about-me"></div>
-            </div>
-        </div>
-        <div class="personal-info">
-            <div>
-                <div class="base-title">Adress</div>
-                <div data-id="address"></div>
-            </div>
-            <div>
-                <div class="base-title">Kontakt</div>
-                <ul data-id="contact" class="contact"></ul>
-            </div>
-            
-            <div>
-                <div class="base-title">Języki</div>
-                <ul data-id="languages" class="languages"></ul>
-            </div>
-            <div>
-                <div class="base-title">Uprawnienia</div>
-                <ul data-id="credentials" class="credentials"></ul>
-            </div>
-            <div>
-                <div class="base-title">Edukacja</div>
-                <ul data-id="educations" class="educations"></ul>
-            </div>
-        </div> 
-        
-        <div class="d-block">
-            <div class="base-card">
-                <div>
-                    <div class="base-title">Technologie</div>
-                    <ul data-id="technologies" class="technologies"></ul>
-                    <div class="base-title">Uczę się </div>
-                    <ul data-id="technologies-in-progress" class="technologies-in-progress"></ul>
-                </div>
-            </div>
-        </div>
-        <div class="d-block">
-            <div class="base-card">
-                <h3 class="base-title">Doświadczenie zawodowe</h3>
-                <ul data-id="experience" class="experience"></ul>
-            </div>
-        </div>
-        <div class="d-block projects">
-            <h3 class="base-title">Moje projekty</h3>
-            <ul data-id="projects"></ul>
-        </div>
-        <div class="base-card">
-            <div class="base-title">Zainteresowania</div>
-            <ul data-id="hobbies" class="technologies-in-progress"></ul>
-        </div>
-
-        <div class="d-block">
-            <h3 class="base-title">Kursy i szkolenia w których uczestniczyłem</h3>
-            <ul data-id="courses" class="courses"></ul>
-        </div>
-    </main>  
-</div>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-
