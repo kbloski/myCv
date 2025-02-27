@@ -1,30 +1,5 @@
 const experiences = [
     {
-        company: "IDEAL WORK GERMANY SP. Z O.O.",
-        description:
-            `
-                Praca w sortowni paczek kurierskich.
-                Pracodawca zagraniczny: 
-                GLS GENERAL LOGISTICS SYSTEMS GERMANY GMBH
-            `,
-        address: "CO. OHG, GLS-GERMANY-STRABE 1-7, 36286 NEUENSTEIN, NIEMCY",
-        position: "Magazynier",
-        period: {
-            start: "10-06-2024",
-            end: "06-07-2024",
-        },
-    },
-    {
-        company: "Dubeco B.V.",
-        period: {
-            start: "10-07-2023",
-            end: "31-08-2023",
-        },
-        address: "Mortel 27, 6088 AH te Roggel",
-        position: "Pracownik szczytowy",
-        description: "Zbiory borówki amerykańskiej",
-    },
-    {
         company: "FHU Ematik Mateusz Nosal (serwis komputerowy)",
         address: "Brzostek 39-230, ul. Rynek 38",
         position: "Stażysta",
@@ -34,6 +9,7 @@ const experiences = [
         //     end: undefined,
         // },
     },
+    
 ];
 
 init();

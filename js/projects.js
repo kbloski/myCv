@@ -1,18 +1,5 @@
 const projectsList = [
     {
-        name: "TodoList with vuetify",
-        technologies: ["vue3", "vuetify", "pinia"],
-        description:
-            "Aplikacja frontend pomagająca w wykonywaniu codziennych obowiązków. Wykonana w vue z frameworkiem vuetify.",
-        links: [
-            createLink(
-                "code-review",
-                "https://github.com/kbloski/vuetify-todolist"
-            ),
-            // createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
-        ],
-    },
-    {
         name: "Translator",
         technologies: ["vue3", "+api"],
         description:
@@ -23,32 +10,12 @@ const projectsList = [
         ],
     },
     {
-        name: "Weather App",
-        technologies: ["vue3", "+api"],
-        description:
-            "Aplikacja frontend wykonana w vue korzystająca z publicznego api do sprawdzania warunków pogodowych.",
-        links: [
-            createLink("code-review", "https://github.com/kbloski/weatherApp"),
-            createLink("Website", "https://demo-weater-app.netlify.app"),
-        ],
-    },
-    {
         name: "Spend wise (fullstack project)",
         technologies: ["vue3", "node", "express", "ts", "js"],
         description:
             "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
         links: [
             createLink("code-review", "https://github.com/kbloski/SpendWise"),
-        ],
-    },
-    {
-        name: "ReactQuiz",
-        technologies: ["react"],
-        description:
-            "Aplikacja reactowa, która daje możliwość sprawdzenia swojej wiedzy na temat react.",
-        links: [
-            createLink("code-review", "https://github.com/kbloski/ReactQuiz"),
-            // createLink("page", "https://helpful-blini-7dd5ac.netlify.app/"),
         ],
     },
     {
@@ -63,37 +30,6 @@ const projectsList = [
             ),
         ],
     },
-    {
-        name: "Role Managment",
-        technologies: [
-            "nextJs",
-            "react",
-            "ts",
-            "node",
-            "express",
-            "html",
-            "css",
-        ],
-        description:
-            "Prosta aplikacja wykorzystująca zarządzanie dostępem do stron za pomocą roli uzytkowników i priorytetów, technologie",
-        links: [
-            createLink(
-                "code-review",
-                "https://github.com/kbloski/userManagment"
-            ),
-            createLink("Website", "https://usermanagment-role.netlify.app/"),
-        ],
-    },
-    // {
-    //     name: "Simple TodoList",
-    //     technologies: ["html", "css", "js"],
-    //     description:
-    //         "Prosta aplikacja zadań do wykonania z możliwością pobrania pliku z zadaniami.",
-    //     links: [
-    //         createLink("code-review", "https://github.com/kbloski/todoList"),
-    //         createLink("Website", "https://kbloski.github.io/todoList/"),
-    //     ],
-    // },
 ];
 
 function createLink( title, link){
