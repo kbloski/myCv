@@ -1,11 +1,7 @@
+import RouterAppProvider from "./router"
 
 function App() {
-
-  return (
-    <>
-      <h1>TEST </h1>       
-    </>
-  )
+  return <RouterAppProvider />
 }
 
 export default App
