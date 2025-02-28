@@ -1,0 +1,19 @@
+$colorGold: #C2A229;
+
+.skillsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillListItem {
+    background-color: $colorGold;
+    color: black;
+    font-size: .8rem;
+    margin: .2rem;
+    padding: .2rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px $colorGold;
+}

@@ -6,6 +6,7 @@ import MainContent from "./MainContent";
 import Contact from "./Contact";
 import SidebarContainer from "./SidebarContainer";
 import Education from "./Education";
+import TechnicalSkils from "./TechnicalSkills";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -29,6 +30,7 @@ function Cv() {
                     address={cvData.address}
                 />
                 <Education education={cvData.education} />
+                <TechnicalSkils skills={cvData.technologies.familiar} />
             </Sidebar>
             <MainContent>
                 <div className="w-80">{JSON.stringify(cvData)}</div>
