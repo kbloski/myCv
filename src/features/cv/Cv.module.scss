@@ -2,9 +2,18 @@
     width: 210mm;
     height: 297mm;
     margin: 0 auto;
+    font-size: 11px;
     padding: 0;
     border: 1px solid #000;
     position: relative;
     background-color: #fff;
+    display: flex;
     // overflow: hidden;
 }
+
+.profile {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+

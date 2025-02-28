@@ -1,0 +1,75 @@
+$colorGold: #C2A229;
+$background-light: #3F4249;
+$defaultPadding: 1rem;
+
+@mixin title-style {
+    text-transform: uppercase;
+        letter-spacing: .2rem;
+        text-align: end;
+        position: relative;
+        padding: .3rem 0;
+}
+
+@mixin title-underline {
+    filter: blur(.7px);
+    bottom: 0;
+    position: absolute;
+    content: '';
+    background-color: $colorGold;
+}
+
+.sidebarContainer {
+    margin: 0;
+    padding: $defaultPadding;
+    padding-left: 0;
+    color: white;
+    
+    .title {
+        @include title-style();
+        color: $colorGold;
+        
+    
+        &::before {
+            @include title-underline();
+            left: 0;
+            width: 100%;
+            height: 2px;
+        }
+    
+        &::after {
+            @include title-underline();
+            right: 0;
+            transform: translateY(30%);
+            width: 15%;
+            height: 4px;
+        }
+    }
+
+    &Light {
+        background-color: $background-light ;
+        color: white;
+
+        .title {
+            @include title-style();
+            background-color: $colorGold;
+            padding-right: $defaultPadding;
+            color: $background-light;
+            font-weight: bolder;
+        }
+
+        .content {
+            padding: $defaultPadding;
+            padding-left: 0;
+            padding-top: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

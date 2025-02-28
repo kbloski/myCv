@@ -8,12 +8,15 @@ interface InitialState {
     contact: {
         phone: string;
         email: string;
-        socials: { name: string; link: string }[];
+        websites: string[]
     };
     credentials: string[];
     languages: { name: string; level: string }[];
     hobbies: string[];
-    education: { name: string; years: string }[];
+    education: { 
+        name: string; 
+        years: string 
+    }[];
     diplomas: { name: string; result: string }[];
     experience: {
         company: string;
@@ -58,12 +61,9 @@ const initialState : InitialState = {
     contact: {
         phone: "798 154 959",
         email: "kblonski02@gmail.com",
-        socials: [
-            { name: "GitHub", link: "https://github.com/kbloski" },
-            {
-                name: "LinkedIn",
-                link: "https://www.linkedin.com/in/kamil-b%C5%82o%C5%84ski-1958b4297/",
-            },
+        websites: [
+            "https://github.com/kbloski",
+            "https://www.linkedin.com/in/kamil-b%C5%82o%C5%84ski-1958b4297/"
         ],
     },
     languages: [
@@ -82,7 +82,7 @@ const initialState : InitialState = {
     education: [
         {
             name: "ZSNR 4 im. Mikołaja Kopernika w Dębicy",
-            years: "(2019r. / 2024r.)",
+            years: "2019 | 2024",
         },
     ],
     experience: {
