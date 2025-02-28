@@ -1,4 +1,4 @@
-import style from './CV.module.scss'
+import style from './Sidebar.module.scss'
 
 function Sidebar({ children } : { children?: React.ReactNode }) {
     return (

@@ -1,3 +1,32 @@
+$colorGold: #C2A229;
+
 .personCard{
-    
+    margin-top: 2rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: $colorGold;
+    background-color: #282830;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.description {
+    margin-top: .8rem;
+    font-size: .8rem;
+    font-weight: bold;
 }
