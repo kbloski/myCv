@@ -1,4 +1,4 @@
-import style from './ContactListItem.module.scss'
+import style from './Contact.module.scss'
 
 type ContactListItemProps = {
     title: string; 

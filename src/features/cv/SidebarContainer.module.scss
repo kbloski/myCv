@@ -57,14 +57,14 @@ $defaultPadding: 1rem;
             font-weight: bolder;
         }
 
-        .content {
-            padding: $defaultPadding;
-            padding-left: 0;
-            padding-top: 0;
-        }
+        
     }
 }
 
+.content {
+    padding: $defaultPadding;
+    padding-top: 0;
+}
 
 
 
