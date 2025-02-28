@@ -1,0 +1,227 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+interface InitialState {
+    name: string;
+    surname: string;
+    profession: string;
+    address: string;
+    contact: {
+        phone: string;
+        email: string;
+        socials: { name: string; link: string }[];
+    };
+    credentials: string[];
+    languages: { name: string; level: string }[];
+    hobbies: string[];
+    education: { name: string; years: string }[];
+    diplomas: { name: string; result: string }[];
+    experience: {
+        company: string;
+        address: string;
+        position: string;
+        description: string;
+        period?: {
+            start: string;
+            end: string;
+        };
+    };
+    technologies: {
+        inProgress: string[];
+        familiar: string[];
+    };
+    courses: { name: string; hours: string; link: string }[];
+    projects: {
+        name: string;
+        technologies: string[];
+        description: string;
+        links: { name: string; link: string }[];
+    }[];
+}
+
+// const clauses = [
+//     "Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).",
+// ];
+
+// const projectsList = 
+
+
+// extras: [
+//     "W razie potrzeby jestem gotów rozważyć bezpłatny staż na okres 1-3 miesięcy w celu zdobycia doświadczenia i rozwoju zawodowego.",
+//     // "Rozważam także możliwość zmiany miejsca zamieszkania, aby wykonywać pracę w trybie stacjonarnym.",
+// ],
+
+const initialState : InitialState = {
+    name: "Kamil",
+    surname: "Błoński",
+    profession: "Junior Frontend Developer",
+    address: "Jodłowa 194A, 39-225",
+    contact: {
+        phone: "798 154 959",
+        email: "kblonski02@gmail.com",
+        socials: [
+            { name: "GitHub", link: "https://github.com/kbloski" },
+            {
+                name: "LinkedIn",
+                link: "https://www.linkedin.com/in/kamil-b%C5%82o%C5%84ski-1958b4297/",
+            },
+        ],
+    },
+    languages: [
+        { name: "Polski", level: "Native" },
+        { name: "Angielski", level: "A2/B1" },
+    ],
+    credentials: ["Prawo jazdy kat. B"],
+    hobbies: [
+        "Programowanie",
+        "Motocykle ",
+        "Projektowanie 3D",
+        "Druk 3D",
+        "Gry strategiczne i logiczne",
+        "Czytanie książek",
+    ],
+    education: [
+        {
+            name: "ZSNR 4 im. Mikołaja Kopernika w Dębicy",
+            years: "(2019r. / 2024r.)",
+        },
+    ],
+    experience: {
+        company: "FHU Ematik Mateusz Nosal (serwis komputerowy)",
+        address: "Brzostek 39-230, ul. Rynek 38",
+        position: "Stażysta",
+        description: "Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",
+        // period: {
+        //     start: "10-10-2022",
+        //     end: undefined,
+        // },
+    },
+    technologies: {
+        inProgress: [
+            "React (advanced)",
+            // Docker
+            // "Bootstrap5",
+        ],
+        familiar: [
+            // "Wordpress",
+            // "PrestaShop",
+            "NextJs",
+            "React",
+            "Redux",
+            // "React/ContextAPI",
+            "Vue3",
+            // "VueX",
+            "Vuetify",
+            "Pinia",
+            "HTML5 & CSS3",
+            "JavaScript",
+            "SCSS",
+            "TypeScript",
+            "NodeJS",
+            "Express",
+            // "Sequelize",
+            "Git / GitHub",
+            // MySQL",
+            "Python",
+            "VSC",
+        ],
+    },
+        diplomas: [
+        {
+            name: "Dyplom zawodowy Technik Informatyk",
+            result: "92%",
+        },
+        {
+            name: "Kwalifikacja zawodowa INF.02",
+            result: "97%",
+        },
+        {
+            name: "Kwalifikacja zawodowa INF.03",
+            result: "83.5%",
+        },
+        {
+            name: "Matura",
+            result: "Success",
+        },
+    ],
+    courses: [
+        {
+            name: "Vue3 - The Complete Guide (incl. Router & Composition API)",
+            hours: "32 godzin",
+            link: "https://www.udemy.com/certificate/UC-397ddca6-3a80-4d1d-a116-ffe71cdb7891/",
+        },
+        {
+            name: 'Kurs Fullstack Developer "Od podstaw do Mastera"',
+            hours: "72 godziny",
+            link: "https://www.udemy.com/certificate/UC-bce7a037-943f-4c20-b918-b4131a5d0c4e/",
+        },
+        {
+            name: 'Kurs PHP "Programowanie w PHP od podstaw - teoria i praktyka"',
+            hours: "40 godzin",
+            link: "https://www.udemy.com/certificate/UC-0efc533a-5a25-445f-85d2-eb3dacc1d124/",
+        },
+        {
+            name: "Next.js 14 od podstaw. Pełen kurs",
+            hours: "9 godzin",
+            link: "https://www.udemy.com/certificate/UC-758b1c19-2dfc-42ab-870c-8c090a4deca6/",
+        },
+        {
+            name: 'Kurs "Git od podstaw dla każdego"',
+            hours: "4,5 godziny",
+            link: "https://www.udemy.com/certificate/UC-60824cbf-e03d-494c-b52c-f32c46c2c940/",
+        },
+        {
+            name: "Kurs Sass (Tylko część z sass)",
+            hours: "3 godziny",
+            link: "https://www.udemy.com/certificate/UC-b15c9685-bb9c-4fa2-844f-46d649002e2b/",
+        },
+    ],
+    projects: [
+        {
+            name: "Translator",
+            technologies: ["vue3", "+api"],
+            description:
+                "Aplikacja frontend wykonana w vue korzystająca z publicznego api do tłumaczenia języków.",
+            links: [
+                { name: "Code-review", link: "https://github.com/kbloski/translator"},
+                { name: "Website", link: "https://helpful-blini-7dd5ac.netlify.app/"},
+            ],
+        },
+        {
+            name: "Spend wise (fullstack project)",
+            technologies: ["vue3", "node", "express", "ts", "js"],
+            description:
+                "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
+            links: [
+                { name: "code-review", link: "https://github.com/kbloski/SpendWise" },
+            ],
+        },
+        {
+            name: "Photographer website (fullstack project)",
+            technologies: ["nextJs", "react", "ts", "node", "express"],
+            description:
+                "Monorepo Application: pełnostackowy projekt z backendem w Node.js i frontendem w Next.js, oba w TypeScript.",
+            links: [
+                {
+                    name: "code-review",
+                    link: "https://github.com/kbloski/photographer-website/"
+                },
+            ],
+        },
+    ]
+};
+
+
+
+
+const cvSlice = createSlice({
+    name: 'cv',
+    initialState,
+    reducers: { }
+})
+
+
+export const { } = cvSlice.actions;
+export default cvSlice.reducer;
+
+export const getCvData = (state : any) => state.cv as InitialState
+

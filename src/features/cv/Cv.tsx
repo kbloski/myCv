@@ -1,12 +1,14 @@
+import { useSelector } from "react-redux";
 import style from "./Cv.module.scss"
+import { getCvData } from "./cvSlice";
 
 function Cv(){
+    const cvData = useSelector( getCvData)
+
     return (
-        <>
-            <div>
-                <div>"Apologies, I'm currently working on a page."</div>
-            </div>
-        </>
+        <div className={style.a4sheet}>
+            <div>{ JSON.stringify(cvData) } </div>
+        </div>
     );
 }
 
