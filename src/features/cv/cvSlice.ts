@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface InitialState {
+    aboutMe: string;
     name: string;
     surname: string;
     profession: string;
@@ -8,14 +9,14 @@ interface InitialState {
     contact: {
         phone: string;
         email: string;
-        websites: string[]
+        websites: string[];
     };
     credentials: string[];
     languages: { name: string; level: string }[];
     hobbies: string[];
-    education: { 
-        name: string; 
-        years: string 
+    education: {
+        name: string;
+        years: string;
     }[];
     diplomas: { name: string; result: string }[];
     experience: {
@@ -53,7 +54,9 @@ interface InitialState {
 //     // "Rozważam także możliwość zmiany miejsca zamieszkania, aby wykonywać pracę w trybie stacjonarnym.",
 // ],
 
-const initialState : InitialState = {
+const initialState: InitialState = {
+    aboutMe:
+        "Jestem młodym, ambitnym programistą z pasją do tworzenia kodu. Choć w szkole mieliśmy podstawy programowania, większość umiejętności zdobyłem samodzielnie, realizując własne projekty i zgłębiając nowe technologie. Chcę podjąć pracę jako programista jeszcze przed studiami, aby zdobyć praktyczne doświadczenie. Jestem otwarty na naukę i gotów poświęcić pierwszy miesiąc lub dwa na pracę bez wynagrodzenia, by udowodnić swoje umiejętności i wartość dla zespołu.",
     name: "Kamil",
     surname: "Błoński",
     profession: "Junior Frontend Developer",
@@ -63,7 +66,7 @@ const initialState : InitialState = {
         email: "kblonski02@gmail.com",
         websites: [
             "https://github.com/kbloski",
-            "https://www.linkedin.com/in/kamil-b%C5%82o%C5%84ski-1958b4297/"
+            "www.linkedin.com/in/kamil-błoński-1958b4297",
         ],
     },
     languages: [
@@ -125,7 +128,7 @@ const initialState : InitialState = {
             "VSC",
         ],
     },
-        diplomas: [
+    diplomas: [
         {
             name: "Dyplom zawodowy Technik Informatyk",
             result: "92%",
@@ -182,8 +185,14 @@ const initialState : InitialState = {
             description:
                 "Aplikacja frontend wykonana w vue korzystająca z publicznego api do tłumaczenia języków.",
             links: [
-                { name: "Code-review", link: "https://github.com/kbloski/translator"},
-                { name: "Website", link: "https://helpful-blini-7dd5ac.netlify.app/"},
+                {
+                    name: "Code-review",
+                    link: "https://github.com/kbloski/translator",
+                },
+                {
+                    name: "Website",
+                    link: "https://helpful-blini-7dd5ac.netlify.app/",
+                },
             ],
         },
         {
@@ -192,7 +201,10 @@ const initialState : InitialState = {
             description:
                 "Monorepo Application: pełnostackowy projekt z backendem w Node.js, Express z autoryzacją napisany w Typescript i frontendem w Vue3 z użyciem vuex i vue-router napisany w javascript.",
             links: [
-                { name: "code-review", link: "https://github.com/kbloski/SpendWise" },
+                {
+                    name: "code-review",
+                    link: "https://github.com/kbloski/SpendWise",
+                },
             ],
         },
         {
@@ -203,11 +215,11 @@ const initialState : InitialState = {
             links: [
                 {
                     name: "code-review",
-                    link: "https://github.com/kbloski/photographer-website/"
+                    link: "https://github.com/kbloski/photographer-website/",
                 },
             ],
         },
-    ]
+    ],
 };
 
 

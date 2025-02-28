@@ -1,3 +1,5 @@
+$backgroundDarkColor: #282830;
+
 .a4sheet {
     width: 210mm;
     height: 297mm;
@@ -10,6 +12,13 @@
     display: flex;
     // overflow: hidden;
 }
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    background-color: $backgroundDarkColor;
+}
+
 
 .profile {
     width: 100%;
