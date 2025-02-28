@@ -56,7 +56,7 @@ interface InitialState {
 
 const initialState: InitialState = {
     aboutMe:
-        "Jestem młodym, ambitnym programistą z pasją do tworzenia kodu. Choć w szkole mieliśmy podstawy programowania, większość umiejętności zdobyłem samodzielnie, realizując własne projekty i zgłębiając nowe technologie. Chcę podjąć pracę jako programista jeszcze przed studiami, aby zdobyć praktyczne doświadczenie. Jestem otwarty na naukę i gotów poświęcić pierwszy miesiąc lub dwa na pracę bez wynagrodzenia, by udowodnić swoje umiejętności i wartość dla zespołu.",
+        "Jestem młodym, ambitnym programistą z pasją do kodowania. Większość umiejętności zdobyłem samodzielnie, realizując projekty i ucząc się nowych technologii. Chcę pracować jako programista przed studiami, by zdobyć doświadczenie.",
     name: "Kamil",
     surname: "Błoński",
     profession: "Junior Frontend Developer",

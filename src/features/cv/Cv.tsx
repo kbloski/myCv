@@ -9,6 +9,7 @@ import TechnicalSkils from "./TechnicalSkills";
 import PersonCard from "./PersonCard";
 import PaperA4Sheet from "./ui/PaperA4Sheet";
 import ContentContainer from "./ui/ContentContainer";
+import AboutMe from "./AboutMe";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -42,13 +43,11 @@ function Cv() {
                             description={`CV: https://kbloski.github.io/myCv/`}
                         />
                     </ContentContainer>
+                    <AboutMe description={cvData.aboutMe}/>
 
                     {/* <div className="w-80">{JSON.stringify(cvData)}</div> */}
                 </MainContent>
             </PaperA4Sheet>
-            {/* <PaperA4Sheet>
-
-            </PaperA4Sheet> */}
         </>
     );
 }
