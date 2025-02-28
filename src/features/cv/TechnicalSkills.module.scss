@@ -1,4 +1,4 @@
-$colorGold: #C2A229;
+@import './variables';
 
 .skillsList {
     list-style: none;
@@ -9,11 +9,11 @@ $colorGold: #C2A229;
 }
 
 .skillListItem {
-    background-color: $colorGold;
+    background-color: $accent-color;
     color: black;
     font-size: .8rem;
     margin: .2rem;
     padding: .2rem;
     font-weight: bold;
-    box-shadow: 0 0 5px $colorGold;
+    box-shadow: 0 0 5px $accent-color;
 }

@@ -1,6 +1,6 @@
-$backgroundDarkColor: #282830;
+@import '../variables';
 
 .sidebar {
     width: 30%;
-    background-color: $backgroundDarkColor;
+    background-color: $background-darkgray;
 }

@@ -1,6 +1,5 @@
-$colorGold: #C2A229;
-$background-light: #3F4249;
-$defaultPadding: 1rem;
+@import '../variables';
+
 
 @mixin title-style {
     text-transform: uppercase;
@@ -15,18 +14,18 @@ $defaultPadding: 1rem;
     bottom: 0;
     position: absolute;
     content: '';
-    background-color: $colorGold;
+    background-color: $accent-color;
 }
 
 .sidebarContainer {
     margin: 0;
-    padding: $defaultPadding;
+    padding: $sheet-padding;
     padding-left: 0;
     color: white;
     
     .title {
         @include title-style();
-        color: $colorGold;
+        color: $accent-color;
         
     
         &::before {
@@ -46,14 +45,14 @@ $defaultPadding: 1rem;
     }
 
     &Light {
-        background-color: $background-light ;
+        background-color: $background-gray ;
         color: white;
 
         .title {
             @include title-style();
-            background-color: $colorGold;
-            padding-right: $defaultPadding;
-            color: $background-light;
+            background-color: $accent-color;
+            padding-right: $sheet-padding;
+            color: $background-gray;
             font-weight: bolder;
         }
 
@@ -62,7 +61,7 @@ $defaultPadding: 1rem;
 }
 
 .content {
-    padding: $defaultPadding;
+    padding: $sheet-padding;
     padding-top: 0;
 }
 
