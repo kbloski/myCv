@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import type Experience from "./ExperienceType";
 
 interface InitialState {
     aboutMe: string;
@@ -19,16 +20,7 @@ interface InitialState {
         years: string;
     }[];
     diplomas: { name: string; result: string }[];
-    experience: {
-        company: string;
-        address: string;
-        position: string;
-        description: string;
-        period?: {
-            start: string;
-            end: string;
-        };
-    };
+    experience: Experience[];
     technologies: {
         inProgress: string[];
         familiar: string[];
@@ -88,16 +80,20 @@ const initialState: InitialState = {
             years: "2019 | 2024",
         },
     ],
-    experience: {
-        company: "FHU Ematik Mateusz Nosal (serwis komputerowy)",
-        address: "Brzostek 39-230, ul. Rynek 38",
-        position: "Stażysta",
-        description: "Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",
-        // period: {
-        //     start: "10-10-2022",
-        //     end: undefined,
-        // },
-    },
+    experience: [
+        {
+            company: "FHU Ematik Mateusz Nosal (serwis komputerowy)",
+            address: "Brzostek 39-230, ul. Rynek 38",
+            position: "Stażysta",
+            description: "Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",
+            // period: [
+            //     {
+            //         start: "10-10-2022",
+            //         end: undefined,
+            //     },
+            // ],
+        }
+    ],
     technologies: {
         inProgress: [
             "React (advanced)",
