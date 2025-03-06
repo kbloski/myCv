@@ -16,8 +16,7 @@ function Cv() {
     const cvData = useSelector(getCvData);
     
     const userWebsitesList = cvData.contact.websites.map( data => data.url)
-    const githubUrl = cvData.contact.websites.find( website => website.name === 'GitHub')?.url;
-
+    const cvGithubUrl = 'https://kbloski.github.io/myCv/';
     return (
         <>
             <PaperA4Sheet>
@@ -45,10 +44,10 @@ function Cv() {
                         position={cvData.profession}
                         description={
                             <a 
-                                href={githubUrl}
+                                href={cvGithubUrl}
                                 target="_blank"
                             >
-                                Portfolio: https://kbloski.github.io/myCv/
+                                Portfolio: {cvGithubUrl}
                             </a>
                         }
                     />
