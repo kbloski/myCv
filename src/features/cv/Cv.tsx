@@ -10,7 +10,7 @@ import PersonCard from "./PersonCard";
 import PaperA4Sheet from "./ui/PaperA4Sheet";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
-import MainContainer from "./ui/MainContent/MainContainer";
+import Clauses from "./Clauses";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -56,6 +56,7 @@ function Cv() {
                     <Experience experiences={cvData.experience} />
 
                     {/* <div className="w-80">{JSON.stringify(cvData)}</div> */}
+                    <Clauses />
                 </MainContent>
             </PaperA4Sheet>
         </>
