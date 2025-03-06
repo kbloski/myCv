@@ -1,4 +1,3 @@
-import { Children } from 'react';
 import style from './MainContainer.module.scss'
 
 type MainContainer = {
@@ -19,7 +18,7 @@ interface MainContainerContentProps {
     children: React.ReactNode,
 }
 function MainContainerContent({children} : MainContainerContentProps){
-    <div className={style.mainContainerContent}>
+    return <div className={style.mainContainerContent}>
         { children }
     </div>
 }

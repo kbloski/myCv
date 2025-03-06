@@ -53,9 +53,7 @@ function Cv() {
                         }
                     />
                     <AboutMe description={cvData.aboutMe} />
-                    <MainContainer>
-                        <Experience experiences={cvData.experience} />
-                    </MainContainer>
+                    <Experience experiences={cvData.experience} />
 
                     {/* <div className="w-80">{JSON.stringify(cvData)}</div> */}
                 </MainContent>
