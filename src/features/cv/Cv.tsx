@@ -11,10 +11,12 @@ import PaperA4Sheet from "./ui/PaperA4Sheet";
 import ContentContainer from "./ui/ContentContainer";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
-import SidebarContainer from "./ui/SidebarContainer";
 
 function Cv() {
     const cvData = useSelector(getCvData);
+    
+    const userWebsitesList = cvData.contact.websites.map( data => data.url)
+    const githubUrl = cvData.contact.websites.find( website => website.name === 'GitHub')?.url;
 
     return (
         <>
@@ -30,7 +32,7 @@ function Cv() {
                     <Contact
                         phone={cvData.contact.phone}
                         email={cvData.contact.email}
-                        websites={cvData.contact.websites}
+                        websites={userWebsitesList}
                         address={cvData.address}
                     />
                     <Education education={cvData.education} />
@@ -44,7 +46,7 @@ function Cv() {
                             position={cvData.profession}
                             description={
                                 <a 
-                                    href="https://kbloski.github.io/myCv/"
+                                    href={githubUrl}
                                     target="_blank"
                                 >
                                     Portfolio: https://kbloski.github.io/myCv/

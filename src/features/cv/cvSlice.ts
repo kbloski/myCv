@@ -10,7 +10,7 @@ interface InitialState {
     contact: {
         phone: string;
         email: string;
-        websites: string[];
+        websites: {name: string, url: string}[];
     };
     credentials: string[];
     languages: { name: string; level: string }[];
@@ -57,8 +57,16 @@ const initialState: InitialState = {
         phone: "798 154 959",
         email: "kblonski02@gmail.com",
         websites: [
-            "https://github.com/kbloski",
-            "www.linkedin.com/in/kamil-błoński-1958b4297",
+            {
+                name: 'GitHub',
+                url:"https://github.com/kbloski",
+
+            },
+            {
+                name: "LinkedIn",
+                url: "www.linkedin.com/in/kamil-błoński-1958b4297",
+            }
+            
         ],
     },
     languages: [
