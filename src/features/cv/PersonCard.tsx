@@ -4,7 +4,7 @@ type PersonCardProps = {
     name: string;
     surname: string;
     position: string;
-    description: string;
+    description: React.ReactNode;
 }
 
 function PersonCard({name, surname, position, description} : PersonCardProps){

@@ -25,16 +25,14 @@ function Cv() {
                             src="/myCv/images/profile.png"
                             alt="Profile"
                             className={style.profile}
-                            />
-                    </div>
-                    <SidebarContainer>
-                        <Contact
-                            phone={cvData.contact.phone}
-                            email={cvData.contact.email}
-                            websites={cvData.contact.websites}
-                            address={cvData.address}
                         />
-                    </SidebarContainer>
+                    </div>
+                    <Contact
+                        phone={cvData.contact.phone}
+                        email={cvData.contact.email}
+                        websites={cvData.contact.websites}
+                        address={cvData.address}
+                    />
                     <Education education={cvData.education} />
                     <TechnicalSkils skills={cvData.technologies.familiar} />
                 </Sidebar>
@@ -44,14 +42,20 @@ function Cv() {
                             name={cvData.name}
                             surname={cvData.surname}
                             position={cvData.profession}
-                            description={`Portfolio: https://kbloski.github.io/myCv/`}
+                            description={
+                                <a 
+                                    href="https://kbloski.github.io/myCv/"
+                                    target="_blank"
+                                >
+                                    Portfolio: https://kbloski.github.io/myCv/
+                                </a>
+                            }
                         />
                     </ContentContainer>
-                    <AboutMe description={cvData.aboutMe}/>
+                    <AboutMe description={cvData.aboutMe} />
                     <ContentContainer>
                         <Experience experiences={cvData.experience} />
                     </ContentContainer>
-
 
                     {/* <div className="w-80">{JSON.stringify(cvData)}</div> */}
                 </MainContent>

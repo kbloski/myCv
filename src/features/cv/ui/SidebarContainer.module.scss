@@ -1,18 +1,24 @@
 @use '../variables' as *;
 
-
-.sidebarContainer {
+@mixin sidebar-container-style {
     margin: 0;
     padding: $sheet-padding;
     padding-left: 0;
     color: white;
 }
 
+.sidebarContainer {
+    @include sidebar-container-style();
+}
+
+.sidebarContainerLight {
+    @include sidebar-container-style();
+    background-color: #3F4249;
+}
+
 .content {
     padding: $sheet-padding;
     padding-top: 0;
-    padding-left: 0;
-
 }
 
 

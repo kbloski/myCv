@@ -1,6 +1,10 @@
 import style from './AboutMe.module.scss';
 
-function AboutMe({ description }: { description: string }) {
+interface AboutMeProps { 
+    description: string
+}
+
+function AboutMe({ description }: AboutMeProps ) {
     return <div className={style.aboutMe}>{description}</div>
 }
 
