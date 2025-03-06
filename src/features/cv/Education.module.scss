@@ -1,9 +1,10 @@
 @use './variables' as *;
 
-.title {
+.titleLabel {
     background: $accent-color;
-    padding: .2rem;
+    padding: .2rem 1rem .2rem 0rem;
     margin: 0;
+    font-weight: bolder;
 }
 
 .educationList {

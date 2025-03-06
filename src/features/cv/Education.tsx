@@ -11,7 +11,7 @@ type EducationProps = {
 function Education({ education }: EducationProps) {
     return (
         <SidebarContainer mode="light">
-            <div className={style.title}>
+            <div className={style.titleLabel}>
                 <Title mode="underline-right" className={`text-right`}>
                     Education
                 </Title>
