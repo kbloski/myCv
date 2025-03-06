@@ -1,4 +1,4 @@
-import style from './Contact.module.scss'
+import style from './ContactListItem.module.scss'
 
 type ContactListItemProps = {
     title: string; 
@@ -13,7 +13,7 @@ function ContactListItem({ title, subtitle, icon} : ContactListItemProps){
                 <div className={style.title}>{title}</div>
                 <div className={style.subtitle}>{subtitle}</div>
             </div>
-            <div>
+            <div className={style.iconBox}>
                 <img src={icon} aria-hidden className={style.icon}/>
             </div>
         </li>

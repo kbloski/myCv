@@ -4,13 +4,15 @@ import style from './Title.module.scss'
 interface TitleProps {
     children: React.ReactNode,
     color?: 'basic' | 'accent',
-    mode?: "normal" | 'underline' | 'underline-left' | 'underline-right'
+    mode?: "normal" | 'underline' | 'underline-left' | 'underline-right',
+    className?: string;
 }
 
 function Title({
     children, 
     color = 'basic', 
-    mode = 'normal'
+    mode = 'normal',
+    className,
 } : TitleProps){
     let classes = style.title
 
@@ -32,7 +34,7 @@ function Title({
     }
 
 
-    return <div className={classes}>
+    return <div className={`${classes} ${className}`}>
         {children}
     </div>
 }

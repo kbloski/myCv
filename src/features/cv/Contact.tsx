@@ -12,7 +12,11 @@ type ContactProps = {
 function Contact({ phone, email, websites, address }: ContactProps) {
     return (
         <div>
-            <Title mode="underline-right" color="accent">Contact</Title>
+            <Title 
+                mode="underline-right" 
+                color="accent" 
+                className="text-end"
+            >Contact</Title>
             <ul className={style.contactList}>
                 {phone && (
                     <ContactListItem
