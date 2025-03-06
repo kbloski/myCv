@@ -39,21 +39,19 @@ function Cv() {
                     <TechnicalSkils skills={cvData.technologies.familiar} />
                 </Sidebar>
                 <MainContent>
-                    <MainContainer>
-                        <PersonCard
-                            name={cvData.name}
-                            surname={cvData.surname}
-                            position={cvData.profession}
-                            description={
-                                <a 
-                                    href={githubUrl}
-                                    target="_blank"
-                                >
-                                    Portfolio: https://kbloski.github.io/myCv/
-                                </a>
-                            }
-                        />
-                    </MainContainer>
+                    <PersonCard
+                        name={cvData.name}
+                        surname={cvData.surname}
+                        position={cvData.profession}
+                        description={
+                            <a 
+                                href={githubUrl}
+                                target="_blank"
+                            >
+                                Portfolio: https://kbloski.github.io/myCv/
+                            </a>
+                        }
+                    />
                     <AboutMe description={cvData.aboutMe} />
                     <MainContainer>
                         <Experience experiences={cvData.experience} />

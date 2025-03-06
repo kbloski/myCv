@@ -1,4 +1,5 @@
 import style from './PersonCard.module.scss'
+import MainContainer from './ui/MainContent/MainContainer';
 
 type PersonCardProps = {
     name: string;
@@ -9,12 +10,14 @@ type PersonCardProps = {
 
 function PersonCard({name, surname, position, description} : PersonCardProps){
     return (
-        <div className={style.personCard}>
-            <div className={style.title}>{name}</div>
-            <div className={style.title}>{surname}</div>
-            <div className={style.subtitle}>{position}</div>
-            <div className={style.description}>{description}</div>
-        </div>
+        <MainContainer>
+            <div className={style.personCard}>
+                <div className={style.title}>{name}</div>
+                <div className={style.title}>{surname}</div>
+                <div className={style.subtitle}>{position}</div>
+                <div className={style.description}>{description}</div>
+            </div>
+        </MainContainer>
     )
 }
 
