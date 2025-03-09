@@ -143,7 +143,7 @@ const initialState: InitialState = {
             "Pinia",
             // "HTML5 & CSS3",
             "JavaScript",
-            "SCSS",
+            // "SCSS",
             "TypeScript",
             "NodeJS",
             "Express",
