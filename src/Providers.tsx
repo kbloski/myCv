@@ -5,6 +5,7 @@ function Providers({ children }: { children: React.ReactNode }) {
   return (
     <ReduxStoreProvider>
         { children}
+        <Outlet />
     </ReduxStoreProvider>
   );
 }

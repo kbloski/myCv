@@ -1,23 +1,17 @@
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 import Cv from './features/cv/Cv';
-import WorkingInProgress from './features/ui/WorkingInProgress';
 
 const router = createBrowserRouter([{
     path: '/myCv',
-    // errorElement: 
+    element: <Cv />
 
-    // Working in progress page
-    // path: '/myCv/*',
-    // element: <WorkingInProgress />,
-
-    children: [
-        {
-            path: '',
-            element: <Cv />
+    // children: [
+    //     {
+    //         path: '',
             
-        }
-    ]
+    //     }
+    // ]
 }])
 
 function routerAppProvider(){
