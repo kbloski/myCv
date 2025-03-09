@@ -1,0 +1,11 @@
+Dodać todolistę do projektu
+Dodać daty do doświadczenia 
+Dodać model dla tworzenia list w mainContainer
+Dodać Dyplomy 
+Dodać Kursy
+Dodać Zainteresowania
+Dodać możliwość pobierania cV
+
+// Stylistyczne
+Zmienićwygląd linków
+Dodać animacje po najechaniu na dane elementy
