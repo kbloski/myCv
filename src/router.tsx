@@ -4,14 +4,14 @@ import Cv from './features/cv/Cv';
 
 const router = createBrowserRouter([{
     path: '/myCv',
-    element: <Cv />
 
-    // children: [
-    //     {
-    //         path: '',
+    children: [
+        {
+            path: '',
+            element: <Cv />
             
-    //     }
-    // ]
+        }
+    ]
 }])
 
 function routerAppProvider(){
