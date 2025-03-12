@@ -14,11 +14,9 @@ function Experience({ experiences }: ExperienceProps) {
             <Title mode="underline-left">Experience</Title>
             <MainContainerContent>
                 <ul className={style.experienceList}>
-                    <li>
-                        {experiences.map((experience) => (
-                            <ExperienceListItem experience={experience} />
-                        ))}
-                    </li>
+                    {experiences.map((experience, index) => (
+                        <ExperienceListItem experience={experience} key={index}/>
+                    ))}
                 </ul>
             </MainContainerContent>
         </MainContainer>

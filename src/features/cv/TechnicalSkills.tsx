@@ -17,7 +17,7 @@ function TechnicalSkils({ skills }: TechnicalSkillsProps) {
             <SidebarContent>
                 <ul className={style.skillsList}>
                     {skills.map((skill) => (
-                        <li className={style.skillListItem}>{skill}</li>
+                        <li className={style.skillListItem} key={skill}>{skill}</li>
                     ))}
                 </ul>
             </SidebarContent>

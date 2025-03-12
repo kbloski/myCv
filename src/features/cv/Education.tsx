@@ -19,7 +19,7 @@ function Education({ education }: EducationProps) {
             <SidebarContent>
                 <ul className={style.educationList}>
                     {education.map((edu) => (
-                        <li className={style.educationListItem}>
+                        <li className={style.educationListItem} key={edu.name}>
                             <div className={style.listItemTitle}>
                                 {edu.name}
                             </div>

@@ -11,15 +11,32 @@ import PaperA4Sheet from "./ui/PaperA4Sheet";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Clauses from "./Clauses";
+import { useRef } from "react";
+import { generatePDFandSave } from "../../utils/generatePDF";
 
 function Cv() {
+    const cvElement = useRef(document.getElementById('cv'));
     const cvData = useSelector(getCvData);
     
     const userWebsitesList = cvData.contact.websites.map( data => data.url)
     const cvGithubUrl = 'https://kbloski.github.io/myCv/';
+    
+    function handleGeneratePdf(){
+        console.log( cvElement.current )
+        if (!cvElement.current) return;
+        
+
+        generatePDFandSave({
+            elementHtml: cvElement.current,
+            filename: 'kamil_błoński_cv'
+        })
+    }
+
     return (
         <>
-            <PaperA4Sheet>
+            <a href="#" onClick={handleGeneratePdf}>Downalod CV</a>
+
+            <PaperA4Sheet id="cv">
                 <Sidebar>
                     <div className={style.profileContainer}>
                         <img

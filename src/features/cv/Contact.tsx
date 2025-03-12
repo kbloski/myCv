@@ -37,6 +37,7 @@ function Contact({ phone, email, websites, address }: ContactProps) {
                     {websites?.length &&
                         websites.map((webiste) => (
                             <ContactListItem
+                                key={webiste}
                                 title="website"
                                 subtitle={webiste}
                                 icon="/myCv/icons/web.png"
