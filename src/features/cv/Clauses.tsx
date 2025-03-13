@@ -13,6 +13,7 @@ function Clauses(){
                     27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z
                     przetwarzaniem danych osobowych i w sprawie swobodnego przepływu
                     takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)."
+                    lorem2000
                 </div>
             </MainContainerContent>
         </MainContainer>
