@@ -23,6 +23,7 @@ function Cv() {
         const cvElement = document.getElementById('cv');
         if (!cvElement) throw new Error("Don't find html element for generate cv.");
 
+
         generatePDFandSave({
             elementHtml: cvElement,
             filename: 'kamil_błoński_cv'

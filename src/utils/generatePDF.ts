@@ -8,11 +8,10 @@ interface generatePDFProps {
 
 export async function generatePDFandSave( { elementHtml, filename } : generatePDFProps){
     html2pdf()
-        .set({
-            html2canvas: { scale: 2, scrollY: -window.scrollY },
-            margin: 0,
-            pagebreak: { mode: ["avoid-all", "css", "legacy"] },
-        })
+        // .set({
+            // html2canvas: { scale: 1 },
+            // margin: 0,
+        // })
         .from(elementHtml)
         .save(`${filename}.pdf`);
 }
