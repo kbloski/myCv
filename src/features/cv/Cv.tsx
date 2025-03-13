@@ -11,31 +11,29 @@ import PaperA4Sheet from "./ui/PaperA4Sheet";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Clauses from "./Clauses";
-import { useRef } from "react";
 import { generatePDFandSave } from "../../utils/generatePDF";
 
 function Cv() {
-    const cvElement = useRef(document.getElementById('cv'));
     const cvData = useSelector(getCvData);
     
     const userWebsitesList = cvData.contact.websites.map( data => data.url)
     const cvGithubUrl = 'https://kbloski.github.io/myCv/';
     
     function handleGeneratePdf(){
-        console.log( cvElement.current )
-        if (!cvElement.current) return;
-        
+        const cvElement = document.getElementById('cv');
+        if (!cvElement) throw new Error("Don't find html element for generate cv.");
 
         generatePDFandSave({
-            elementHtml: cvElement.current,
+            elementHtml: cvElement,
             filename: 'kamil_błoński_cv'
         })
     }
 
     return (
         <>
-            <a href="#" onClick={handleGeneratePdf}>Downalod CV</a>
-
+            <div style={{ textAlign: 'center' }}>
+                <a href="#" onClick={handleGeneratePdf}>Download CV</a>
+            </div>
             <PaperA4Sheet id="cv">
                 <Sidebar>
                     <div className={style.profileContainer}>
