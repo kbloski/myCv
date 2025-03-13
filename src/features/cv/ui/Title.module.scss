@@ -1,17 +1,9 @@
 @use "../variables" as *;
 
-@mixin title-style {
-    font-size: medium;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    position: relative;
-    padding: 0.3rem 0;
-}
-
 @mixin underline-style {
     &::before {
         filter: blur(0.7px);
-        bottom: 0;
+        bottom: 0px;
         position: absolute;
         content: "";
         left: 0;
@@ -21,7 +13,7 @@
 }
 
 @mixin underline-after {
-    bottom: 0;
+    bottom: 0px;
     position: absolute;
     content: '';
     width: 15%;
@@ -29,11 +21,13 @@
 }
 
 .title {
-    @include title-style();
-    padding-bottom: 0.3rem;
+    font-size: medium;
+    letter-spacing: 0.2rem;
     margin-bottom: 1rem;
     position: relative;
-
+    padding: .4rem 0;
+    text-transform: uppercase;
+    
     &-color {
         &-basic {
             color: $basic-color;
