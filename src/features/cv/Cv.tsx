@@ -55,7 +55,7 @@ function Cv() {
                             address={cvData.address}
                         />
                         <Education education={cvData.education} />
-                        <TechnicalSkils skills={cvData.skills.technologies.familiar} />
+                        <TechnicalSkils skills={cvData.skills.programming.familiar} />
                         <SoftSkills skills={cvData.skills.soft}/>
                     </Sidebar>
                     <MainContent>

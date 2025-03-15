@@ -21,7 +21,7 @@ interface InitialState {
     diplomas: { name: string; result: string }[];
     experience: Experience[];
     skills: {
-        technologies: {
+        programming: {
             inProgress: string[];
             familiar: string[];
         };
@@ -137,9 +137,10 @@ const initialState: InitialState = {
             "Samodzielność",
             "Zarządzanie czasem",
             "Rozwiązywanie problemów",
-            "Aktywne uczenie się"
+            "Aktywne uczenie się",
+            "Szybkie pisanie na komputerze"
         ],
-        technologies: {
+        programming: {
             inProgress: [
                 "React (advanced)",
                 // Docker
