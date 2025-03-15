@@ -13,7 +13,6 @@ interface InitialState {
         websites: {name: string, url: string}[];
     };
     credentials: string[];
-    languages: { name: string; level: string }[];
     hobbies: string[];
     education: {
         name: string;
@@ -21,10 +20,14 @@ interface InitialState {
     }[];
     diplomas: { name: string; result: string }[];
     experience: Experience[];
-    technologies: {
-        inProgress: string[];
-        familiar: string[];
-    };
+    skills: {
+        technologies: {
+            inProgress: string[];
+            familiar: string[];
+        };
+        languages: { name: string; level: string }[];
+        soft: string[]
+    }
     courses: { name: string; hours: string; link: string }[];
     projects: {
         name: string;
@@ -33,14 +36,6 @@ interface InitialState {
         links: { name: string; link: string }[];
     }[];
 }
-
-
-
-// const projectsList = 
-// extras: [
-//     "W razie potrzeby jestem gotów rozważyć bezpłatny staż na okres 1-3 miesięcy w celu zdobycia doświadczenia i rozwoju zawodowego.",
-//     // "Rozważam także możliwość zmiany miejsca zamieszkania, aby wykonywać pracę w trybie stacjonarnym.",
-// ],
 
 const initialState: InitialState = {
     aboutMe:
@@ -63,10 +58,7 @@ const initialState: InitialState = {
             },
         ],
     },
-    languages: [
-        { name: "Polski", level: "Native" },
-        { name: "Angielski", level: "A2/B1" },
-    ],
+    
     credentials: ["Prawo jazdy kat. B"],
     hobbies: [
         "Programowanie",
@@ -135,36 +127,49 @@ const initialState: InitialState = {
             skils: [],
         },
     ],
-    technologies: {
-        inProgress: [
-            "React (advanced)",
-            // Docker
-            // "Bootstrap5",
-            // "Taiwildcss"
+    skills: {
+        languages: [
+            { name: "Polski", level: "Native" },
+            { name: "Angielski", level: "A2/B1" },
         ],
-        familiar: [
-            // "Wordpress",
-            // "PrestaShop",
-            "NextJs",
-            "React",
-            "Redux",
-            // "React/ContextAPI",
-            "Vue3",
-            // "VueX",
-            "Vuetify",
-            "Pinia",
-            // "HTML5 & CSS3",
-            "JavaScript",
-            // "SCSS",
-            "TypeScript",
-            "NodeJS",
-            "Express",
-            // "Sequelize",
-            "Git",
-            // MySQL",
-            // "Python",
-            "VSC",
+        soft: [
+            "Kreatywność",
+            "Samodzielność",
+            "Zarządzanie czasem",
+            "Rozwiązywanie problemów",
+            "Aktywne uczenie się"
         ],
+        technologies: {
+            inProgress: [
+                "React (advanced)",
+                // Docker
+                // "Bootstrap5",
+                // "Taiwildcss"
+            ],
+            familiar: [
+                // "Wordpress",
+                // "PrestaShop",
+                "NextJs",
+                "React",
+                "Redux",
+                // "React/ContextAPI",
+                "Vue3",
+                // "VueX",
+                "Vuetify",
+                "Pinia",
+                // "HTML5 & CSS3",
+                "JavaScript",
+                // "SCSS",
+                "TypeScript",
+                "NodeJS",
+                "Express",
+                // "Sequelize",
+                "Git",
+                // MySQL",
+                // "Python",
+                "VSC",
+            ],
+        },
     },
     diplomas: [
         {
@@ -264,13 +269,20 @@ const initialState: InitialState = {
 
 
 const cvSlice = createSlice({
-    name: 'cv',
+    name: "cv",
     initialState,
-    reducers: { }
-})
+    reducers: {
+        // exampleReducer(
+        //     state : InitialState, 
+        //     action: { payload: any; type: string }
+        // ) {
+        //     state.name = action.payload.name;
+        // },
+    },
+});
 
 
-export const { } = cvSlice.actions;
+export const { /* exampleReducer */ } = cvSlice.actions;
 export default cvSlice.reducer;
 
 export const getCvData = (state : any) => state.cv as InitialState

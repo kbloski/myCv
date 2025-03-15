@@ -14,6 +14,7 @@ import Clauses from "./Clauses";
 import { generatePDFandSave } from "../../utils/generatePDF";
 import Background from "./ui/Background";
 import ProfileImage from "./ProfileImage";
+import SoftSkills from "./SoftSkillsList";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -54,7 +55,8 @@ function Cv() {
                             address={cvData.address}
                         />
                         <Education education={cvData.education} />
-                        <TechnicalSkils skills={cvData.technologies.familiar} />
+                        <TechnicalSkils skills={cvData.skills.technologies.familiar} />
+                        <SoftSkills skills={cvData.skills.soft}/>
                     </Sidebar>
                     <MainContent>
                         <PersonCard
