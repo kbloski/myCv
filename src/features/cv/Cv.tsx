@@ -13,6 +13,7 @@ import Experience from "./Experience";
 import Clauses from "./Clauses";
 import { generatePDFandSave } from "../../utils/generatePDF";
 import Background from "./ui/Background";
+import ProfileImage from "./ProfileImage";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -40,13 +41,7 @@ function Cv() {
             <div className={style.cv}>
                 <PaperA4Sheet id="cv">
                     <Sidebar>
-                        <div className={style.profileContainer}>
-                            <img
-                                src="/myCv/images/profile.png"
-                                alt="Profile"
-                                className={style.profile}
-                            />
-                        </div>
+                        <ProfileImage src="/myCv/images/profile.png" />
                         <Contact
                             phone={cvData.contact.phone}
                             email={cvData.contact.email}
