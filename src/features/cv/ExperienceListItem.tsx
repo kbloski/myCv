@@ -8,11 +8,29 @@ type ExperienceListItemProps = {
 function ExperienceListItem({experience} : ExperienceListItemProps ){
     return (
         <li className={style.listItem}>
-            <div className={style.companyName}>{experience.company}</div>
-            { experience.period && <div>Okres: {experience.period.start} do  {experience.period.end}</div>}
-            <div>Pozycja: {experience.position}</div>
-            <div>Address: {experience.address}</div>
-            <div>{experience.description}</div>
+            <div className={style.listItemHeader}>
+                <div>
+                    <div className={style.companyName}>
+                        {experience.company}
+                    </div>
+                    <hr></hr>
+                    <div>
+                        <div>
+                            Job position / {experience.position}
+                        </div>
+                        { experience.period && <div>
+                            {experience.period.start} / {experience.period.end}
+                        </div>}
+                    </div>
+                </div>
+
+            </div>
+            <div className={style.listItemBody}>
+                <div>
+                    <div>Address: {experience.address}</div>
+                    <div>{experience.description}</div>
+                </div>
+            </div>
         </li>
     );
 }
