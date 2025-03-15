@@ -16,7 +16,7 @@ function PersonCard({name, surname, position, description} : PersonCardProps){
                 <div className={style.title}>{name}</div>
                 <div className={style.title}>{surname}</div>
                 <div className={style.subtitle}>{position}</div>
-                {/* <div className={style.description}>{description}</div> */}
+                <div className={style.description}>{description}</div>
             </div>
         </MainContainer>
     )

@@ -61,13 +61,9 @@ function Cv() {
                             name={cvData.name}
                             surname={cvData.surname}
                             position={cvData.profession}
-                            description={
-                                <a 
-                                    href={cvGithubUrl}
-                                    target="_blank"
-                                >
+                            description={<>
                                     Portfolio: {cvGithubUrl}
-                                </a>
+                                </>
                             }
                         />
                         <AboutMe description={cvData.aboutMe} />
