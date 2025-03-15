@@ -9,6 +9,7 @@ type Experience = {
         start: string;
         end: string;
     };
+    skils?: string[]
 };
 
 export default Experience;

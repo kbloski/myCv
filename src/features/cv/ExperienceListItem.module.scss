@@ -43,3 +43,13 @@ $padding: 1rem 0;
     letter-spacing: .1rem;
     margin-bottom: 1rem;
 }
+
+.experience {
+    &Description {
+        margin-bottom: 1rem;
+    }
+
+    &SkillList {
+        list-style: disc;
+    }
+}

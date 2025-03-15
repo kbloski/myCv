@@ -37,8 +37,6 @@ interface InitialState {
 
 
 // const projectsList = 
-
-
 // extras: [
 //     "W razie potrzeby jestem gotów rozważyć bezpłatny staż na okres 1-3 miesięcy w celu zdobycia doświadczenia i rozwoju zawodowego.",
 //     // "Rozważam także możliwość zmiany miejsca zamieszkania, aby wykonywać pracę w trybie stacjonarnym.",
@@ -96,32 +94,43 @@ const initialState: InitialState = {
                 "CO. OHG, GLS-GERMANY-STRABE 1-7, 36286 NEUENSTEIN, NIEMCY",
             position: "Magazynier",
             period: {
-                start: "10-06-2024",
-                end: "06-07-2024",
+                start: "06-2024", //10-06-2024
+                end: "07-2024", //06-07-2024
             },
+            skils: [
+                "praca zespołowa",
+                "praca w systemie zmianowym",
+                "organizacja pracy"
+            ],
         },
         {
             company: "Dubeco B.V.",
             period: {
-                start: "10-07-2023",
-                end: "31-08-2023",
+                start: "07-2023", // 10-07-2023
+                end: "08-2023", // 31-08-2023
             },
             address: "Mortel 27, 6088 AH te Roggel",
             position: "Pracownik szczytowy",
             description: "Zbiory borówki amerykańskiej",
+            skils: [
+                'praca zespołowa',
+                'szybkość i precyzja pracy manualnej',
+            ],
         },
         {
-            company: "FHU Ematik Mateusz Nosal (serwis komputerowy)",
+            company: "FHU Ematik Mateusz Nosal",
             address: "Brzostek 39-230, ul. Rynek 38",
             position: "Stażysta",
             description:
-                "Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",
-            // period: [
-            //     {
-            //         start: "10-10-2022",
-            //         end: undefined,
-            //     },
-            // ],
+                "Serwis komputerowy. Udział w projekcie Staż Europejski Twoja przyszłość tu i teraz. 160 godzin.",
+            period: {
+                start: "10-2022", //10-10-2022
+                end: "04-2023", //15-04-2023
+            },
+            skils: [
+                
+                "diagnozowanie i naprawa urządzeń elektronicznych",
+            ],
         },
     ],
     technologies: {
@@ -129,6 +138,7 @@ const initialState: InitialState = {
             "React (advanced)",
             // Docker
             // "Bootstrap5",
+            // "Taiwildcss"
         ],
         familiar: [
             // "Wordpress",

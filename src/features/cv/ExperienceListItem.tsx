@@ -15,20 +15,30 @@ function ExperienceListItem({experience} : ExperienceListItemProps ){
                     </div>
                     <hr></hr>
                     <div>
-                        <div>
-                            Job position / {experience.position}
-                        </div>
-                        { experience.period && <div>
-                            {experience.period.start} / {experience.period.end}
-                        </div>}
+                        <div>Job position / {experience.position}</div>
+                        {experience.period && (
+                            <div>
+                                {experience.period.start} /{" "}
+                                {experience.period.end}
+                            </div>
+                        )}
                     </div>
                 </div>
-
             </div>
             <div className={style.listItemBody}>
                 <div>
-                    <div>Address: {experience.address}</div>
-                    <div>{experience.description}</div>
+                    <div className={style.experienceDescription}>
+                        {experience.description}
+                    </div>
+                    {experience.skils && (
+                        <div>
+                            <ul className={style.experienceSkillList}>
+                                {experience.skils.map((skill) => (
+                                    <li> {skill}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                 </div>
             </div>
         </li>
