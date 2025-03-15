@@ -36,10 +36,15 @@ function Cv() {
         <>
             <Background />
             <div className={style.btnContainer}>
-                <button onClick={handleGeneratePdf} className={style.btnDownload}>Download CV</button>
+                <button
+                    onClick={handleGeneratePdf}
+                    className={style.btnDownload}
+                >
+                    Download CV
+                </button>
             </div>
-            <div className={style.cv}>
-                <PaperA4Sheet id="cv">
+            <div>
+                <PaperA4Sheet id="cv" className={style.cv}>
                     <Sidebar>
                         <ProfileImage src="/myCv/images/profile.png" />
                         <Contact
@@ -56,10 +61,7 @@ function Cv() {
                             name={cvData.name}
                             surname={cvData.surname}
                             position={cvData.profession}
-                            description={<>
-                                    Portfolio: {cvGithubUrl}
-                                </>
-                            }
+                            description={<>Portfolio: {cvGithubUrl}</>}
                         />
                         <AboutMe description={cvData.aboutMe} />
                         <Experience experiences={cvData.experience} />
