@@ -1,0 +1,47 @@
+:root {
+    --background-first-color: yellowgreen;
+    --background-second-color: black;
+}
+
+@property --positionCircleGradientX {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
+@property --positionCircleGradientY {
+    syntax: '<percentage>';  
+    inherits: false;
+    initial-value: 0%;
+}
+
+body {
+    background-color: black;
+    background: radial-gradient(circle at var(--positionCircleGradientX) var(--positionCircleGradientY), 
+    var(--background-first-color) , 
+    var(--background-second-color) 50%
+    );
+    animation: moveGradient 30s ease infinite; 
+}
+
+@keyframes moveGradient {
+    0% {
+        --positionCircleGradientX: 0%;
+        --positionCircleGradientY: 0%;
+    }
+    20% {
+        --positionCircleGradientX: 100%;  
+        --positionCircleGradientY: 0%;
+    }
+    40% {
+        --positionCircleGradientX: 10%;  
+        --positionCircleGradientY: 90%;  
+    }
+    60% {
+        --positionCircleGradientX: 90%;     
+        --positionCircleGradientY: 67%;     
+    }
+    100% {
+        --positionCircleGradientX: 0%;     
+        --positionCircleGradientY: 0%;     
+    }
+}

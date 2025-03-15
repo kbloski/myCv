@@ -1,3 +1,5 @@
+import './index.css'
+
 import { useSelector } from "react-redux";
 import style from "./Cv.module.scss";
 import { getCvData } from "./cvSlice";
