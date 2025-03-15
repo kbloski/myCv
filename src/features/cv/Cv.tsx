@@ -1,5 +1,3 @@
-import './index.css'
-
 import { useSelector } from "react-redux";
 import style from "./Cv.module.scss";
 import { getCvData } from "./cvSlice";
@@ -14,6 +12,7 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Clauses from "./Clauses";
 import { generatePDFandSave } from "../../utils/generatePDF";
+import Background from "./ui/Background";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -34,8 +33,9 @@ function Cv() {
 
     return (
         <>
-            <div style={{ textAlign: 'center' }}>
-                <a href="#" onClick={handleGeneratePdf}>Download CV</a>
+            <Background />
+            <div className={style.btnContainer}>
+                <button onClick={handleGeneratePdf} className={style.btnDownload}>Download CV</button>
             </div>
             <div className={style.cv}>
                 <PaperA4Sheet id="cv">

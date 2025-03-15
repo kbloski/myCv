@@ -1,8 +1,5 @@
-:root {
-    --background-first-color: yellowgreen;
-    --background-second-color: black;
-}
-
+$background-first-color: yellowgreen;
+$background-second-color: black;
 @property --positionCircleGradientX {
     syntax: '<percentage>';
     inherits: false;
@@ -14,14 +11,23 @@
     initial-value: 0%;
 }
 
-body {
+.background {
+    animation: moveGradient 30s ease infinite; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+
     background-color: black;
     background: radial-gradient(circle at var(--positionCircleGradientX) var(--positionCircleGradientY), 
-    var(--background-first-color) , 
-    var(--background-second-color) 50%
+    $background-first-color , 
+    $background-second-color 50%
     );
-    animation: moveGradient 30s ease infinite; 
 }
+
+
+
 
 @keyframes moveGradient {
     0% {

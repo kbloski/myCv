@@ -2,17 +2,20 @@
     font-family: sans-serif !important;
 }
 
-.test {
-    margin: 0 auto;
-    padding: 0;
-    width: 100px;
-    text-align: center;
-    background-color: greenyellow;
-}
-
 .profileContainer {
     img {
         width: 100%;
         height: auto;
     }
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.btnDownload {
+    background-color: white;
+    padding: .3rem 1rem;
+    margin: .5rem auto;
 }
