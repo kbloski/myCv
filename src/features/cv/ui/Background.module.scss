@@ -1,5 +1,6 @@
 $background-first-color: yellowgreen;
 $background-second-color: black;
+
 @property --positionCircleGradientX {
     syntax: '<percentage>';
     inherits: false;
@@ -24,9 +25,8 @@ $background-second-color: black;
     $background-first-color , 
     $background-second-color 50%
     );
+    z-index: -1;
 }
-
-
 
 
 @keyframes moveGradient {
