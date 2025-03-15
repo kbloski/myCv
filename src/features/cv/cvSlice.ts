@@ -126,6 +126,14 @@ const initialState: InitialState = {
             },
             skils: ["diagnozowanie i naprawa urządzeń elektronicznych"],
         },
+        {
+            company: "Dorywcze prace budowlane",
+            address: "-",
+            position: "Pomocnik",
+            description:
+                "Dorywczo pomogam w pracach budowlanych.",
+            skils: [],
+        },
     ],
     technologies: {
         inProgress: [
