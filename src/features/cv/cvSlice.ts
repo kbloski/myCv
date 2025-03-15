@@ -100,7 +100,7 @@ const initialState: InitialState = {
             skils: [
                 "praca zespołowa",
                 "praca w systemie zmianowym",
-                "organizacja pracy"
+                "organizacja pracy",
             ],
         },
         {
@@ -112,10 +112,7 @@ const initialState: InitialState = {
             address: "Mortel 27, 6088 AH te Roggel",
             position: "Pracownik szczytowy",
             description: "Zbiory borówki amerykańskiej",
-            skils: [
-                'praca zespołowa',
-                'szybkość i precyzja pracy manualnej',
-            ],
+            skils: ["praca zespołowa", "szybkość i precyzja pracy manualnej"],
         },
         {
             company: "FHU Ematik Mateusz Nosal",
@@ -127,10 +124,7 @@ const initialState: InitialState = {
                 start: "10-2022", //10-10-2022
                 end: "04-2023", //15-04-2023
             },
-            skils: [
-                
-                "diagnozowanie i naprawa urządzeń elektronicznych",
-            ],
+            skils: ["diagnozowanie i naprawa urządzeń elektronicznych"],
         },
     ],
     technologies: {

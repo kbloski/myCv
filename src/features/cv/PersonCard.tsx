@@ -8,6 +8,7 @@ type PersonCardProps = {
     description: React.ReactNode;
 }
 
+// @ts-ignore
 function PersonCard({name, surname, position, description} : PersonCardProps){
     return (
         <MainContainer>
