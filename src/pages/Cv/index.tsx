@@ -3,10 +3,12 @@ import { useSelector } from "react-redux";
 import { getCvData } from "../../entities/cv/model/selectors";
 
 import Sidebar from "../../features/cv/ui/Sidebar/Sidebar";
-import MainContent from "../../features/cv/ui/Main/MainContent";
+// import MainContent from "../../features/cv/ui/Main/MainContent";
+import { MainContent } from '../../features/cv/ui/Main'
+
 import Contact from "../../features/cv/ui/Contact";
 import Education from "../../features/cv/ui/Education";
-import TechnicalSkils from "../../features/cv/ui/TechnicalSkils/TechnicalSkills";
+import TechnicalSkils from "../../features/cv/ui/TechnicalSkils";
 import PersonCard from "../../features/cv/ui/PersonCard";
 import PaperA4Sheet from "../../features/cv/ui/A4Paper";
 import AboutMe from "../../features/cv/ui/AboutMe";

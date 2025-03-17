@@ -1,4 +1,4 @@
-import MainContainer, { MainContainerContent } from "../Main/MainContainer";
+import { MainContainer, MainContainerContent} from "../Main";
 import Title from "../Title";
 
 function Clauses() {

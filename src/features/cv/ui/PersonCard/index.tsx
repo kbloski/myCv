@@ -1,5 +1,5 @@
 import style from "./PersonCard.module.scss";
-import MainContainer from "../Main/MainContainer";
+import { MainContainer } from "../Main";
 
 type PersonCardProps = {
     name: string;

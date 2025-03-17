@@ -1,5 +1,5 @@
 import style from "./Education.module.scss";
-import SidebarContainer, { SidebarContent } from "../Sidebar/SidebarContainer";
+import {SidebarContainer, SidebarContainerContent} from "../Sidebar";
 import Title from "../Title";
 
 type EducationProps = {
@@ -14,7 +14,7 @@ function Education({ education }: EducationProps) {
                     Education
                 </Title>
             </div>
-            <SidebarContent>
+            <SidebarContainerContent>
                 <ul className={style.educationList}>
                     {education.map((edu) => (
                         <li className={style.educationListItem} key={edu.name}>
@@ -25,7 +25,7 @@ function Education({ education }: EducationProps) {
                         </li>
                     ))}
                 </ul>
-            </SidebarContent>
+            </SidebarContainerContent>
         </SidebarContainer>
     );
 }

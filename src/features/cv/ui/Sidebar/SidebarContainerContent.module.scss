@@ -1,0 +1,6 @@
+@use '../../styles/variables' as *;
+
+.sidebarContainerContent {
+    padding: 0 $sheet-padding;
+    padding-top: 0;
+}

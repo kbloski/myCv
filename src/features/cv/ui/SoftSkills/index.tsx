@@ -1,7 +1,7 @@
 import style from "./SoftSkillsList.module.scss";
 
 import SoftSkillsListItem from "./SoftSkillsListItem";
-import SidebarContainer, { SidebarContent } from "../Sidebar/SidebarContainer";
+import {SidebarContainer, SidebarContainerContent} from "../Sidebar";
 import Title from "../Title";
 
 interface SoftSkillsProps {
@@ -16,13 +16,13 @@ function SoftSkills({ skills }: SoftSkillsProps) {
             <Title color="accent" mode="underline-right" className="text-right">
                 Soft skils
             </Title>
-            <SidebarContent>
+            <SidebarContainerContent>
                 <ul className={style.skillList}>
                     {skills.map((skill) => (
                         <SoftSkillsListItem skill={skill} />
                     ))}
                 </ul>
-            </SidebarContent>
+            </SidebarContainerContent>
         </SidebarContainer>
     );
 }

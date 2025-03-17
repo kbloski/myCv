@@ -1,5 +1,5 @@
 import style from "./TechnicalSkills.module.scss";
-import SidebarContainer, { SidebarContent } from "../Sidebar/SidebarContainer";
+import {SidebarContainer, SidebarContainerContent} from "../Sidebar";
 import Title from "../Title";
 
 type TechnicalSkillsProps = {
@@ -12,7 +12,7 @@ function TechnicalSkils({ skills }: TechnicalSkillsProps) {
             <Title mode="underline-right" color="accent" className="text-end">
                 Technical skils
             </Title>
-            <SidebarContent>
+            <SidebarContainerContent>
                 <ul className={style.skillsList}>
                     {skills.map((skill) => (
                         <li className={style.skillListItem} key={skill}>
@@ -20,7 +20,7 @@ function TechnicalSkils({ skills }: TechnicalSkillsProps) {
                         </li>
                     ))}
                 </ul>
-            </SidebarContent>
+            </SidebarContainerContent>
         </SidebarContainer>
     );
 }

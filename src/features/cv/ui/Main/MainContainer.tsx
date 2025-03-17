@@ -14,14 +14,4 @@ function MainContainer({ children, title }: MainContainer) {
     );
 }
 
-interface MainContainerContentProps {
-    children: React.ReactNode,
-}
-function MainContainerContent({children} : MainContainerContentProps){
-    return <div className={style.mainContainerContent}>
-        { children }
-    </div>
-}
-
-export { MainContainerContent }
 export default MainContainer;

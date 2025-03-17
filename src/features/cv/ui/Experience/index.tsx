@@ -1,7 +1,7 @@
 import style from "./Experience.module.scss";
 import ExperienceListItem from "./ExperienceListItem";
 import type { ExperienceType } from "./types";
-import MainContainer, { MainContainerContent } from "../Main/MainContainer";
+import { MainContainer, MainContainerContent } from "../Main";
 import Title from "../Title";
 
 type ExperienceProps = {

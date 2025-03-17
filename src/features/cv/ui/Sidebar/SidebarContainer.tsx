@@ -16,17 +16,4 @@ function SidebarContainer({ children, mode} : SidebarContainerProps) {
     );
 }
 
-interface SidebarContentProps  {
-    children: React.ReactNode, 
-}
-
-
-
-function SidebarContent({children} : SidebarContentProps){
-    return <div className={style.content}>
-            {children}
-    </div>
-}
-
-export { SidebarContent };
 export default SidebarContainer;

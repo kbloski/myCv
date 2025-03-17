@@ -1,7 +1,7 @@
 import ContactListItem from "./ContactListItem";
 import style from "./Contact.module.scss";
 import Title from "../Title";
-import SidebarContainer, { SidebarContent } from "../Sidebar/SidebarContainer";
+import { SidebarContainer, SidebarContainerContent} from "../Sidebar";
 
 type ContactProps = {
     phone?: string;
@@ -16,7 +16,7 @@ function Contact({ phone, email, websites, address }: ContactProps) {
             <Title mode="underline-right" color="accent" className="text-end">
                 Contact
             </Title>
-            <SidebarContent>
+            <SidebarContainerContent>
                 <ul className={style.contactList}>
                     {phone && (
                         <ContactListItem
@@ -49,7 +49,7 @@ function Contact({ phone, email, websites, address }: ContactProps) {
                         />
                     )}
                 </ul>
-            </SidebarContent>
+            </SidebarContainerContent>
         </SidebarContainer>
     );
 }
