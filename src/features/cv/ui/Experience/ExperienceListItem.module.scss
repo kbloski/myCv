@@ -1,0 +1,55 @@
+@use '../../styles/variables' as *;
+
+$border: 2px solid $background-darkgray;
+$padding: 1rem 0;
+
+@mixin header-style() {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $padding;
+}
+
+.listItem {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    &Header {
+        @include header-style();
+        width: 30%;
+        min-height: 80px;
+        padding: 20px 0;
+        border-right: $border;
+    }
+
+    &Body {
+        display: flex;
+        align-items: center;
+        padding: $padding;
+        border-bottom: $border;
+        width: 67%;
+    }
+
+    &:last-child &Header, 
+    &:last-child &Body
+    {
+        border-bottom: 0;
+    }
+}
+
+.companyName {
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+}
+
+.experience {
+    &Description {
+        margin-bottom: 1rem;
+    }
+
+    &SkillList {
+        list-style: disc;
+    }
+}

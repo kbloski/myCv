@@ -1,0 +1,10 @@
+@use '../../../styles/variables' as *;
+
+.aboutMe {
+    background-color: $accent-color;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    position: relative;
+}

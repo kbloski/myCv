@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+
+.skillsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillListItem {
+    background-color: $accent-color;
+    color: $background-darkgray;
+    font-size: .7rem;
+    margin: .2rem;
+    padding: .2rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px $accent-color;
+}

@@ -1,0 +1,69 @@
+@use "../../styles/variables" as *;
+
+@mixin underline-style {
+    &::before {
+        filter: blur(0.7px);
+        bottom: 0px;
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+}
+
+@mixin underline-after {
+    bottom: 0px;
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 4px;
+}
+
+.title {
+    font-size: medium;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: .4rem 0;
+    text-transform: uppercase;
+    
+    &-color {
+        &-basic {
+            color: $basic-color;
+            &::before, &::after {
+                background-color: $basic-color;
+            }
+        }
+
+        &-accent {
+            color: $accent-color;
+            &::before, &::after {
+                background-color: $accent-color;
+            }
+        }
+    }
+
+
+    &-underline {
+        @include underline-style();
+
+
+        &-right {
+            &::after {
+                @include underline-after();
+                right: 0;
+                transform: translateY(30%);
+            }
+        }
+        
+        &-left {
+            &::after {
+                @include underline-after();
+                left: 0;
+                transform: translateY(30%);
+            }
+        }
+    }
+}
+

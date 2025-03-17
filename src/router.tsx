@@ -1,22 +1,22 @@
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Cv from './features/cv/Cv';
+import Cv from "./pages/Cv";
 
-const router = createBrowserRouter([{
-    path: '/myCv',
+const router = createBrowserRouter([
+    {
+        path: "/myCv",
 
-    children: [
-        {
-            path: '',
-            element: <Cv />
-            
-        },
-    ]
-}])
+        children: [
+            {
+                path: "",
+                element: <Cv />,
+            },
+        ],
+    },
+]);
 
-function routerAppProvider(){
-    return <RouterProvider router={router} />
+function routerAppProvider() {
+    return <RouterProvider router={router} />;
 }
 
 export default routerAppProvider;
-
