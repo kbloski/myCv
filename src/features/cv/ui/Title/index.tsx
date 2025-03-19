@@ -1,12 +1,6 @@
 import style from './Title.module.scss'
+import { TitleProps } from './types'
 
-
-interface TitleProps {
-    children: React.ReactNode,
-    color?: 'basic' | 'accent',
-    mode?: "normal" | 'underline' | 'underline-left' | 'underline-right',
-    className?: string;
-}
 
 function Title({
     children, 
