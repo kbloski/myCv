@@ -18,7 +18,7 @@ function Title({
         classes += ' '+style['title-color-accent'] 
     }
     
-    // Mode
+    // Mode 
     if (mode === 'underline'){
         classes += ` ${style['title-underline']}`
     } else if (mode === 'underline-left'){
