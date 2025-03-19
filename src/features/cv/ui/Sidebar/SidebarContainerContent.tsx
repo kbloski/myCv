@@ -1,13 +1,8 @@
 import style from './SidebarContainerContent.module.scss'
+import { SidebarContainerContentProps } from './types';
 
-
-interface SidebarContentProps  {
-    children: React.ReactNode, 
-}
-
-
-function SidebarContent({children} : SidebarContentProps){
+function SidebarContainerContent({ children }: SidebarContainerContentProps) {
     return <div className={style.sidebarContainerContent}>{children}</div>;
 }
 
-export default SidebarContent;
+export default SidebarContainerContent;

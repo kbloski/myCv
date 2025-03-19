@@ -3,10 +3,8 @@ import style from "./SoftSkillsList.module.scss";
 import SoftSkillsListItem from "./SoftSkillsListItem";
 import {SidebarContainer, SidebarContainerContent} from "../Sidebar";
 import Title from "../Title";
+import { SoftSkillsProps } from "./types";
 
-interface SoftSkillsProps {
-    skills: string[];
-}
 
 function SoftSkills({ skills }: SoftSkillsProps) {
     if (!skills.length) return;

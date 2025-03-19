@@ -1,8 +1,5 @@
 import style from './ProfileImage.module.scss'
-
-interface ProfileImageProps {
-    src: string
-}
+import { ProfileImageProps } from './types';
 
 function ProfileImage({ src } : ProfileImageProps){
     return <div className={style.profileContainer}>
