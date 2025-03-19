@@ -1,10 +1,7 @@
 import style from "./TechnicalSkills.module.scss";
 import {SidebarContainer, SidebarContainerContent} from "../Sidebar";
 import Title from "../Title";
-
-type TechnicalSkillsProps = {
-    skills: string[];
-};
+import { TechnicalSkillsProps } from "./types";
 
 function TechnicalSkils({ skills }: TechnicalSkillsProps) {
     return (
