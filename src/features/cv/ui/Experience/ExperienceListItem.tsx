@@ -34,7 +34,7 @@ function ExperienceListItem({experience} : ExperienceListItemProps ){
                         <div>
                             <ul className={style.experienceSkillList}>
                                 {experience.skils.map((skill) => (
-                                    <li> {skill}</li>
+                                    <li key={skill}> {skill}</li>
                                 ))}
                             </ul>
                         </div>

@@ -17,7 +17,7 @@ function SoftSkills({ skills }: SoftSkillsProps) {
             <SidebarContainerContent>
                 <ul className={style.skillList}>
                     {skills.map((skill) => (
-                        <SoftSkillsListItem skill={skill} />
+                        <SoftSkillsListItem skill={skill} key={skill} />
                     ))}
                 </ul>
             </SidebarContainerContent>
