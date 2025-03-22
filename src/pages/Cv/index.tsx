@@ -3,9 +3,7 @@ import { useSelector } from "react-redux";
 import { getCvData } from "../../entities/cv/model/selectors";
 
 import Sidebar from "../../features/cv/ui/Sidebar/Sidebar";
-// import MainContent from "../../features/cv/ui/Main/MainContent";
 import { MainContent } from '../../features/cv/ui/Main'
-
 import Contact from "../../features/cv/ui/Contact";
 import Education from "../../features/cv/ui/Education";
 import TechnicalSkils from "../../features/cv/ui/TechnicalSkils";
@@ -18,6 +16,7 @@ import { generatePDFandSave } from "../../shared/utils/generatePDF";
 import Background from "../../features/cv/ui/PageBackground";
 import ProfileImage from "../../features/cv/ui/ProfileImage";
 import SoftSkills from "../../features/cv/ui/SoftSkills";
+import BtnDownload from "../../features/cv/ui/BtnDownload";
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -39,14 +38,7 @@ function Cv() {
     return (
         <>
             <Background />
-            <div className={style.btnContainer}>
-                <button
-                    onClick={handleGeneratePdf}
-                    className={style.btnDownload}
-                >
-                    Download CV
-                </button>
-            </div>
+            <BtnDownload onClick={handleGeneratePdf} />
             <div>
                 <PaperA4Sheet id="cv" className={style.cv}>
                     <Sidebar>
@@ -73,7 +65,6 @@ function Cv() {
                         <AboutMe description={cvData.aboutMe} />
                         <Experience experiences={cvData.experience} />
 
-                        {/* <div className="w-80">{JSON.stringify(cvData)}</div> */}
                         <Clauses />
                     </MainContent>
                 </PaperA4Sheet>

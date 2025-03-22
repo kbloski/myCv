@@ -1,0 +1,1 @@
+        // filter: sepia(70%) invert(0%) brightness(100%) hue-rotate(200deg); - dla zdjecia
