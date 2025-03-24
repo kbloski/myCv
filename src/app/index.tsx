@@ -1,4 +1,5 @@
-import RouterAppProvider from "../router";
+import "./index.css";
+import RouterAppProvider from "./router";
 import Providers from "./providers";
 
 function App() {

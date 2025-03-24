@@ -1,3 +1,5 @@
+-Feature-Sliced Design FFD Structure
+
 src/
 ├── app/
 │   ├── store/                      # Globalny store, np. Redux, Zustand
