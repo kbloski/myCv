@@ -1,7 +1,9 @@
 @use '@styles/index.scss' as *;
+@use '../../styles/variables' as *;
 
 .details {
-    margin-left: $basicMargin;
-    flex-grow: 1;
+    background-color: $background-color-dark;
     border: 1px solid white;
+    flex-grow: 1;
+    margin-left: $basicMargin;
 }
