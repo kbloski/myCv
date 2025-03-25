@@ -23,4 +23,9 @@
 
 .navItem {
     margin-left: $basicMargin;
+    cursor: pointer;
+    
+    &:hover {
+        color: $accent-color;
+    }
 }
