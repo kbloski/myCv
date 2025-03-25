@@ -1,0 +1,7 @@
+@use '@styles/index.scss' as *;
+
+.details {
+    margin-left: $basicMargin;
+    flex-grow: 1;
+    border: 1px solid white;
+}

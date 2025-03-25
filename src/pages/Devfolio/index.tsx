@@ -1,11 +1,17 @@
 import { 
-    BackgroundPage 
+    BackgroundPage, 
+    ContentWrapper,
+    Details,
+    Profile
 } from "../../features/devfolio/ui";
 
 function Portfolio(){
     return <>
         <BackgroundPage />
-        <div>Portfolio</div>
+        <ContentWrapper>
+            <Profile />
+            <Details />
+        </ContentWrapper>
     </>
 }
 
