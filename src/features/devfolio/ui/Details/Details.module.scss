@@ -1,9 +1,9 @@
 @use '@styles/index.scss' as *;
-@use '../../styles/variables' as *;
+@use '../../styles/index' as *;
 
 .details {
-    background-color: $background-color-dark;
-    border: 1px solid white;
+    @include card-style;
+    background-color: $card-color-primary;
     flex-grow: 1;
     margin-left: $basicMargin;
 }

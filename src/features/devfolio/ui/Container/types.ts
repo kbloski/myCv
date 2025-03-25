@@ -1,3 +1,3 @@
-export type DetaislProps = {
+export type ContainerProps = {
     children?: React.ReactNode
 }

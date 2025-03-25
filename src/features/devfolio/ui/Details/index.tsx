@@ -3,6 +3,7 @@ import { DetaislProps } from "./types";
 
 function Details({children} : DetaislProps) {
     return <div className={style.details}>
+        Details
         {children}
     </div>;
 }

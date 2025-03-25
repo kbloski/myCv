@@ -10,6 +10,7 @@ export default defineConfig({
     resolve: {
         alias: {
             "@styles": path.resolve(__dirname, "./src/shared/styles"),
+            "@entities": path.resolve(__dirname, "./src/entities"),
         },
         extensions: [".js", ".jsx", ".ts", ".tsx", ".css", ".scss"],
     },
