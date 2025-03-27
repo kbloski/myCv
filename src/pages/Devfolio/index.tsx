@@ -2,18 +2,18 @@ import style from './Devfolio.module.scss'
 
 import { 
     BackgroundPage, 
-    ContentWrapper,
-    Details,
-    Profile
-} from "../../features/devfolio/ui";
+    Dashboard,
+    DetailsPanel,
+    SideWrapper
+} from "../../features/devfolio";
 
 function Portfolio(){
     return <div className={style.devfolio}>
         <BackgroundPage />
-        <ContentWrapper>
-            <Profile />
-            <Details />
-        </ContentWrapper>
+        <SideWrapper>
+            <Dashboard />
+            <DetailsPanel />
+        </SideWrapper>
     </div>
 }
 
