@@ -1,6 +1,8 @@
 import style from "./Navigation.module.scss";
 
 import { useSelector } from "react-redux";
+
+// @ts-ignore
 import { getName } from "@entities/cv/model/selectors";
 import { Container, TheTitle} from "../../templates";
 
@@ -9,6 +11,7 @@ function Navigation() {
     const links: { name: string; onClick?: React.MouseEventHandler }[] = [
         { name: "Home", onClick: () => console.log("Home") },
         { name: "About", onClick: () => console.log("About") },
+        { name: "Technologies", onClick: () => console.log("About") },
         { name: "Education", onClick: () => console.log("Education") },
         { name: "Skils", onClick: () => console.log("Skils") },
         { name: "Contact", onClick: () => console.log("Contact") },

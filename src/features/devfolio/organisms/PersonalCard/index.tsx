@@ -12,6 +12,7 @@ import {
     getAboutMe,
 // @ts-ignore
 } from "@entities/cv/model/selectors";
+import { Link } from 'react-router-dom';
 
 function PersonalCard(){
     const name : string = useSelector(getName)
@@ -34,10 +35,15 @@ function PersonalCard(){
                     </TheTitle>
                     <p className={style.aboutMe}>{aboutMe}</p>
                 </div>
-                <div>
-                    <TheButton>Action</TheButton>
-                    <TheButton>Action</TheButton>
+                <div className={style.actions}>
+                    <Link to={{ pathname: '/myCv' }}>
+                        <TheButton>My Cv</TheButton>
+                    </Link>
+                    <TheButton>Let's Talk</TheButton>
                 </div>
+                {/* <div>
+                    <span className='pi pi-cloud' />
+                </div> */}
             </div>
         </Container>
     );

@@ -27,7 +27,14 @@
             color: rgb(194, 194, 194);
         }
 
+        
+        
+    }
 
+    .actions {
+        & > * {
+            margin-right: $basicMargin*0.5;
+        }
     }
 }
 
