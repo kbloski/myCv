@@ -3,7 +3,7 @@ import type { InitialCvSliceState } from "./types";
 
 const initialState: InitialCvSliceState = {
     aboutMe:
-        "Jestem młodym, ambitnym programistą z pasją do kodowania. Większość umiejętności zdobyłem samodzielnie, realizując projekty i ucząc się nowych technologii. Chcę pracować jako programista przed studiami, by zdobyć doświadczenie.",
+        "Jestem młodym, ambitnym programistą z pasją do kodowania. Większość umiejętności zdobyłem sam, realizując własne projekty i ciągle ucząc się nowych technologii. Chcę rozwijać się dalej i zdobyć cenne doświadczenie w branży.",
     name: "Kamil",
     surname: "Błoński",
     profession: "Junior Frontend Developer",
