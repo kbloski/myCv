@@ -1,4 +1,7 @@
 import "./index.css";
+
+import "primeicons/primeicons.css";
+
 import RouterAppProvider from "./router";
 import Providers from "./providers";
 

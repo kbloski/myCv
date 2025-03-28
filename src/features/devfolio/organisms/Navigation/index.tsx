@@ -11,7 +11,7 @@ function Navigation() {
         { name: "About", onClick: () => console.log("About") },
         { name: "Education", onClick: () => console.log("Education") },
         { name: "Skils", onClick: () => console.log("Skils") },
-        { name: "Contact", onClick: () => console.log("Skils") },
+        { name: "Contact", onClick: () => console.log("Contact") },
     ];
 
     return (
@@ -22,6 +22,7 @@ function Navigation() {
                     <ul className={style.navList}>
                         {links.map((link) => (
                             <li
+                                key={link.name}
                                 onClick={link.onClick}
                                 className={style.navItem}
                             >
