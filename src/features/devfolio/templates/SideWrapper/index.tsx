@@ -1,7 +1,7 @@
-import style from './ContentWrapper.module.scss'
+import style from './SideWrapper.module.scss'
 import type { ContentWraperProps } from "./type";
 
-function ContentWrapper({ children }: ContentWraperProps) {
+function SideWrapper({ children }: ContentWraperProps) {
     return <div className={style.sideWrapper}>
         <div>
             {children}
@@ -9,4 +9,4 @@ function ContentWrapper({ children }: ContentWraperProps) {
     </div>;
 }
 
-export default ContentWrapper;
+export default SideWrapper;

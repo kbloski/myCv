@@ -1,0 +1,67 @@
+@use '@styles' as *;
+@use "../../../styles" as *;
+
+$border-width: 2px;
+
+.bulletListItem {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 $basicPadding $basicPadding;
+    // border-left: $border-width solid $text-color-accent;
+
+    // Line connection
+    &::before {
+        content: '';
+        background-color: $text-color-accent;
+        left: 0;
+        top: 0;
+        width: $border-width;
+        height: 100%;
+        position: absolute;
+    }
+
+    &:last-child::before {
+        background: linear-gradient(to bottom, $text-color-accent, transparent);
+    }
+
+    // Circle points
+    &::after {
+        background: black;
+        border: $border-width solid $text-color-accent;
+        border-radius: 50%;
+        content: '';
+        height: 10px;
+        left: 0;
+        top: 0;
+        width: 10px;
+        position: absolute;
+        transform: translate(calc(-50% + $border-width / 2), -50%);
+    }
+    
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &Content{
+        display: block;
+        padding: $basicPadding*.5 ;
+        border-radius: $borderRadius*.5;
+        border: $border-width solid $text-color-accent;
+    
+    
+        .title {
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+    
+        .subtitle {
+            color: $text-color-accent;
+        }
+    
+        .description {
+            color: $text-color-gray;
+            font-size: 11px;
+        }
+    }
+}

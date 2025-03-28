@@ -1,11 +1,12 @@
 import style from "./Details.module.scss";
 import { DetaislProps } from "./types";
-import { Container } from "../../templates";
+import { MyJourney } from "../../organisms";
 
-function Details({children} : DetaislProps) {
+function Details({} : DetaislProps) {
     return <div className={style.detailsPanel}>
         <div className={style.details}>
-            <Container>
+            <MyJourney />
+            {/* <Container>
                 <h4>
                     Details
                 </h4>
@@ -14,7 +15,7 @@ function Details({children} : DetaislProps) {
                 <h4>
                     Pozdrawiam
                 </h4>
-            </Container>
+            </Container> */}
         </div>
     </div>
 }

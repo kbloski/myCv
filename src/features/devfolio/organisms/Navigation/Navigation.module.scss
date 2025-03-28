@@ -1,15 +1,15 @@
-@use '@styles/index' as *;
-@use '../../styles/index' as *;
+@use "@styles/index" as *;
+@use "../../styles/index" as *;
 
 .navbar {
-    color: $text-color;
+    color: $text-color-basic;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .banerTitle {
-    font-family: 'Bauhaus 93', Arial, Helvetica, sans-serif;
+    font-family: "Bauhaus 93", Arial, Helvetica, sans-serif;
 }
 
 .navList {
@@ -23,8 +23,8 @@
 .navItem {
     margin-left: $basicMargin;
     cursor: pointer;
-    
+
     &:hover {
-        color: $accent-color;
+        color: $text-color-accent;
     }
 }

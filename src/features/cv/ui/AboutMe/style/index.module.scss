@@ -1,7 +1,7 @@
-@use '../../../styles/variables' as *;
+@use "../../../styles/variables" as *;
 
 .aboutMe {
-    background-color: $accent-color;
+    background-color: $text-color-accent;
     color: rgb(255, 255, 255);
     font-size: 1rem;
     padding: 1rem 2rem;

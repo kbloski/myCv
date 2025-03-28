@@ -1,10 +1,10 @@
-
 // Colors
 $background-color-dark: #071927;
-$background-color-light: #00ABF0;
+$background-color-light: #00abf0;
 
-$accent-color: $background-color-light;
-$text-color: white;
+$text-color-basic: white;
+$text-color-accent: $background-color-light;
+$text-color-gray: rgb(194, 194, 194);;
 
 $card-color-primary: #0a2335;
-$card-color-secondary: #122E43;
+$card-color-secondary: #122e43;

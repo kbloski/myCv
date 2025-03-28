@@ -1,9 +1,9 @@
-@use '@styles/index.scss' as *;
-@use '../../styles/index' as *;
+@use "@styles/index.scss" as *;
+@use "../../styles/index" as *;
 
 .detailsPanel {
-    width: 35%;
-    color: $text-color;
+    width: 40%;
+    color: $text-color-basic;
 }
 
 .details {

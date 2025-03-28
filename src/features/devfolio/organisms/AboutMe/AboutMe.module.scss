@@ -1,26 +1,26 @@
-@use '@styles' as *;
-@use '../../styles/' as *;
+@use "@styles" as *;
+@use "../../styles/" as *;
 
 @mixin border-style {
     aspect-ratio: 1/1;
-    border: 5px solid $accent-color;
+    border: 5px solid $text-color-accent;
     border-radius: 50%;
-    content: '';
+    content: "";
     position: absolute;
 }
 
 .aboutMe {
-    padding-top: $basicPadding*2;
-    padding-bottom: $basicPadding*2;
+    padding-top: $basicPadding * 2;
+    padding-bottom: $basicPadding * 2;
     background: $card-color-secondary;
-    color: $text-color;
+    color: $text-color-gray;
 }
 
 .aboutPicture {
     height: 150px;
     display: flex;
     justify-content: center;
-    padding: $basicPadding*3;
+    padding: $basicPadding * 3;
 
     .pictureContainer {
         aspect-ratio: 1/1;
@@ -29,7 +29,7 @@
         align-items: center;
 
         position: relative;
-        
+
         img {
             position: relative;
             display: block;
@@ -37,17 +37,16 @@
             width: auto;
             border-radius: 100px;
         }
-        
+
         &::before {
             @include border-style();
             height: calc(100% + $basicPadding);
             background-color: $card-color-primary;
-
         }
 
-         &::after {
+        &::after {
             @include border-style();
-            height: calc(100% + 2.5*$basicPadding);
+            height: calc(100% + 2.5 * $basicPadding);
             border-width: 2px;
             border-left: 0;
             border-right: 0;

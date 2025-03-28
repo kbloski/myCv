@@ -1,15 +1,15 @@
-@use '@styles/index' as *;
-@use '../../styles/index.scss' as *;
+@use "@styles/index" as *;
+@use "../../styles/index.scss" as *;
 
 .personalCard {
-    color: $text-color;
+    color: $text-color-basic;
     position: relative;
-    padding-bottom: $basicPadding*3;
+    padding-bottom: $basicPadding * 3;
 
     &Content {
-        padding-top: $basicPadding*5;
-        
-        @media screen and (min-width: $breakpoint-md){
+        padding-top: $basicPadding * 5;
+
+        @media screen and (min-width: $breakpoint-md) {
             width: 50%;
         }
 
@@ -18,22 +18,19 @@
         }
 
         .profession {
-            color: $accent-color;
-            border-left: 3px solid $accent-color;
+            color: $text-color-accent;
+            border-left: 3px solid $text-color-accent;
             padding-left: $basicPadding;
         }
 
         .aboutMe {
-            color: rgb(194, 194, 194);
+            color: $text-color-gray;
         }
-
-        
-        
     }
 
     .actions {
         & > * {
-            margin-right: $basicMargin*0.5;
+            margin-right: $basicMargin * 0.5;
         }
     }
 }
@@ -43,7 +40,7 @@
         display: block;
         max-height: 100%;
         max-width: 100%;
-        opacity: .8;
+        opacity: 0.8;
         filter: blur(0px);
         position: absolute;
         right: 0;

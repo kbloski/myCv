@@ -1,9 +1,9 @@
-@use '@styles/index' as *;
-@use '../../styles/index' as *;
+@use "@styles/index" as *;
+@use "../../styles/index" as *;
 
 .btn {
-    padding: .5*$basicPadding $basicPadding;
-    background-color: $accent-color;
+    padding: 0.5 * $basicPadding $basicPadding;
+    background-color: $text-color-accent;
     border-radius: $borderRadius;
     outline: none;
     border: 0;

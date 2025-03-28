@@ -1,9 +1,9 @@
-@use './variables' as *;
-@use './keyframes' as *;
+@use "./variables" as *;
+@use "./keyframes" as *;
 
-@forward './variables'; 
-@forward './mixins'; 
+@forward "./variables";
+@forward "./mixins";
 
 .text-accent {
-    color: $accent-color;
+    color: $text-color-accent;
 }
