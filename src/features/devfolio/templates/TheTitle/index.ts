@@ -1,0 +1,1 @@
+export { default as TheTitle} from './index.tsx'

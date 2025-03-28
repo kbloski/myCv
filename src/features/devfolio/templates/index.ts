@@ -1,4 +1,5 @@
 export * from './BackgroundPage'
-export * from './Button'
+export * from './TheButton'
 export * from './Container'
+export * from './TheTitle'
 export * from './SideWrapper'

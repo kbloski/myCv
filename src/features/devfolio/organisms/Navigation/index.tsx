@@ -2,7 +2,7 @@ import style from "./Navigation.module.scss";
 
 import { useSelector } from "react-redux";
 import { getName } from "@entities/cv/model/selectors";
-import { Container} from "../../templates";
+import { Container, TheTitle} from "../../templates";
 
 function Navigation() {
     const name = useSelector(getName) ;
@@ -18,7 +18,9 @@ function Navigation() {
         <>
             <Container>
                 <nav className={style.navbar}>
-                    <div className={style.baner}>{name}.</div>
+                    <TheTitle tag={2} className={style.banerTitle}>
+                        {name}.
+                    </TheTitle>
                     <ul className={style.navList}>
                         {links.map((link) => (
                             <li

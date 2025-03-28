@@ -15,7 +15,7 @@ function Details({children} : DetaislProps) {
                     Pozdrawiam
                 </h4>
             </Container>
-        </div>;
+        </div>
     </div>
 }
 

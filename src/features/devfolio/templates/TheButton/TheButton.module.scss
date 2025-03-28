@@ -4,8 +4,7 @@
 .btn {
     padding: .5*$basicPadding $basicPadding;
     background-color: $accent-color;
-
-    
+    border-radius: $borderRadius;
     outline: none;
     border: 0;
 }

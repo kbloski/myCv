@@ -19,6 +19,8 @@
 
         .profession {
             color: $accent-color;
+            border-left: 3px solid $accent-color;
+            padding-left: $basicPadding;
         }
 
         .aboutMe {

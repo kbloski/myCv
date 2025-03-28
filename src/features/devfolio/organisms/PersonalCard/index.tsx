@@ -1,7 +1,8 @@
 import style from './PersonalCard.module.scss'
 import {
     Container,
-    Button
+    TheButton,
+    TheTitle
 } from '../../templates'
 import { useSelector } from 'react-redux';
 
@@ -24,13 +25,18 @@ function PersonalCard(){
                     <img src="images/profile-without-background-mirror.png" />
                 </div>
                 <div className={style.personalCardContent}>
-                    <h1 className={style.gretting}>Cześć, jestem {name}</h1>
-                    <h3 className={style.profession}>{profession}</h3>
+                    <TheTitle tag={1} className={style.gretting}>
+                        Cześć, jestem {name}
+                    </TheTitle>
+                    <TheTitle tag={3} className={style.profession}
+                    >
+                        {profession}
+                    </TheTitle>
                     <p className={style.aboutMe}>{aboutMe}</p>
                 </div>
                 <div>
-                    <Button>Action</Button>
-                    <Button>Action</Button>
+                    <TheButton>Action</TheButton>
+                    <TheButton>Action</TheButton>
                 </div>
             </div>
         </Container>

@@ -1,4 +1,5 @@
 import style from './Devfolio.module.scss'
+import '../../features/devfolio/styles/index.scss'
 
 import { 
     BackgroundPage, 
