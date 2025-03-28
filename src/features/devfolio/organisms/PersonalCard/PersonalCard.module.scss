@@ -1,0 +1,41 @@
+@use '@styles/index' as *;
+@use '../../styles/index.scss' as *;
+
+.personalCard {
+    color: $text-color;
+    position: relative;
+
+    &Content {
+        padding-top: $basicPadding*5;
+        
+        @media screen and (min-width: $breakpoint-md){
+            width: 50%;
+        }
+
+        .gretting {
+            font-weight: bold;
+        }
+
+        .profession {
+            color: $accent-color;
+        }
+
+        .aboutMe {
+            color: rgb(194, 194, 194);
+        }
+
+
+    }
+}
+
+.personalImg {
+    img {
+        display: block;
+        height: 100%;
+        opacity: .8;
+        filter: blur(0px);
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

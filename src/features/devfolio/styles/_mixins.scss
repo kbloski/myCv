@@ -1,5 +1,7 @@
+@use '@styles' as *;
+
 @mixin card-style {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-    border-radius: 1rem;
+    border-radius: $border-radius;
     overflow: hidden;
 }

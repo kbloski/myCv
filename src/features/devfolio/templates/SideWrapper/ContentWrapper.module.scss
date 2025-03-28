@@ -1,11 +1,16 @@
-@use '@styles/index.scss' as *;
+@use '@styles' as *;
 
-.contentWrapper {
+.sideWrapper {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 $basicPadding*5;
-    min-height: 100vh;
+    min-height: 100vh;    
+    margin: $basicMargin 0;
+    padding: 0;
+    
+    & > div {
+        padding: 0 $basicPadding*5;
+        max-width: 1200px;
+    }
 }
+

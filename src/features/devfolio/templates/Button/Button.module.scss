@@ -1,5 +1,11 @@
 @use '@styles/index' as *;
+@use '../../styles/index' as *;
 
 .btn {
     padding: .5*$basicPadding $basicPadding;
+    background-color: $accent-color;
+
+    
+    outline: none;
+    border: 0;
 }

@@ -1,7 +1,14 @@
+
+@use '@styles' as *;
 @use '../../styles/index.scss' as *;
+
+.dashboard {
+    width: 70vw
+}
 
 .profile {
     @include card-style;
     background-color: $card-color-primary;
-    flex-grow: 2;
+    padding: 0;
+    position: relative;
 }
