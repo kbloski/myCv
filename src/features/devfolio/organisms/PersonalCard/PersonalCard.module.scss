@@ -4,6 +4,7 @@
 .personalCard {
     color: $text-color;
     position: relative;
+    padding-bottom: $basicPadding*3;
 
     &Content {
         padding-top: $basicPadding*5;

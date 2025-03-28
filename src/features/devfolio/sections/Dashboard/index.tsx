@@ -1,5 +1,6 @@
 import style from "./Dashboard.module.scss";
 import { 
+    AboutMe,
     Navigation,
     PersonalCard
 } from "../../organisms";
@@ -10,6 +11,7 @@ function Dashboard() {
             <div className={style.profile}>
                 <Navigation />
                 <PersonalCard />
+                <AboutMe />
             </div>
         </div>
     );

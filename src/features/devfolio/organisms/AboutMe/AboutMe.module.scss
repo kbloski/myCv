@@ -1,0 +1,8 @@
+@use '@styles' as *;
+@use '../../styles/' as *;
+
+.aboutMe {
+    padding-top: $basicPadding*2;
+    background: $card-color-secondary;
+    color: $text-color;
+}
