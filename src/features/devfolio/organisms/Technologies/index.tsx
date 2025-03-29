@@ -18,7 +18,7 @@ function Technologies(){
             { skills.length && skills.map( skill => 
             <div>
                 <span className={skill.icon}></span>
-                <span >{skill.name}</span>
+                <span  className={style.name}>{skill.name}</span>
             </div>)
             }
         </Container>
