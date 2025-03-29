@@ -50,11 +50,11 @@
 
         &::after {
             @include border-style();
+            @include rotate360(0, 10s infinite);
             height: calc(100% + 2.5 * $basicPadding);
             border-width: 2px;
             border-left: 0;
             border-right: 0;
-            animation: rotate360 3s infinite reverse linear;
         }
     }
 }
