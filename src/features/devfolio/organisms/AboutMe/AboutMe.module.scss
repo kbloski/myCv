@@ -13,6 +13,10 @@
     padding-top: $basicPadding * 2;
     padding-bottom: $basicPadding * 2;
     background: $card-color-secondary;
+    color: $text-color-basic;
+}
+
+.description {
     color: $text-color-gray;
 }
 

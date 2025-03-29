@@ -16,34 +16,52 @@ function AboutMe(){
 
     return (
         <Container className={style.aboutMe}>
-            <TheTitle tag={2} className='text-center'>
+            <TheTitle tag={2} className="text-center">
                 <span>About </span>
-                <span className='text-accent'>Me</span>
+                <span className="text-accent">Me</span>
             </TheTitle>
             <div className={style.aboutPicture}>
                 <div className={style.pictureContainer}>
-                    <img src='images/profile-without-background-mirror.png' />
+                    <img src="images/profile-without-background-mirror.png" />
                 </div>
             </div>
-            <p className={style.aboutMe}>{aboutMe}</p>
-            <div className='flex justify-around'>
-                { skills.length && 
-                <ul>
-                    { skills.map( skill => <li>{skill}</li>)}
-                </ul>
-                }
-                { languages.length && 
-                <ul>
-                    { languages.map( language => <li><span>{language.name}</span> <span className='text-accent'>{language.level}</span></li>)}
-                </ul>
-                }
-                { hobbies.length && 
-                <ul>
-                    { hobbies.map( hobby => <li>{hobby}</li>)}
-                </ul>
-                }
+            <p className={style.description}>{aboutMe}</p>
+            <div className="flex justify-around">
+                {skills.length && (
+                    <ul>
+                        <TheTitle tag={4} className="text-accent">
+                            SoftSkills
+                        </TheTitle>
+                        {skills.map((skill) => (
+                            <li>{skill}</li>
+                        ))}
+                    </ul>
+                )}
+                {languages.length && (
+                    <ul>
+                        <TheTitle tag={4} className="text-accent">
+                            Languages
+                        </TheTitle>
+                        {languages.map((language) => (
+                            <li>
+                                <span>{language.name}</span>{" "}
+                                <span>{language.level}</span>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+                {hobbies.length && (
+                    <ul>
+                        <TheTitle tag={4} className="text-accent">
+                            Hobbies
+                        </TheTitle>
+                        {hobbies.map((hobby) => (
+                            <li>{hobby}</li>
+                        ))}
+                    </ul>
+                )}
             </div>
-            <div className='flex justify-center'>
+            <div className="flex justify-center">
                 <TheButton>More about me</TheButton>
             </div>
         </Container>
