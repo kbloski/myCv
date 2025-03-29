@@ -105,33 +105,49 @@ const initialState: InitialCvSliceState = {
         ],
         programming: {
             inProgress: [
-                "React (advanced)",
+                // "React (advanced)",
                 // Docker
                 // "Bootstrap5",
                 // "Taiwildcss"
             ],
             familiar: [
-                // "Wordpress",
-                // "PrestaShop",
-                "NextJs",
-                "React",
-                "Redux",
-                // "React/ContextAPI",
-                "Vue3",
-                // "VueX",
-                "Vuetify",
-                "Pinia",
-                // "HTML5 & CSS3",
-                "JavaScript",
-                // "SCSS",
-                "TypeScript",
-                "NodeJS",
-                "Express",
-                // "Sequelize",
-                "Git",
-                // MySQL",
-                // "Python",
-                "VSC",
+                // { name: "Wordpress", icon: "pi pi-wordpress" },
+                // { name: "PrestaShop", iconHref: "" },
+                {
+                    name: "NextJs",
+                    icon: "devicon-nextjs-original-wordmark colored",
+                }, // Ikona ustawień, symbolizująca konfigurację i narzędzia
+                {
+                    name: "React",
+                    icon: "devicon-react-original-wordmark colored",
+                }, // Ikona React
+                { name: "Redux", icon: "devicon-redux-original colored" }, // Ikona pauzy, symbolizująca zarządzanie stanem
+                // { name: "React/ContextAPI", icon: "pi pi-share-alt" },
+                { name: "Vue3", icon: "devicon-vuejs-plain colored" }, // Ikona Vue
+                // { name: "VueX", icon: "pi pi-share-alt" },
+                // { name: "Vuetify", icon: "devicon-vuetify-plain colored" }, // Ikona kółek, symbolizująca framework UI
+                // { name: "Pinia", icon: "pi pi-refresh" }, // Ikona odświeżenia, symbolizująca store management
+                { name: "HTML5", icon: "devicon-html5-plain colored" },
+                { name: "CSS", icon: "devicon-css3-plain colored" },
+                { name: "JavaScript", icon: "devicon-javascript-plain" }, // Ikona pliku
+                { name: "SCSS", icon: "devicon-sass-original colored" },
+                {
+                    name: "TypeScript",
+                    icon: "devicon-typescript-plain colored",
+                },
+                {
+                    name: "NodeJS",
+                    icon: "devicon-nodejs-plain-wordmark colored",
+                }, // Ikona serwera
+                { name: "Express", icon: "devicon-express-original colored" },
+                // { name: "Sequelize", icon: "pi pi-database" },
+                {
+                    name: "Git",
+                    icon: "devicon-github-original-wordmark colored",
+                }, // Ikona GitHub
+                { name: "MySQL", icon: "devicon-mysql-plain-wordmark colored" },
+                { name: "Python", icon: "fab fa-python" },
+                { name: "VSC", icon: "devicon-vscode-plain colored" },
             ],
         },
     },

@@ -8,8 +8,40 @@ $border-width: 2px;
     list-style: none;
     margin: 0;
     padding: 0 0 $basicPadding $basicPadding;
-    // border-left: $border-width solid $text-color-accent;
 
+    
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+
+    &Content{
+        display: block;
+        padding: $basicPadding*.5 ;
+        border-radius: $borderRadius*.5;
+        border: $border-width solid $text-color-accent;
+        cursor: pointer;
+
+        &:hover {
+            background: $text-color-accent-dark;
+        }
+        
+    
+        .title {
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+    
+        .subtitle {
+            color: $text-color-accent;
+        }
+    
+        .description {
+            color: $text-color-gray;
+            font-size: 11px;
+        }
+    }
+    
     // Line connection
     &::before {
         content: '';
@@ -37,31 +69,5 @@ $border-width: 2px;
         width: 10px;
         position: absolute;
         transform: translate(calc(-50% + $border-width / 2), -50%);
-    }
-    
-    &:last-child {
-        padding-bottom: 0;
-    }
-
-    &Content{
-        display: block;
-        padding: $basicPadding*.5 ;
-        border-radius: $borderRadius*.5;
-        border: $border-width solid $text-color-accent;
-    
-    
-        .title {
-            font-weight: bolder;
-            text-transform: capitalize;
-        }
-    
-        .subtitle {
-            color: $text-color-accent;
-        }
-    
-        .description {
-            color: $text-color-gray;
-            font-size: 11px;
-        }
     }
 }

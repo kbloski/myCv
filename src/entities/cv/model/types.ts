@@ -10,6 +10,11 @@ export type Experience = {
     skils?: string[];
 };
 
+type Skill = {
+    name: string;
+    icon: string;
+}
+
 export type InitialCvSliceState = {
     aboutMe: string;
     name: string;
@@ -31,8 +36,8 @@ export type InitialCvSliceState = {
     experience: Experience[];
     skills: {
         programming: {
-            inProgress: string[];
-            familiar: string[];
+            inProgress: Skill[];
+            familiar: Skill[];
         };
         languages: { name: string; level: string }[];
         soft: string[];

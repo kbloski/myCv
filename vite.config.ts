@@ -9,8 +9,9 @@ export default defineConfig({
     plugins: [react(), tailwindcss()],
     resolve: {
         alias: {
+            // @ts-ignore
             "@styles": path.resolve(__dirname, "./src/shared/styles"),
-            "@entities": path.resolve(__dirname, "./src/entities"),
+            // "@entities": path.resolve(__dirname, "./src/entities"),
         },
         extensions: [".js", ".jsx", ".ts", ".tsx", ".css", ".scss"],
     },

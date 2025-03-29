@@ -3,7 +3,7 @@ import style from "./Navigation.module.scss";
 import { useSelector } from "react-redux";
 
 // @ts-ignore
-import { getName } from "@entities/cv/model/selectors";
+import { getName } from "../../../../entities/cv/model/selectors";
 import { Container, TheTitle} from "../../templates";
 
 function Navigation() {

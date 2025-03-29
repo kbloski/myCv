@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@reduxjs/toolkit": "^2.6.0",
     "@tailwindcss/vite": "^4.0.11",
+    "devicon": "^2.16.0",
     "html2canvas": "^1.4.1",
     "primeicons": "^7.0.0",
     "react": "^18.3.1",

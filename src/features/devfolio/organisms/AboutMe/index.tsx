@@ -6,11 +6,13 @@ import {
     TheTitle
 } from "../../templates";
 import { useSelector } from 'react-redux';
-// @ts-ignore
-import { getAboutMe } from '@entities/cv/model/selectors';
+import { getAboutMe, getHobbies, getLanguages, getSoftSkills } from '../../../../entities/cv/model/selectors';
 
 function AboutMe(){
-    const aboutMe : string = useSelector(getAboutMe)
+    const aboutMe = useSelector(getAboutMe)
+    const hobbies = useSelector(getHobbies);
+    const languages = useSelector(getLanguages)
+    const skills = useSelector(getSoftSkills)
 
     return (
         <Container className={style.aboutMe}>
@@ -23,7 +25,24 @@ function AboutMe(){
                     <img src='images/profile-without-background-mirror.png' />
                 </div>
             </div>
-            <p className='text-center'>{aboutMe}</p>
+            <p className={style.aboutMe}>{aboutMe}</p>
+            <div className='flex justify-around'>
+                { skills.length && 
+                <ul>
+                    { skills.map( skill => <li>{skill}</li>)}
+                </ul>
+                }
+                { languages.length && 
+                <ul>
+                    { languages.map( language => <li><span>{language.name}</span> <span className='text-accent'>{language.level}</span></li>)}
+                </ul>
+                }
+                { hobbies.length && 
+                <ul>
+                    { hobbies.map( hobby => <li>{hobby}</li>)}
+                </ul>
+                }
+            </div>
             <div className='flex justify-center'>
                 <TheButton>More about me</TheButton>
             </div>

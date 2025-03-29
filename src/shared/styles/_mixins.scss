@@ -1,0 +1,16 @@
+@mixin rotate360(
+    $start-angle: 0, 
+    $args...
+) {
+    --start-angle: #{$start-angle}deg;
+    animation: rotate360 $args;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(var(--start-angle)); 
+    }
+    to {
+        transform: rotate(calc(var(--start-angle) + 360deg)); 
+    }
+}

@@ -11,7 +11,7 @@ import {
     getProfession,
     getAboutMe,
 // @ts-ignore
-} from "@entities/cv/model/selectors";
+} from "../../../../entities/cv/model/selectors";
 import { Link } from 'react-router-dom';
 
 function PersonalCard(){

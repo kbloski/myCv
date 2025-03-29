@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@styles/*": ["./src/shared/styles/*"],
-      "@entities/*": ["./src/entities/*"]
+      // "@entities/*": ["./src/entities/*"]
     }
   },
   "files": [],

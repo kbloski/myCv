@@ -2,12 +2,9 @@
 import style from './MyJourney.module.scss'
 import {
     Container,
-    TheButton,
     TheTitle
 } from "../../templates";
 import { useSelector } from 'react-redux';
-// @ts-ignore
-import { getAboutMe } from '@entities/cv/model/selectors';
 import { BulletList, BulletListItem } from '../../templates/BulletList';
 import {
     getExperience,
