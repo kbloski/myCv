@@ -7,6 +7,13 @@
     color: $text-color-basic;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $basicMargin;
+}
+
 .name {
     margin-left: $basicMargin;
 }
