@@ -2,21 +2,23 @@ import style from "./Cv.module.scss";
 import { useSelector } from "react-redux";
 import { getCvData } from "../../entities/cv/model/selectors";
 
-import Sidebar from "../../features/cv/ui/Sidebar/Sidebar";
-import { MainContent } from '../../features/cv/ui/Main'
-import Contact from "../../features/cv/ui/Contact";
-import Education from "../../features/cv/ui/Education";
-import TechnicalSkils from "../../features/cv/ui/TechnicalSkils";
-import PersonCard from "../../features/cv/ui/PersonCard";
-import PaperA4Sheet from "../../features/cv/ui/A4Paper";
-import AboutMe from "../../features/cv/ui/AboutMe";
-import Experience from "../../features/cv/ui/Experience";
-import Clauses from "../../features/cv/ui/Clauses";
 import { generatePDFandSave } from "../../shared/utils/generatePDF";
-import Background from "../../features/cv/ui/PageBackground";
-import ProfileImage from "../../features/cv/ui/ProfileImage";
-import SoftSkills from "../../features/cv/ui/SoftSkills";
-import BtnDownload from "../../features/cv/ui/BtnDownload";
+import { 
+    AboutMe,
+    A4Paper,
+    TheHeader, 
+    Contact,
+    Clauses,
+    Education,
+    Experience,
+    MainContent,
+    PageBackground,
+    PersonCard,
+    ProfileImage,
+    Sidebar,
+    SoftSkills,
+    TechnicalSkills,
+} from '../../features/cv/ui'
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -37,10 +39,10 @@ function Cv() {
 
     return (
         <>
-            <Background />
-            <BtnDownload onClick={handleGeneratePdf} />
+            <PageBackground />
+            <TheHeader onClick={handleGeneratePdf} />
             <div>
-                <PaperA4Sheet id="cv" className={style.cv}>
+                <A4Paper id="cv" className={style.cv}>
                     <Sidebar>
                         <ProfileImage src="/myCv/images/profile.png" />
                         <Contact
@@ -50,7 +52,7 @@ function Cv() {
                             address={cvData.address}
                         />
                         <Education education={cvData.education} />
-                        <TechnicalSkils
+                        <TechnicalSkills
                             skills={cvData.skills.programming.familiar}
                         />
                         <SoftSkills skills={cvData.skills.soft} />
@@ -67,7 +69,7 @@ function Cv() {
 
                         <Clauses />
                     </MainContent>
-                </PaperA4Sheet>
+                </A4Paper>
             </div>
         </>
     );

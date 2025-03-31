@@ -8,7 +8,7 @@ import {
     SideWrapper
 } from "../../features/devfolio";
 
-function Portfolio(){
+function Devfolio(){
     return <div className={style.devfolio}>
         <BackgroundPage />
         <SideWrapper>
@@ -18,4 +18,4 @@ function Portfolio(){
     </div>
 }
 
-export default Portfolio;
+export default Devfolio;

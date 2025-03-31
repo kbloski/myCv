@@ -10,9 +10,7 @@ import {
     getName,
     getProfession,
     getAboutMe,
-// @ts-ignore
 } from "../../../../entities/cv/model/selectors";
-import { Link } from 'react-router-dom';
 
 function PersonalCard(){
     const name : string = useSelector(getName)
@@ -36,14 +34,9 @@ function PersonalCard(){
                     <p className={style.aboutMe}>{aboutMe}</p>
                 </div>
                 <div className={style.actions}>
-                    <Link to={{ pathname: '/myCv' }}>
-                        <TheButton>My Cv</TheButton>
-                    </Link>
+                    <TheButton>My Cv</TheButton>
                     <TheButton>Let's Talk</TheButton>
                 </div>
-                {/* <div>
-                    <span className='pi pi-cloud' />
-                </div> */}
             </div>
         </Container>
     );
