@@ -1,3 +1,21 @@
+i can do page for save and add review for films in wordpress -> maybe infinity free, use php :)
+
+Shared:
+    - background
+    - buttons 
+    - lists
+    - colors 
+
+    - global card component?
+
+Refactor styles on responsive styles. 
+
+Add/Create routing by query params. 
+
+Refactor all components folder:
+    - delete douuble index.ts, index.tsx on only one index.tsx 
+    - import {default as *} from ".../Barcode" "example
+
 refactoring -> {
     add section -> Languages 
     add geters to reducer cvSlice 

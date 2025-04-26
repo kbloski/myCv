@@ -1,20 +1,21 @@
 import style from './Devfolio.module.scss'
-import '../../features/devfolio/styles/index.scss'
+import '@features/devfolio/styles/index.scss'
+
+import { Wrapper } from "@shared/components";
 
 import { 
     BackgroundPage, 
     Dashboard,
     DetailsPanel,
-    SideWrapper
-} from "../../features/devfolio";
+} from "@features/devfolio";
 
 function Devfolio(){
     return <div className={style.devfolio}>
         <BackgroundPage />
-        <SideWrapper>
+        <Wrapper>
             <Dashboard />
-            <DetailsPanel />
-        </SideWrapper>
+            {/* <DetailsPanel /> */}
+        </Wrapper>
     </div>
 }
 

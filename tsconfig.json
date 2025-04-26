@@ -2,7 +2,7 @@
     "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@styles/*": ["./src/shared/styles/*"],
+      "@shared/styles/*": ["./src/shared/styles/*"],
       // "@entities/*": ["./src/entities/*"]
     }
   },

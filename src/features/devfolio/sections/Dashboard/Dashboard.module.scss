@@ -1,10 +1,6 @@
 
-@use '@styles' as *;
+@use '@shared/styles' as *;
 @use '../../styles/index.scss' as *;
-
-// .dashboard {
-//     width: 60%
-// }
 
 .profile {
     @include card-style;
