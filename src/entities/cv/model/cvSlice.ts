@@ -40,6 +40,39 @@ const initialState: InitialCvSliceState = {
     ],
     experience: [
         {
+            company: "Freeway IT Sp. z o.o.",
+            position: "Programista",
+            description: `
+                Staż z urzędu pracy
+            `,
+            address:
+                "Żuławskiego 2, 39-200 Dębica",
+            period: {
+                start: "04-2025", //01-04-2025
+                end: "now", //31-09-2025
+            },
+            skils: [
+                "Wordpress, C#, .NET, CQRS"
+            ],
+        },
+        {
+            company: "Atomic IT.",
+            description: `
+                Staż programistyczny
+            `,
+            address:
+                "brak",
+            position: "Stażysta",
+            period: {
+                start: "03-2025", //08-03-2025
+                end: "now", //31-09-2025
+            },
+            skils: [
+                "PHP, Presta Shop, Vue, Laravel, CSS/SCSS",
+                "Stylowanie sklepu PrestaShop"
+            ],
+        },
+        {
             company: "IDEAL WORK GERMANY SP. Z O.O.",
             description: `
                 Praca w sortowni paczek kurierskich.
@@ -100,31 +133,27 @@ const initialState: InitialCvSliceState = {
             "Samodzielność",
             "Zarządzanie czasem",
             "Rozwiązywanie problemów",
-            "Aktywne uczenie się",
-            "Szybkie pisanie na komputerze",
         ],
         programming: {
             inProgress: [
-                // "React (advanced)",
                 // Docker
-                // "Bootstrap5",
-                // "Taiwildcss"
             ],
             familiar: [
-                // { name: "Wordpress", icon: "pi pi-wordpress" },
+                { name: "C#", icon: "-" },
+                { name: ".NET", icon: "-" },
+                { name: "Wordpress", icon: "pi pi-wordpress" },
+                { name: "PHP", icon: "-" },
                 // { name: "PrestaShop", iconHref: "" },
                 {
                     name: "NextJs",
                     icon: "devicon-nextjs-original-wordmark colored",
-                }, // Ikona ustawień, symbolizująca konfigurację i narzędzia
+                },
                 {
                     name: "React",
                     icon: "devicon-react-original-wordmark colored",
-                }, // Ikona React
-                { name: "Redux", icon: "devicon-redux-original colored" }, // Ikona pauzy, symbolizująca zarządzanie stanem
-                // { name: "React/ContextAPI", icon: "pi pi-share-alt" },
-                { name: "Vue3", icon: "devicon-vuejs-plain colored" }, // Ikona Vue
-                // { name: "VueX", icon: "pi pi-share-alt" },
+                },
+                { name: "Redux", icon: "devicon-redux-original colored" }, 
+                { name: "Vue3", icon: "devicon-vuejs-plain colored" },
                 // { name: "Vuetify", icon: "devicon-vuetify-plain colored" }, // Ikona kółek, symbolizująca framework UI
                 // { name: "Pinia", icon: "pi pi-refresh" }, // Ikona odświeżenia, symbolizująca store management
                 { name: "HTML5", icon: "devicon-html5-plain colored" },
@@ -138,7 +167,7 @@ const initialState: InitialCvSliceState = {
                 {
                     name: "NodeJS",
                     icon: "devicon-nodejs-plain-wordmark colored",
-                }, // Ikona serwera
+                }, 
                 { name: "Express", icon: "devicon-express-original colored" },
                 // { name: "Sequelize", icon: "pi pi-database" },
                 {
@@ -153,20 +182,16 @@ const initialState: InitialCvSliceState = {
     },
     diplomas: [
         {
-            name: "Dyplom zawodowy Technik Informatyk",
-            result: "92%",
+            name: "Dyplom zawodowy Technik Informatyk",  result: "92%",
         },
         {
-            name: "Kwalifikacja zawodowa INF.02",
-            result: "97%",
+            name: "Kwalifikacja zawodowa INF.02", result: "97%",
         },
         {
-            name: "Kwalifikacja zawodowa INF.03",
-            result: "83.5%",
+            name: "Kwalifikacja zawodowa INF.03", result: "83.5%",
         },
         {
-            name: "Matura",
-            result: "Success",
+            name: "Matura", result: "Success",
         },
     ],
     courses: [

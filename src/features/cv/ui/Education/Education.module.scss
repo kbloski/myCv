@@ -1,7 +1,8 @@
-@use "../../styles/variables" as *;
+@use "@shared/styles" as *;
 
 .titleLabel {
-    background: $text-color-accent;
+    color: white;
+    background: $bg-secondary;
     padding: 0.2rem 1rem 0.2rem 0rem;
     margin: 0;
     font-weight: bolder;

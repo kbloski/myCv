@@ -10,7 +10,7 @@ function Education({ education }: EducationProps) {
     return (
         <SidebarContainer mode="light">
             <div className={style.titleLabel}>
-                <Title mode="underline-right" className={`text-right`}>
+                <Title mode="underline-right" color="accent" className={`text-right`}>
                     Education
                 </Title>
             </div>

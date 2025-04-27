@@ -1,6 +1,6 @@
-@use '../../styles/variables' as *;
+@use "@shared/styles" as *;
 
 .sidebar {
     width: 30%;
-    background-color: $background-darkgray;
+    background-color: $bg-primary;
 }

@@ -1,10 +1,10 @@
-@use '../../styles/variables' as *;
+@use "@shared/styles" as *;
 
 @mixin sidebar-container-style {
     margin: 0;
-    padding: $sheet-padding;
+    padding: 1rem;
     padding-left: 0;
-    color: white;
+    color: $text-color;
 }
 
 .sidebarContainer {
@@ -13,7 +13,7 @@
 
 .sidebarContainerLight {
     @include sidebar-container-style();
-    background-color: #3F4249;
+    background-color: $bg-secondary;
 }
 
 

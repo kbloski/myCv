@@ -1,8 +1,8 @@
-@use "../../styles/variables" as *;
+@use "@shared/styles" as *;
 
 .listItem {
     margin-bottom: 0.3rem;
-    color: $text-color-accent;
+    color: $primary;
     text-transform: uppercase;
     padding-left: 1rem;
     position: relative;
@@ -14,7 +14,7 @@
         height: 10px;
         width: 10px;
         content: "";
-        background-color: $text-color-accent;
+        background-color: $primary;
         border-radius: 1rem 0 0 1rem;
     }
 }

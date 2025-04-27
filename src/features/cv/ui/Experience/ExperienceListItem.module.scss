@@ -1,6 +1,6 @@
-@use '../../styles/variables' as *;
+@use "@shared/styles" as *;
 
-$border: 2px solid $background-darkgray;
+$border: 2px solid $bg-primary;
 $padding: 1rem 0;
 
 @mixin header-style() {
@@ -14,19 +14,22 @@ $padding: 1rem 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
+
+    &Header, 
+    &Body {
+        padding: 1rem 0;
+        // padding: 0 1rem;
+    }
     
     &Header {
         @include header-style();
         width: 30%;
-        min-height: 80px;
-        padding: 20px 0;
         border-right: $border;
     }
 
     &Body {
         display: flex;
         align-items: center;
-        padding: $padding;
         border-bottom: $border;
         width: 67%;
     }

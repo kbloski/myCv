@@ -1,8 +1,8 @@
-@use "../../../styles/variables" as *;
+@use "@shared/styles" as *;
 
 .aboutMe {
-    background-color: $text-color-accent;
-    color: rgb(255, 255, 255);
+    background-color: $secondary;
+    color: $text-color;
     font-size: 1rem;
     padding: 1rem 2rem;
     margin-top: 1rem;

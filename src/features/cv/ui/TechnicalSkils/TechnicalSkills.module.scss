@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "@shared/styles" as *;
 
 .skillsList {
     list-style: none;
@@ -9,11 +9,11 @@
 }
 
 .skillListItem {
-    background-color: $text-color-accent;
-    color: $background-darkgray;
+    background-color: $primary;
+    color: $bg-primary;
     font-size: 0.7rem;
     margin: 0.2rem;
     padding: 0.2rem;
     font-weight: bold;
-    box-shadow: 0 0 5px $text-color-accent;
+    box-shadow: 0 0 5px $primary;
 }

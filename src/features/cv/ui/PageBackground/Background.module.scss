@@ -1,5 +1,7 @@
-$background-first-color: yellowgreen;
-$background-second-color: black;
+@use "@shared/styles" as *;
+
+$background-first-color: $secondary;
+$background-second-color: $bg-primary;
 
 @property --positionCircleGradientX {
     syntax: '<percentage>';

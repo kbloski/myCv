@@ -1,4 +1,4 @@
-$colorGold: #C2A229;
+@use "@shared/styles" as *;
 
 .personCard{
     margin-top: 2rem;
@@ -18,7 +18,7 @@ $colorGold: #C2A229;
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: $colorGold;
+    color: $primary;
     background-color: #282830;
     padding: .5rem 1rem;
     text-transform: uppercase;

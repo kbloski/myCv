@@ -1,8 +1,8 @@
-@use '../../styles/variables' as *;
+@use "@shared/styles" as *;
 
 .mainContainer {
     margin: 0;
-    padding: $sheet-padding;
+    padding: 1rem;
     padding-right: 0;
 
 }

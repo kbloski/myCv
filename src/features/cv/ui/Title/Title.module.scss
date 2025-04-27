@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "@shared/styles" as *;
 
 @mixin underline-style {
     &::before {
@@ -30,18 +30,18 @@
 
     &-color {
         &-basic {
-            color: $basic-color;
+            color: $secondary;
             &::before,
             &::after {
-                background-color: $basic-color;
+                background-color: $secondary;
             }
         }
 
         &-accent {
-            color: $text-color-accent;
+            color: $primary;
             &::before,
             &::after {
-                background-color: $text-color-accent;
+                background-color: $primary;
             }
         }
     }
