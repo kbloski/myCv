@@ -19,7 +19,7 @@ function MyJourney(){
         <Container className={style.myJourney}>
             <TheTitle tag={2} className="text-center">
                 <span>My </span>
-                <span className="text-accent">Journey</span>
+                <span className="text-primary">Journey</span>
             </TheTitle>
             <div>
                 { 

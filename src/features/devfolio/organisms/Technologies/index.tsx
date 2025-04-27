@@ -14,7 +14,7 @@ function Technologies(){
         <Container className={style.technologies}>
             <TheTitle tag={3} className={style.title}>
                 <span>Tech</span>
-                <span className="text-accent">Skills</span>
+                <span className="text-primary">Skills</span>
             </TheTitle>
             { skills.length && skills.map( skill => 
             <div>

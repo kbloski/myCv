@@ -1,3 +1,4 @@
+@use "@shared/styles" as *;
 @use "./variables" as *;
 @use "./keyframes" as *;
 
@@ -5,5 +6,5 @@
 @forward "./mixins";
 
 .text-accent {
-    color: $text-color-accent;
+    color: $primary;
 }

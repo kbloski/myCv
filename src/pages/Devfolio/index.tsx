@@ -1,7 +1,8 @@
+// @ts-nocheck
 import style from './Devfolio.module.scss'
 import '@features/devfolio/styles/index.scss'
 
-import { Wrapper } from "@shared/components";
+import { Wrapper, Background } from "@shared/components";
 
 import { 
     BackgroundPage, 
@@ -11,7 +12,7 @@ import {
 
 function Devfolio(){
     return <div className={style.devfolio}>
-        <BackgroundPage />
+        <Background />
         <Wrapper>
             <Dashboard />
             {/* <DetailsPanel /> */}

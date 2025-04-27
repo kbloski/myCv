@@ -3,8 +3,7 @@
 @use '../../styles/index.scss' as *;
 
 .profile {
-    @include card-style;
-    background-color: $card-color-primary;
+    // @include card-style;
     padding: 0;
     position: relative;
 }

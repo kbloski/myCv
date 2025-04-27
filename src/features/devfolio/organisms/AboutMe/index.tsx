@@ -18,7 +18,7 @@ function AboutMe(){
         <Container className={style.aboutMe}>
             <TheTitle tag={2} className="text-center">
                 <span>About </span>
-                <span className="text-accent">Me</span>
+                <span className="text-primary">Me</span>
             </TheTitle>
             <div className={style.aboutPicture}>
                 <div className={style.pictureContainer}>
@@ -29,7 +29,7 @@ function AboutMe(){
             <div className="flex justify-around">
                 {skills.length && (
                     <ul>
-                        <TheTitle tag={4} className="text-accent">
+                        <TheTitle tag={4} className="text-primary">
                             SoftSkills
                         </TheTitle>
                         {skills.map((skill) => (
@@ -39,7 +39,7 @@ function AboutMe(){
                 )}
                 {languages.length && (
                     <ul>
-                        <TheTitle tag={4} className="text-accent">
+                        <TheTitle tag={4} className="text-primary">
                             Languages
                         </TheTitle>
                         {languages.map((language) => (
@@ -52,7 +52,7 @@ function AboutMe(){
                 )}
                 {hobbies.length && (
                     <ul>
-                        <TheTitle tag={4} className="text-accent">
+                        <TheTitle tag={4} className="text-primary">
                             Hobbies
                         </TheTitle>
                         {hobbies.map((hobby) => (

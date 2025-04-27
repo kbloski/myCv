@@ -5,15 +5,18 @@ import {
     PersonalCard
 } from "../../organisms";
 
+// @ts-ignore
+import { Container } from "@shared/components";
+
 function Dashboard() {
     return (
-        <div className={style.dashboard}>
+        <Container>
             <div className={style.profile}>
                 <Navigation />
-                <PersonalCard />
-                <AboutMe />
+                {/* <PersonalCard /> */}
+                {/* <AboutMe /> */}
             </div>
-        </div>
+        </Container>
     );
 }
 

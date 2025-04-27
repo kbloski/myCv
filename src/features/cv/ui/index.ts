@@ -1,7 +1,6 @@
 // Ui elements
 export * from './Sidebar'
 export * from './Main'
-export {default as PageBackground} from './PageBackground'
 export {default as A4Paper} from './A4Paper'
 
 // Sections

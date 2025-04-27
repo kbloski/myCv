@@ -1,0 +1,7 @@
+@use '@shared/styles' as *;
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: $xl;
+}

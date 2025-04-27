@@ -3,6 +3,10 @@ import { useSelector } from "react-redux";
 import { getCvData } from "../../entities/cv/model/selectors";
 
 import { generatePDFandSave } from "../../shared/utils/generatePDF";
+
+// @ts-ignore
+import { Background } from "@shared/components";
+
 import { 
     AboutMe,
     A4Paper,
@@ -39,7 +43,7 @@ function Cv() {
 
     return (
         <>
-            <PageBackground />
+            <Background />
             <TheHeader onClick={handleGeneratePdf} />
             <div>
                 <A4Paper id="cv" className={style.cv}>

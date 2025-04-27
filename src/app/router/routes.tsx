@@ -6,8 +6,8 @@ const routes: {
 }[] = [
     {
         path: "/",
-        element: <Cv />,
-        // element: <Devfolio />,
+        // element: <Cv />,
+        element: <Devfolio />,
     },
     {
         path: "/devfolio",
