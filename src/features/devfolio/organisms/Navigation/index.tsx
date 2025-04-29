@@ -3,8 +3,10 @@ import style from "./Navigation.module.scss";
 import { useSelector } from "react-redux";
 
 // @ts-ignore
-import { getName } from "../../../../entities/cv/model/selectors";
-import { Container, TheTitle} from "../../templates";
+import { getName } from "@entities/cv/model/selectors";
+import { Title} from "../../templates";
+// @ts-ignore
+import { Container } from "@shared/components"
 
 function Navigation() {
     const name = useSelector(getName) ;
@@ -19,11 +21,11 @@ function Navigation() {
 
     return (
         <>
-            <Container>
+            <Container className={style.navContainer}>
                 <nav className={style.navbar}>
-                    <TheTitle tag={2} className={style.banerTitle}>
+                    <Title tag={2} className={style.banerTitle}>
                         {name}.
-                    </TheTitle>
+                    </Title>
                     <ul className={style.navList}>
                         {links.map((link) => (
                             <li

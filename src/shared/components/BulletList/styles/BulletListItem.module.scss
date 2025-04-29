@@ -1,0 +1,80 @@
+@use '@shared/styles' as *;
+
+$border-width: 1px;
+
+.bulletListItem {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 1rem;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &Content{
+        cursor: pointer;
+        padding: .5rem ;
+        border-radius: .5rem;
+        border: $border-width solid $border-color;
+
+        &:hover {
+            background: $secondary;
+        }
+
+        .title {
+            font-size: 13px;
+            text-transform: capitalize;
+            margin: .5rem 0;
+            color: $text-white;
+        }
+
+        .subtitle, .description {
+            font-size: 11px;
+        }
+    
+        .subtitle {
+            color: $info;
+        }
+    
+        .description {
+            color: $text-muted;
+            margin: 0;
+        }
+    }
+    
+    // Circle points
+    &::after {
+        background: $bg-primary;
+        border: $border-width*2 solid $border-color;
+        border-radius: 50% 0 50% 50%;
+        content: '';
+        height: 10px;
+        left: 0;
+        top: 0;
+        width: 10px;
+        position: absolute;
+        transform: translate(calc(-50% + $border-width / 2), -50%) rotate(135deg);
+    }
+
+    // Decoration lines
+    &::before {
+        content: '';
+        background-color: $border-color;
+        left: 0;
+        top: 0;
+        width: $border-width;
+        height: 100%;
+        position: absolute;
+    }
+
+    &:last-child::before {
+        background: linear-gradient(to bottom, $border-color, transparent);
+    }
+
+    &:hover {
+        &::after {
+            background: $text-white;
+        }
+    }
+}

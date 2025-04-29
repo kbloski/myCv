@@ -1,6 +1,5 @@
 export type BulletListProps = {
     children?: React.ReactNode,
-    title: string
 }
 
 export type BulletListItemProps = {

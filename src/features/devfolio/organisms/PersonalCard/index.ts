@@ -1,1 +1,0 @@
-export { default as PersonalCard } from './index.tsx';

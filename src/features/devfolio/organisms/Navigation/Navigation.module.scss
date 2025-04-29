@@ -1,30 +1,42 @@
-@use "@shared/styles/index" as *;
-@use "../../styles/index" as *;
+@use "@shared/styles" as *;
 
-.navbar {
-    color: $text-color-basic;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.navContainer {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(4px);
+    background: rgba($bg-secondary, .4);
+    
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 1000;
 
-.banerTitle {
-    font-family: "Bauhaus 93", Arial, Helvetica, sans-serif;
-}
-
-.navList {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navItem {
-    margin-left: $basicMargin;
-    cursor: pointer;
-
-    &:hover {
-        color: $text-color-accent;
+    .navbar {
+        color: $text-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .banerTitle {
+            font-family: "Bauhaus 93", Arial, Helvetica, sans-serif;
+        }
+        
+        .navList {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            .navItem {
+                margin-left: 1rem;
+                cursor: pointer;
+            
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
     }
 }
+

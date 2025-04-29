@@ -1,0 +1,28 @@
+@use "@shared/styles" as *;
+
+.button {
+    padding: .5rem;
+    margin-right: .5rem;
+    background-color: $secondary;
+    color: $text-white;
+    outline: none;
+    border: 0;
+
+    &:hover {
+        background-color: $primary;
+    }
+
+    &:active {
+        background: $text-white;
+        color: $primary;
+    }
+
+    &:focus {
+        outline: 2px solid $text-white;
+    }
+
+    &:disabled {
+        color: $text-muted;
+        background: $bg-secondary;
+    }
+}

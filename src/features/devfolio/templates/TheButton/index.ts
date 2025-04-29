@@ -1,1 +1,0 @@
-export { default as TheButton} from './index.tsx'

@@ -10,13 +10,11 @@ import { Container } from "@shared/components";
 
 function Dashboard() {
     return (
-        <Container>
-            <div className={style.profile}>
-                <Navigation />
-                {/* <PersonalCard /> */}
-                {/* <AboutMe /> */}
-            </div>
-        </Container>
+        <div className={style.profile}>
+            <Navigation />
+            <PersonalCard />
+            <AboutMe />
+        </div>
     );
 }
 

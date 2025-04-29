@@ -1,54 +1,52 @@
-@use "@shared/styles/index" as *;
-@use "../../styles/index.scss" as *;
+@use "@shared/styles" as *;
+
 
 .personalCard {
-    color: $text-color-basic;
-    position: relative;
-    padding-bottom: $basicPadding * 3;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    color: $text-muted;
 
-    &Content {
-        padding-top: $basicPadding * 5;
-
-        @media screen and (min-width: $breakpoint-md) {
-            width: 50%;
+    img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: $xs;
+        opacity: 0.8;
+    }
+ 
+    .personalDetails {
+        padding: 1rem 0;
+        
+        .personalContent {
+            .gretting {
+                font-weight: bold;
+                color: $primary;
+            }
+    
+            .profession {
+                color: $info;
+                border-left: 3px solid $info;
+                padding-left: 1rem;
+            }
         }
+    }
 
-        .gretting {
-            font-weight: bold;
-        }
+    @media (width > $md){
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
 
-        .profession {
-            color: $text-color-accent;
-            border-left: 3px solid $text-color-accent;
-            padding-left: $basicPadding;
+        img {
+            margin: 0;
         }
 
         .aboutMe {
-            color: $text-color-gray;
+            max-width: $md;
         }
-    }
 
-    .actions {
-        & > * {
-            margin-right: $basicMargin * 0.5;
-        }
-    }
-}
-
-.personalImg {
-    img {
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-        opacity: 0.8;
-        filter: blur(0px);
-        position: absolute;
-        right: 0;
-        top: 0;
-
-        @media  screen and (max-width: 758px) {
-            position: relative;
+        .personalDetails { 
+            padding: 0;
         }
     }
 }
- 
+

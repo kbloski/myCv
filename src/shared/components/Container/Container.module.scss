@@ -2,6 +2,10 @@
 
 .container {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem .5rem;
     max-width: $xl;
+
+    @media (width >= $sm) {
+        padding: 1rem;
+    }
 }

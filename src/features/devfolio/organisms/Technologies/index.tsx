@@ -1,8 +1,9 @@
 
 import style from './Technologies.module.scss'
+// @ts-ignore
+import { Container } from "@shared/components"
 import {
-    Container,
-    TheTitle,
+    Title,
 } from "../../templates";
 import { useSelector } from 'react-redux';
 import { getProgrammingSkils } from "../../../../entities/cv/model/selectors";
@@ -12,10 +13,10 @@ function Technologies(){
 
     return (
         <Container className={style.technologies}>
-            <TheTitle tag={3} className={style.title}>
+            <Title tag={3} className={style.title}>
                 <span>Tech</span>
                 <span className="text-primary">Skills</span>
-            </TheTitle>
+            </Title>
             { skills.length && skills.map( skill => 
             <div>
                 <span className={skill.icon}></span>

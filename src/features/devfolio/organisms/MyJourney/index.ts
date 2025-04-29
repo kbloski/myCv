@@ -1,1 +1,0 @@
-export {default as MyJourney} from './index.tsx'

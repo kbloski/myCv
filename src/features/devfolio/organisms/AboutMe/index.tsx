@@ -1,37 +1,32 @@
 
 import style from './AboutMe.module.scss'
+// @ts-ignore
+import { Button, Container } from "@shared/components";
 import {
-    Container,
-    TheButton,
-    TheTitle
+    Title
 } from "../../templates";
 import { useSelector } from 'react-redux';
-import { getAboutMe, getHobbies, getLanguages, getSoftSkills } from '../../../../entities/cv/model/selectors';
+import { getHobbies, getLanguages, getSoftSkills } from '../../../../entities/cv/model/selectors';
+import {MyJourney} from '../index';
 
 function AboutMe(){
-    const aboutMe = useSelector(getAboutMe)
+    const skills = useSelector(getSoftSkills)
     const hobbies = useSelector(getHobbies);
     const languages = useSelector(getLanguages)
-    const skills = useSelector(getSoftSkills)
 
     return (
         <Container className={style.aboutMe}>
-            <TheTitle tag={2} className="text-center">
+            <Title tag={2}>
                 <span>About </span>
                 <span className="text-primary">Me</span>
-            </TheTitle>
-            <div className={style.aboutPicture}>
-                <div className={style.pictureContainer}>
-                    <img src="images/profile-without-background-mirror.png" />
-                </div>
-            </div>
-            <p className={style.description}>{aboutMe}</p>
-            <div className="flex justify-around">
-                {skills.length && (
+            </Title>
+            <MyJourney />
+            {/* <div className="flex justify-around"> */}
+                {/* {skills.length && (
                     <ul>
-                        <TheTitle tag={4} className="text-primary">
+                        <Title tag={4} className="text-primary">
                             SoftSkills
-                        </TheTitle>
+                        </Title>
                         {skills.map((skill) => (
                             <li>{skill}</li>
                         ))}
@@ -39,9 +34,9 @@ function AboutMe(){
                 )}
                 {languages.length && (
                     <ul>
-                        <TheTitle tag={4} className="text-primary">
+                        <Title tag={4} className="text-primary">
                             Languages
-                        </TheTitle>
+                        </Title>
                         {languages.map((language) => (
                             <li>
                                 <span>{language.name}</span>{" "}
@@ -52,18 +47,15 @@ function AboutMe(){
                 )}
                 {hobbies.length && (
                     <ul>
-                        <TheTitle tag={4} className="text-primary">
+                        <Title tag={4} className="text-primary">
                             Hobbies
-                        </TheTitle>
+                        </Title>
                         {hobbies.map((hobby) => (
                             <li>{hobby}</li>
                         ))}
                     </ul>
-                )}
-            </div>
-            <div className="flex justify-center">
-                <TheButton>More about me</TheButton>
-            </div>
+                )} */}
+            {/* </div> */}
         </Container>
     );
 }

@@ -1,50 +1,45 @@
 
 import style from './MyJourney.module.scss'
+
+// @ts-ignore
+import { Container, BulletList, BulletListItem } from "@shared/components"
+
 import {
-    Container,
-    TheTitle
+    Title
 } from "../../templates";
 import { useSelector } from 'react-redux';
-import { BulletList, BulletListItem } from '../../templates/BulletList';
-import {
-    getExperience,
-    getEducation,
-} from "../../../../entities/cv/model/selectors";
+import { getExperience, getEducation } from "../../../../entities/cv/model/selectors";
 
-function MyJourney(){
+function MyJourney() {
     const educations = useSelector(getEducation);
     const experiences = useSelector(getExperience)
 
     return (
         <Container className={style.myJourney}>
-            <TheTitle tag={2} className="text-center">
-                <span>My </span>
-                <span className="text-primary">Journey</span>
-            </TheTitle>
             <div>
-                { 
-                    educations.length && <>
-                        <BulletList title='Education'>
-                            {
-                                educations.map( education => 
-                                    <BulletListItem title={education.name} subtitle={education.years} />
-                                )
-                            }
-                        </BulletList>
-                    </>
+                {experiences.length && <>
+                    <Title tag={4} >Experience</Title>
+                    <BulletList title='Experience'>
+                        {
+                            experiences.map(experience =>
+                                <BulletListItem title={experience.company} subtitle={experience.period ? experience.period.start + ` | ` + experience.period.end : undefined}>
+                                    {experience.description}
+                                </BulletListItem>
+                            )
+                        }
+                    </BulletList>
+                </>
                 }
-                { 
-                    experiences.length && <>
-                        <BulletList title='Experience'>
-                            {
-                                experiences.map( experience => 
-                                    <BulletListItem title={experience.company} subtitle={experience.period ?  experience.period.start  + ` | ` + experience.period.end : undefined }>
-                                        {experience.description}
-                                    </BulletListItem>
-                                )
-                            }
-                        </BulletList>
-                    </>
+                {educations.length && <>
+                    <Title tag={4}>Education</Title>
+                    <BulletList title='Education'>
+                        {
+                            educations.map(education =>
+                                <BulletListItem title={education.name} subtitle={education.years} />
+                            )
+                        }
+                    </BulletList>
+                </>
                 }
             </div>
         </Container>

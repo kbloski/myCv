@@ -1,7 +1,9 @@
 @use "@shared/styles" as *;
-@use "../../styles/" as *;
 
 .myJourney {
-    padding-top: $basicPadding * 2;
-    color: $text-color-basic;
+    color: $text-muted;
+
+    ul {
+        max-width: $xs;
+    }
 }

@@ -119,7 +119,7 @@ const initialState: InitialCvSliceState = {
             company: "Dorywcze prace budowlane",
             address: "-",
             position: "Pomocnik",
-            description: "Dorywczo pomogam w pracach budowlanych.",
+            description: "Dorywczo pomagałem w pracach budowlanych.",
             skils: [],
         },
     ],
