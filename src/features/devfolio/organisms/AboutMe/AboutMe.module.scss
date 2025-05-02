@@ -14,6 +14,7 @@
     .aboutFlex {
         display: flex;
         flex-wrap: wrap;
+        justify-content: start;
     }
 
     @media (width > $md){
