@@ -9,11 +9,13 @@ import {
     Dashboard,
     DetailsPanel,
 } from "@features/devfolio";
+import { Banner } from '../../features/devfolio';
 
 function Devfolio(){
     return <div className={style.devfolio}>
         <Background />
         <Wrapper>
+            <Banner />
             <Dashboard />
             {/* <DetailsPanel /> */}
         </Wrapper>

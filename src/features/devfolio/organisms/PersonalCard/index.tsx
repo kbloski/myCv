@@ -26,7 +26,7 @@ function PersonalCard() {
 
     return (
         <Container className={style.personalCard}>
-            <img src="images/profile-without-background-mirror.png" alt='Profile picture' />
+            <img src="images/profile-left-transparent.png" alt='Profile picture' />
             <div className={style.personalDetails}>
                 <div className={style.personalContent}>
                     <Title tag={1} className={style.gretting}> - Cześć, jestem {name} - </Title>

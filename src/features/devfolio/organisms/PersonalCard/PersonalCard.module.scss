@@ -11,11 +11,16 @@
         margin: 0 auto;
         width: 100%;
         max-width: $xs;
-        opacity: 0.8;
+        mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
     }
  
     .personalDetails {
-        padding: 1rem 0;
+        border-radius: 1rem;
+        margin: 2rem;
+        margin-top: -3rem;
+        padding: 1rem;
+        background-color: $secondary;
+        z-index: 100 ;
         
         .personalContent {
             .gretting {
@@ -28,10 +33,18 @@
                 border-left: 3px solid $info;
                 padding-left: 1rem;
             }
+
+           
+        }
+
+        button {
+            margin-top: .2rem;
+            background-color: $primary;
         }
     }
 
     @media (width > $md){
+        margin-top: -200px;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
@@ -45,7 +58,7 @@
         }
 
         .personalDetails { 
-            padding: 0;
+            
         }
     }
 }

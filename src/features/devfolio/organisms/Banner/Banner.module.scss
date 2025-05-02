@@ -1,0 +1,16 @@
+@use "@shared/styles" as * ;
+
+.banner {
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (width > $md){
+        max-height: 300px;
+    }
+}
