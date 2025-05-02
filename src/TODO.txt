@@ -12,3 +12,17 @@ refactoring -> {
     refactor names files -> Education on Educationlist etc.
     refactor feature cv -> ui -> title
 }
+
+
+
+✅ Struktura strony CV (prosty układ):
+Nagłówek (Twoje imię, zawód)
+
+O mnie
+
+Umiejętności / Doświadczenie
+
+Projekty / Portfolio
+
+Kontakt (formularz + dane kontaktowe)
+
