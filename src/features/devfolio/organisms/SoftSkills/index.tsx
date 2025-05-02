@@ -15,7 +15,7 @@ function SoftSkills()
     if (!skills.length) return;
 
     return <Container className={style.container}>
-        <Title tag={4}>Skills</Title>
+        <Title tag={4} className={style.title}>Skills</Title>
         <ul className={style.softSkillsList}>
             {skills.map( s => <li key={s}>{s}</li> )}
         </ul>
