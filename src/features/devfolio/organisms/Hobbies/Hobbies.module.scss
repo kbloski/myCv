@@ -18,10 +18,10 @@
         width: 100%;
         height: 100%;
         content: "";
-        background: linear-gradient(to right bottom, $primary, $info, $success);
+        background: linear-gradient(to right bottom, $primary, $info);
         z-index: -1;
         border-radius: 1rem;
-        padding: 2px;
+        padding: 3px;
         transform: translate(-50%, -50%);
     }
 
