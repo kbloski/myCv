@@ -19,7 +19,7 @@ function Hobbies()
         </Title>
         <ul className={style.hobbiesList}>
             <Container className={style.listContainer}>
-                { hobbies.map(h => <li>{h}</li>)}
+                { hobbies.map(h => <li key={h}>{h}</li>)}
             </Container>
         </ul>
     </Container>

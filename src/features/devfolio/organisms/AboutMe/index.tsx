@@ -5,14 +5,11 @@ import { Button, Container } from "@shared/components";
 import {
     Title
 } from "../../templates";
-import { Hobbies, Languages } from '../';
+import { Hobbies, Languages, SoftSkills } from '../';
 
-import { useSelector } from 'react-redux';
-import { getHobbies, getLanguages, getSoftSkills } from '../../../../entities/cv/model/selectors';
 import {MyJourney} from '../index';
 
 function AboutMe(){
-    const skills = useSelector(getSoftSkills)
 
     return (
         <Container className={style.aboutMe}>
@@ -23,6 +20,7 @@ function AboutMe(){
             <div className={style.aboutFlex}>
                 <Languages />
                 <Hobbies />
+                <SoftSkills />
             </div>
             <MyJourney />
         </Container>

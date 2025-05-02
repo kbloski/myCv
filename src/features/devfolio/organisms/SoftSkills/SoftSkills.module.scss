@@ -1,0 +1,18 @@
+@use "@shared/styles" as *;
+
+.container {
+    max-width: 300px;
+    color: $text-white;
+
+    .softSkillsList {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: .2rem;
+        }
+    }
+}

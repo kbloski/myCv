@@ -21,8 +21,8 @@ function MyJourney() {
                     <Title tag={4} >Experience</Title>
                     <BulletList title='Experience'>
                         {
-                            experiences.map(experience =>
-                                <BulletListItem title={experience.company} subtitle={experience.period ? experience.period.start + ` | ` + experience.period.end : undefined}>
+                            experiences.map((experience, i) =>
+                                <BulletListItem key={i} title={experience.company} subtitle={experience.period ? experience.period.start + ` | ` + experience.period.end : undefined}>
                                     {experience.description}
                                 </BulletListItem>
                             )
@@ -34,8 +34,8 @@ function MyJourney() {
                     <Title tag={4}>Education</Title>
                     <BulletList title='Education'>
                         {
-                            educations.map(education =>
-                                <BulletListItem title={education.name} subtitle={education.years} />
+                            educations.map((education, i) =>
+                                <BulletListItem key={i} title={education.name} subtitle={education.years} />
                             )
                         }
                     </BulletList>

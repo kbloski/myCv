@@ -5,7 +5,7 @@
     border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .title {
         width: 100%;
@@ -14,6 +14,12 @@
     .aboutFlex {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    @media (width > $md){
+        .aboutFlex {
+            max-width: 50%;
+        }
     }
 }
 

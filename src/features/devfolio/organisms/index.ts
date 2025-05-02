@@ -5,5 +5,6 @@ export { default as Languages } from './Languages';
 export * from './Navigation'
 export { default as MyJourney } from './MyJourney'
 export { default as PersonalCard } from './PersonalCard'
+export { default as SoftSkills } from './SoftSkills';
 export * from './Technologies'
 export * from './OrbitIcons'

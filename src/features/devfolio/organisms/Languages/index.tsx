@@ -20,7 +20,7 @@ function Languages()
                 Languages
             </Title>
             <ul>
-                { languages.map( l => <li><div className={style.level}>{l.level}</div><span>{l.name}</span></li>)}
+                { languages.map( l => <li key={l.name}><div className={style.level}>{l.level}</div><span>{l.name}</span></li>)}
             </ul>
         </div>
     </Container>
