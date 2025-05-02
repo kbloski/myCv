@@ -1,0 +1,33 @@
+@use "@shared/styles" as *;
+
+.languages {
+    color: $text-white;
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: .5rem 0;
+            
+            .level {
+                border-radius: .5rem;
+                margin: 0 1rem;
+                padding: .5rem;
+                background: $secondary;
+                color: $text-white;
+                border: 1px solid $border-color;
+                box-shadow: inset 5px 0  12px rgba(0,0,0,.5);
+                font-weight: bolder;
+            
+                &:hover {
+                    background: $primary;
+                }
+            }
+        }
+    }
+
+}

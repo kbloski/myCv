@@ -2,9 +2,16 @@
 
 .aboutMe {
     background: rgba($bg-primary, 0.4);
-    border-radius: 1rem
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
 
+    .title {
+        width: 100%;
+    }
 
+    div {}
 }
 
 

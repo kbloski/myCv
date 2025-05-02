@@ -25,7 +25,7 @@ $background-second-color: $bg-primary;
     background-color: black;
     background: radial-gradient(circle at var(--positionCircleGradientX) var(--positionCircleGradientY), 
     $background-first-color , 
-    $background-second-color 50%
+    $background-second-color 70%
     );
     z-index: -1;
 }
