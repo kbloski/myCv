@@ -1,2 +1,2 @@
-export * from './Dashboard'
-export * from './DetailsPanel'
+export { default as AboutMe } from '../sections/AboutMe'
+export { default as PersonalCard } from './PersonalCard'

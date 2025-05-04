@@ -3,26 +3,27 @@
 .button {
     padding: .5rem;
     margin-right: .5rem;
-    background-color: $secondary;
+    background: $primary;
     color: $text-white;
     outline: none;
     border: 0;
 
     &:hover {
-        background-color: $primary;
+        background: $accent;
+        color: $text-white;
     }
 
     &:active {
-        background: $text-white;
-        color: $primary;
+        background-color: $accent;
     }
+    
 
     &:focus {
         outline: 2px solid $text-white;
     }
 
     &:disabled {
-        color: $text-muted;
         background: $bg-secondary;
+        color: $text-muted;
     }
 }

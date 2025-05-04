@@ -1,1 +1,0 @@
-export {default as AboutMe} from './index.tsx'

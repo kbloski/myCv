@@ -29,12 +29,12 @@ function PersonalCard() {
             <img src="images/profile-left-transparent.png" alt='Profile picture' />
             <div className={style.personalDetails}>
                 <div className={style.personalContent}>
-                    <Title tag={1} className={style.gretting}> - Cześć, jestem {name} - </Title>
+                    <Title tag={1} className={style.gretting}>Cześć, jestem {name}</Title>
                     <Title tag={3} className={style.profession}> {profession} </Title>
                     <p className={style.aboutMe}>{aboutMe}</p>
                 </div>
                 <div>
-                    <Button>My Cv</Button>
+                    <Button>Download Cv</Button>
                     <Button>Let's Talk</Button>
                 </div>
             </div>

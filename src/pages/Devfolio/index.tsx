@@ -9,15 +9,14 @@ import {
     Dashboard,
     DetailsPanel,
 } from "@features/devfolio";
-import { Banner } from '../../features/devfolio';
+import { AboutMe, Banner, PersonalCard } from '../../features/devfolio';
 
 function Devfolio(){
     return <div className={style.devfolio}>
         <Background />
         <Wrapper>
             <Banner />
-            <Dashboard />
-            {/* <DetailsPanel /> */}
+            <PersonalCard />
         </Wrapper>
     </div>
 }

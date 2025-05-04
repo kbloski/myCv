@@ -16,7 +16,6 @@
     }
  
     .personalDetails {
-        border-radius: 1rem;
         margin: 2rem;
         margin-top: -3rem;
         padding: 1rem;
@@ -26,7 +25,7 @@
         .personalContent {
             .gretting {
                 font-weight: bold;
-                color: $primary;
+                color: $text-white;
             }
     
             .profession {
@@ -34,22 +33,19 @@
                 border-left: 3px solid $info;
                 padding-left: 1rem;
             }
-
-           
         }
 
         button {
             margin-top: .2rem;
-            background-color: $primary;
         }
     }
 
     @media  (width > $xs) {
-        margin-top: -150px;
+        margin-top: -200px;
     }
 
     @media (width > $md){
-        margin-top: -200px;
+        margin-top: -250px;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
@@ -58,11 +54,16 @@
             margin: 0;
         }
 
-        .aboutMe {
-            max-width: $md;
-        }
 
-        
+        .personalDetails {
+            margin-right: 5rem;
+            
+            .personalContent {
+                .aboutMe {
+                    max-width: 80%;
+                }
+            }
+        }
     }
 }
 

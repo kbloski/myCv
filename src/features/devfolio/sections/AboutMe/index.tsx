@@ -5,9 +5,9 @@ import { Button, Container } from "@shared/components";
 import {
     Title
 } from "../../templates";
-import { Hobbies, Languages, SoftSkills } from '../';
+import { Hobbies, Languages, SoftSkills } from '../../organisms';
 
-import {MyJourney} from '../index';
+import {MyJourney} from '../../organisms/index';
 
 function AboutMe(){
 

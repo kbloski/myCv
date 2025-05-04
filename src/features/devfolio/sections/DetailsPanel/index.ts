@@ -1,1 +1,0 @@
-export { default as DetailsPanel } from "./index.tsx";
