@@ -2,14 +2,11 @@ import style from './PersonalCard.module.scss'
 import {
     Title
 } from '../../templates'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-import {
-    Container,
-    Button
-}
-    // @ts-ignore
-    from '@shared/components';
+// @ts-ignore
+import {  Container, Button} from '@shared/components';
+    
 
 import {
     getName,
@@ -18,11 +15,18 @@ import {
 }
     // @ts-ignore
     from "@entities/cv/model/selectors";
+import { navigateTo } from '../../../../app/router';
 
 function PersonalCard() {
+    const dispatch = useDispatch();
+
     const name: string = useSelector(getName)
     const profession: string = useSelector(getProfession);
     const aboutMe: string = useSelector(getAboutMe);
+
+    function onClickDownloadCv(){
+        dispatch(navigateTo({path: "/cv"}));
+    }
 
     return (
         <Container className={style.personalCard}>
@@ -30,11 +34,11 @@ function PersonalCard() {
             <div className={style.personalDetails}>
                 <div className={style.personalContent}>
                     <Title tag={1} className={style.gretting}>Cześć, jestem {name}</Title>
-                    <Title tag={3} className={style.profession}> {profession} </Title>
+                    <Title tag={2} className={style.profession}> {profession} </Title>
                     <p className={style.aboutMe}>{aboutMe}</p>
                 </div>
                 <div>
-                    <Button>Download Cv</Button>
+                    <Button onClick={onClickDownloadCv}>Download Cv</Button>
                     <Button>Let's Talk</Button>
                 </div>
             </div>

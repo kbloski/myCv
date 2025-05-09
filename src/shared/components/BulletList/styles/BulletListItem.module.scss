@@ -21,7 +21,7 @@ $border-width: 1px;
         &:hover {
             background: $secondary;
         }
-
+ 
         .title {
             font-size: 13px;
             text-transform: capitalize;
@@ -54,7 +54,7 @@ $border-width: 1px;
         top: 0;
         width: 10px;
         position: absolute;
-        transform: translate(calc(-50% + $border-width / 2), -50%) rotate(135deg);
+        transform: translateX(calc(-50% + $border-width / 2)) rotate(135deg);
     }
 
     // Decoration lines

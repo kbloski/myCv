@@ -1,5 +1,9 @@
 i can do page for save and add review for films in wordpress -> maybe infinity free, use php :)
 
+
+Dodać sekcje your notes do myCv
+
+
 Add/Create routing by query params. 
 
 refactoring -> {

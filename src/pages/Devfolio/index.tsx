@@ -17,6 +17,7 @@ function Devfolio(){
         <Wrapper>
             <Banner />
             <PersonalCard />
+            <AboutMe />
         </Wrapper>
     </div>
 }

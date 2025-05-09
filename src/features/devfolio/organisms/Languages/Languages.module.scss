@@ -1,37 +1,29 @@
 @use "@shared/styles" as *;
 
-.languages {
-    color: $text-white;
-    
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+.languagesList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 
-        li {
-            display: flex;
-            align-items: center;
-            margin: .5rem 0;
-            cursor: pointer;
-            
-            .level {
-                border-radius: .5rem;
-                margin-right: 1rem;
-                padding: .5rem;
-                background: $secondary;
-                color: $text-white;
-                border: 1px solid $border-color;
-                box-shadow: inset 5px 0  12px rgba(0,0,0,.5);
-                font-weight: bolder;
-                transition: .2s background-color ease;
-            }
-            
-            &:hover {
-                .level {
-                    background: $primary;
-                }
-            }
+    li {
+        background: $accent;
+        color: $text-white;
+        padding: .5rem 1rem;
+        margin: .5rem .5rem .5rem 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        & > * {
+            margin-right: .34em;
         }
+
+        &:hover {
+            background: $primary;
+        }
+      
     }
 
 }

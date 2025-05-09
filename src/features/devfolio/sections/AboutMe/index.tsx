@@ -5,24 +5,35 @@ import { Button, Container } from "@shared/components";
 import {
     Title
 } from "../../templates";
-import { Hobbies, Languages, SoftSkills } from '../../organisms';
+import { Hobbies, Languages, SoftSkills,Experiences, Educations } from '../../organisms';
 
-import {MyJourney} from '../../organisms/index';
 
 function AboutMe(){
 
     return (
         <Container className={style.aboutMe}>
-            <Title tag={2} className={style.title}>
-                <span>About </span>
-                <span className="text-primary">Me</span>
-            </Title>
+            <Title tag={3} className={style.title}>Języki</Title>
+            <Languages />
+            <Title tag={3} className={style.title}>O mnie</Title>
             <div className={style.aboutFlex}>
-                <Languages />
-                <Hobbies />
-                <SoftSkills />
+                <div>
+                    <Container>
+                        <SoftSkills />
+                    </Container>
+                </div>
+                <div>
+                    <Container>
+                        <Hobbies />
+                    </Container>
+                </div>
+                <div>
+                    <Container>
+                        <Experiences />
+                    </Container>
+                </div>
             </div>
-            <MyJourney />
+            <Title tag={3} className={style.title}>Education</Title>
+            <Educations />
         </Container>
     );
 }

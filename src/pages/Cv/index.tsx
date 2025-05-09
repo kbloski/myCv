@@ -16,7 +16,6 @@ import {
     Education,
     Experience,
     MainContent,
-    PageBackground,
     PersonCard,
     ProfileImage,
     Sidebar,

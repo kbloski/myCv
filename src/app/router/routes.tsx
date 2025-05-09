@@ -6,12 +6,11 @@ const routes: {
 }[] = [
     {
         path: "/",
-        // element: <Cv />,
         element: <Devfolio />,
     },
     {
-        path: "/devfolio",
-        element: <Devfolio />,
+        path: "/cv",
+        element: <Cv />,
     },
     {
         path: "/not-found",

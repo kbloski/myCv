@@ -1,27 +1,21 @@
 @use "@shared/styles" as *;
 
 .aboutMe {
-    background: rgba($bg-primary, 0.4);
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background: rgba($bg-primary, .7);
 
     .title {
         width: 100%;
     }
 
     .aboutFlex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-
-    @media (width > $md){
-        .aboutFlex {
-            max-width: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // box-shadow: inset 0 0 10px 10px $bg-primary;
+        
+        & > * {
+            max-height: 400px;
+            overflow-y: hidden;
+            width: 100%;
         }
     }
-}
-
-
+} 

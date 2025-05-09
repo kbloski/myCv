@@ -7,7 +7,7 @@ function BtnDownload({ onClick } : BtnDownloadProps){
     const dispatch = useDispatch();
 
     function handleDevfolio(){
-        dispatch(navigateTo({path: '/devfolio'}))
+        dispatch(navigateTo({path: '/'}))
     }
 
     return <div className={style.btnContainer}>

@@ -1,1 +1,0 @@
-export { default as BackgroundPage} from './index.tsx'

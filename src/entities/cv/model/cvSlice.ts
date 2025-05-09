@@ -65,7 +65,7 @@ const initialState: InitialCvSliceState = {
             position: "Stażysta",
             period: {
                 start: "03-2025", //08-03-2025
-                end: "now", //31-09-2025
+                end: "05-2025", //08-05-2025
             },
             skils: [
                 "PHP, Presta Shop, Vue, Laravel, CSS/SCSS",
@@ -176,6 +176,7 @@ const initialState: InitialCvSliceState = {
                 }, // Ikona GitHub
                 { name: "MySQL", icon: "devicon-mysql-plain-wordmark colored" },
                 { name: "Python", icon: "fab fa-python" },
+                { name: "Visual Studio", icon: "devicon-vscode-plain colored" },
                 { name: "VSC", icon: "devicon-vscode-plain colored" },
             ],
         },
