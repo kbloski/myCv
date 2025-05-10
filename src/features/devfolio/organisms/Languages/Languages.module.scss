@@ -8,7 +8,7 @@
     padding: 0;
 
     li {
-        background: $accent;
+        background: lighten($secondary, 10%);
         color: $text-white;
         padding: .5rem 1rem;
         margin: .5rem .5rem .5rem 0;

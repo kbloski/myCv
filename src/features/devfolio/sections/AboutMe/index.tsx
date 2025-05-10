@@ -18,7 +18,7 @@ function AboutMe(){
             <div className={style.aboutFlex}>
                 <div>
                     <Container>
-                        <Title tag={4}>Skils</Title>
+                        <Title tag={4}>Umiejętności Miękkie</Title>
                         <SwiperScrollContainer className={style.aboutMeItem}>
                             <SoftSkillsList />
                         </SwiperScrollContainer>
@@ -26,7 +26,7 @@ function AboutMe(){
                 </div>
                 <div>
                     <Container>
-                        <Title tag={4}>Hobbies</Title>
+                        <Title tag={4}>Pasje</Title>
                         <SwiperScrollContainer className={style.aboutMeItem}>
                             <HobbiesList />
                         </SwiperScrollContainer>
@@ -34,14 +34,14 @@ function AboutMe(){
                 </div>
                 <div>
                     <Container>
-                        <Title tag={4}>Experience</Title>
+                        <Title tag={4}>Doświadczenie</Title>
                         <SwiperScrollContainer className={style.aboutMeItem}>
                             <ExperiencesList />
                         </SwiperScrollContainer>
                     </Container>
                 </div>
             </div>
-            <Title tag={3} className={style.title}>Education</Title>
+            <Title tag={3} className={style.title}>Edukacja</Title>
             <Educations />
         </Container>
     );
