@@ -1,23 +1,19 @@
 // @ts-ignore
-import style from './Experiences.module.scss'
+import style from './ExperiencesList.module.scss'
 
 // @ts-ignore
 import { Container, BulletList, BulletListItem } from "@shared/components"
 
-import {
-    Title
-} from "../../templates";
 import { useSelector } from 'react-redux';
 import { getExperience } from "../../../../entities/cv/model/selectors";
 
-function MyJourney() {
+function ExperiencesList() {
     const experiences = useSelector(getExperience)
 
     if (!experiences.length) return;
 
     return (
         <Container>
-            <Title tag={4} >Experience</Title>
             <BulletList>
                 {
                     experiences.map((experience, i) =>
@@ -31,4 +27,4 @@ function MyJourney() {
     );
 }
 
-export default MyJourney;
+export default ExperiencesList;

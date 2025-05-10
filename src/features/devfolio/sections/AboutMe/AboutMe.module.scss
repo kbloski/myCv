@@ -13,7 +13,11 @@
         
 
         .aboutMeItem {
-            max-height: 400px;
+            max-height: 250px;
+        }
+
+        @media(width < $md){
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 } 

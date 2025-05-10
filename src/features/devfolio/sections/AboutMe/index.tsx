@@ -5,7 +5,7 @@ import { Button, Container, SwiperScrollContainer } from "@shared/components";
 import {
     Title
 } from "../../templates";
-import { Hobbies, Languages, SoftSkills,Experiences, Educations } from '../../organisms';
+import { HobbiesList, Languages, SoftSkillsList ,ExperiencesList , Educations } from '../../organisms';
 
 
 function AboutMe(){
@@ -18,22 +18,25 @@ function AboutMe(){
             <div className={style.aboutFlex}>
                 <div>
                     <Container>
+                        <Title tag={4}>Skils</Title>
                         <SwiperScrollContainer className={style.aboutMeItem}>
-                            <SoftSkills />
+                            <SoftSkillsList />
                         </SwiperScrollContainer>
                     </Container>
                 </div>
                 <div>
                     <Container>
+                        <Title tag={4}>Hobbies</Title>
                         <SwiperScrollContainer className={style.aboutMeItem}>
-                            <Hobbies />
+                            <HobbiesList />
                         </SwiperScrollContainer>
                     </Container>
                 </div>
                 <div>
                     <Container>
+                        <Title tag={4}>Experience</Title>
                         <SwiperScrollContainer className={style.aboutMeItem}>
-                            <Experiences />
+                            <ExperiencesList />
                         </SwiperScrollContainer>
                     </Container>
                 </div>
