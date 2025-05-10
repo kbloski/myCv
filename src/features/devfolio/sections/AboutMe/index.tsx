@@ -1,7 +1,7 @@
 
 import style from './AboutMe.module.scss'
 // @ts-ignore
-import { Button, Container } from "@shared/components";
+import { Button, Container, SwiperScrollContainer } from "@shared/components";
 import {
     Title
 } from "../../templates";
@@ -18,17 +18,23 @@ function AboutMe(){
             <div className={style.aboutFlex}>
                 <div>
                     <Container>
-                        <SoftSkills />
+                        <SwiperScrollContainer className={style.aboutMeItem}>
+                            <SoftSkills />
+                        </SwiperScrollContainer>
                     </Container>
                 </div>
                 <div>
                     <Container>
-                        <Hobbies />
+                        <SwiperScrollContainer className={style.aboutMeItem}>
+                            <Hobbies />
+                        </SwiperScrollContainer>
                     </Container>
                 </div>
                 <div>
                     <Container>
-                        <Experiences />
+                        <SwiperScrollContainer className={style.aboutMeItem}>
+                            <Experiences />
+                        </SwiperScrollContainer>
                     </Container>
                 </div>
             </div>

@@ -10,12 +10,13 @@
     .aboutFlex {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        // box-shadow: inset 0 0 10px 10px $bg-primary;
         
-        & > * {
+
+        .aboutMeItem {
             max-height: 400px;
-            overflow-y: hidden;
-            width: 100%;
         }
     }
 } 
+
+
+
