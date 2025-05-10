@@ -2,13 +2,13 @@
     "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@shared/styles/*": ["./src/shared/styles/*"],
-      // "@entities/*": ["./src/entities/*"]
+      "@shared/*": ["./src/shared/*"],
+      "@entities/*": ["./src/entities/*"]
     }
   },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
 }
