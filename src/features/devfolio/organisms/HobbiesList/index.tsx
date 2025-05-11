@@ -13,9 +13,9 @@ function HobbiesList()
 
     return <Container>
         <ul className={style.hobbiesList}>
-            <Container className={style.listContainer}>
+            <div className={style.listContainer}>
                 { hobbies.map(h => <li key={h}>{h}</li>)}
-            </Container>
+            </div>
         </ul>
     </Container>
 }

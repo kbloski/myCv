@@ -52,7 +52,7 @@ const initialState: InitialCvSliceState = {
                 end: "now", //31-09-2025
             },
             skils: [
-                "Wordpress, C#, .NET, CQRS"
+                "Wordpress, C#, .NET, CQRS, PHP"
             ],
         },
         {

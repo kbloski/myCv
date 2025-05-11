@@ -1,23 +1,25 @@
-import { useDispatch } from 'react-redux';
-import style from './BtnDownload.module.scss'
-import { BtnDownloadProps } from "./type";
-import { navigateTo } from '../../../../app/router';
+import style from "./Header.module.scss";
 
-function BtnDownload({ onClick } : BtnDownloadProps){
+import { useDispatch } from 'react-redux';
+import { navigateTo } from '../../../../app/router';
+import { Button, Container } from '@shared/components'; 
+import { HeaderInterface } from './interface';
+
+function Header({ onClick } : HeaderInterface){
     const dispatch = useDispatch();
 
     function handleDevfolio(){
         dispatch(navigateTo({path: '/'}))
     }
 
-    return <div className={style.btnContainer}>
-        <button onClick={ handleDevfolio } className={style.btnDownload}>
+    return <Container className={style.header}>
+        <Button onClick={ handleDevfolio }>
             Devfolio
-        </button>
-        <button onClick={ onClick } className={style.btnDownload}>
+        </Button>
+        <Button onClick={ onClick } >
             Download CV
-        </button>
-    </div>;
+        </Button>
+    </Container>;
 }
-
-export default BtnDownload;
+Header
+export default Header;

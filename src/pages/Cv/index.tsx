@@ -1,10 +1,10 @@
 import style from "./Cv.module.scss";
 import { useSelector } from "react-redux";
-import { getCvData } from "../../entities/cv/model/selectors";
+import { getCvData } from "@entities/cv/model/selectors";
 
-import { generatePDFandSave } from "../../shared/utils/generatePDF";
+import { generatePDFandSave } from "@shared/utils/generatePDF";
 
-import { Background } from "@shared/components";
+import { Background, Container } from "@shared/components";
 
 import { 
     AboutMe,
@@ -20,7 +20,7 @@ import {
     Sidebar,
     SoftSkills,
     TechnicalSkills,
-} from '../../features/cv/ui'
+} from '@features/cv/ui'
 
 function Cv() {
     const cvData = useSelector(getCvData);
@@ -43,7 +43,7 @@ function Cv() {
         <>
             <Background />
             <TheHeader onClick={handleGeneratePdf} />
-            <div>
+            <Container>
                 <A4Paper id="cv" className={style.cv}>
                     <Sidebar>
                         <ProfileImage src="/myCv/images/profile.png" />
@@ -72,7 +72,7 @@ function Cv() {
                         <Clauses />
                     </MainContent>
                 </A4Paper>
-            </div>
+            </Container>
         </>
     );
 }

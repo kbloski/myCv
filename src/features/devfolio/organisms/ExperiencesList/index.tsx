@@ -1,5 +1,3 @@
-import style from './ExperiencesList.module.scss'
-
 import { Container, BulletList, BulletListItem } from "@shared/components"
 
 import { useSelector } from 'react-redux';

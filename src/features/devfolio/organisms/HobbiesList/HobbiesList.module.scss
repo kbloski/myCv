@@ -1,43 +1,24 @@
 @use "@shared/styles" as *;
 
 .hobbiesList {
-    background-color: rgba($bg-secondary, 1);
-    border-radius: 1rem;
-    box-shadow: inset 0 0 8px $bg-primary;
     color: $text-white;
     list-style: none;
     margin: 0;
     padding: 0;
-
-    &::after {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background: linear-gradient(to right bottom, $primary, $info);
-        z-index: -1;
-        border-radius: 1rem;
-        padding: 3px;
-        transform: translate(-50%, -50%);
-    }
-
     
     .listContainer {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
         li {
-            border-width: 0;
             margin: .2rem;
-            padding: .2rem .5rem;
-            transition: all 0.5s ease, all 0.5s ease;
+            padding: .3rem .5rem;
+            transition: all 0.3s ease;
             cursor: pointer;
+            border-left: 2px solid $border-color;
 
             &:hover {
-                border: 0;
-                border-bottom: 1px solid white;
+                border-left-width: 1rem;
                 background-color: $secondary;
             }
         }

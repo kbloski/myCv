@@ -1,3 +1,5 @@
+import style from "./SwiperScrollContainer.module.scss"
+
 // @ts-ignore
 import "swiper/css";
 // @ts-ignore
@@ -19,7 +21,7 @@ function SwiperScrollContainer({children, className} : SwiperScrollContainerInte
             scrollbar={true}
             mousewheel={true}
             modules={[FreeMode, Scrollbar, Mousewheel]}
-            className={"mySwiper " + className}
+            className={`${className} ${style.swiper}`}
         >
             <SwiperSlide>
                 {children}

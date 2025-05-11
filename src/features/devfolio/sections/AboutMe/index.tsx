@@ -1,6 +1,6 @@
 
 import style from './AboutMe.module.scss'
-import { Button, Container, SwiperScrollContainer } from "@shared/components";
+import { Container, SwiperScrollContainer } from "@shared/components";
 import {
     Title
 } from "../../templates";
@@ -15,26 +15,26 @@ function AboutMe(){
             <Languages />
             <Title tag={3} className={style.title}>O mnie</Title>
             <div className={style.aboutFlex}>
-                <div>
+                <div >
                     <Container>
                         <Title tag={4}>Umiejętności Miękkie</Title>
-                        <SwiperScrollContainer className={style.aboutMeItem}>
+                        <SwiperScrollContainer className={style.aboutMeSwiper}>
                             <SoftSkillsList />
                         </SwiperScrollContainer>
                     </Container>
                 </div>
-                <div>
+                <div >
                     <Container>
                         <Title tag={4}>Pasje</Title>
-                        <SwiperScrollContainer className={style.aboutMeItem}>
+                        <SwiperScrollContainer className={style.aboutMeSwiper}>
                             <HobbiesList />
                         </SwiperScrollContainer>
                     </Container>
                 </div>
-                <div>
+                <div >
                     <Container>
                         <Title tag={4}>Doświadczenie</Title>
-                        <SwiperScrollContainer className={style.aboutMeItem}>
+                        <SwiperScrollContainer className={style.aboutMeSwiper}>
                             <ExperiencesList />
                         </SwiperScrollContainer>
                     </Container>
