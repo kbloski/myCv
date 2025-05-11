@@ -24,9 +24,12 @@ Nagłówek (Twoje imię, zawód)
 
 O mnie
 
-Umiejętności / Doświadczenie
+Dodać uprawnienia i prawojazdy do cv
+
+Kontakt (formularz + dane kontaktowe)
+Jeśli chcesz nawiązać ze mną kontakt skontaktuj się pod tym
+mailem + przycisk kopiowania elementu
 
 Projekty / Portfolio
 
-Kontakt (formularz + dane kontaktowe)
 
