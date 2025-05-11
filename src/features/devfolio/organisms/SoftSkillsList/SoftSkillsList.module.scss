@@ -20,10 +20,11 @@
             background: linear-gradient(to right,  $secondary 80%, transparent );
             background-size: 200% 100%;
             background-position: right;
-            transition: background-position 0.4s ease;
+            transition: background-position 2s ease, border-left .3s ease;
           
             &:hover {
-              background-position: left;
+                border-left: 1rem solid $primary;
+                background-position: left;
             }
           }
           

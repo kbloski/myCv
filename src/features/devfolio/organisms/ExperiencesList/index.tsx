@@ -16,7 +16,7 @@ function ExperiencesList() {
                         <BulletListItem key={i} title={experience.company} subtitle={experience.period ? experience.period.start + ` | ` + experience.period.end : undefined}>
                             {experience.description}
                             <ul>
-                                { experience.skils?.map(ex => <li>
+                                { experience.skils?.map(ex => <li key={ex}>
                                     {ex}
                                 </li>)}
                             </ul>

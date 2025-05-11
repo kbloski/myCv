@@ -7,7 +7,7 @@ function BulletListItem({ children, title, subtitle} : BulletListItemProps){
             <div className={style.bulletListItemContent}>
                 {subtitle && <div className={style.subtitle}> {subtitle}</div> }
                 {title && <div className={style.title}>{title}</div>}
-                { children && <p className={style.description}>{children}</p>}
+                { children && <div className={style.description}>{children}</div>}
             </div>
         </li>
     );

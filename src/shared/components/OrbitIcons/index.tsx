@@ -14,7 +14,7 @@ function OrbitIcons({ children, items} : OrbitIconsInterface){
                 { items?.map( (item, index, arr) => {
                         const deg = rotateDeg(index, arr?.length);
 
-                        return <li style={{transform:  `rotate(${deg}deg)`}}>
+                        return <li style={{transform:  `rotate(${deg}deg)`}} key={index}>
                             <div className={style.iconContainer}>
                                     <div style={{ transform: `rotate(${-deg}deg)`}}>
                                         <div className={style.icon}>
