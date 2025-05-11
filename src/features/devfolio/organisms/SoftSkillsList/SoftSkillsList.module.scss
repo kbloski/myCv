@@ -5,10 +5,7 @@
     padding-left: 0;
     padding-right: 0;
     color: $text-white;
-    background: $secondary;
-    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0 8px $bg-primary;
 
     .softSkillsList {
         list-style: square;
@@ -19,7 +16,16 @@
             list-style-position: inside;
             margin: .5rem 0;
             padding: .5rem 1rem;
-            background: linear-gradient(to right, $primary 60%, transparent);
-        }
+          
+            background: linear-gradient(to right,  $secondary 80%, transparent );
+            background-size: 200% 100%;
+            background-position: right;
+            transition: background-position 0.4s ease;
+          
+            &:hover {
+              background-position: left;
+            }
+          }
+          
     }
 }
