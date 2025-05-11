@@ -1,7 +1,5 @@
-// @ts-ignore
 import style from './ExperiencesList.module.scss'
 
-// @ts-ignore
 import { Container, BulletList, BulletListItem } from "@shared/components"
 
 import { useSelector } from 'react-redux';

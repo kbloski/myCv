@@ -6,4 +6,3 @@ export { default as Languages } from './Languages';
 export * from './Navigation'
 export { default as SoftSkillsList } from './SoftSkillsList';
 export * from './Technologies'
-export * from './OrbitIcons'

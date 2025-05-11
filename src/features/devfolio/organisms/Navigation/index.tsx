@@ -1,10 +1,8 @@
 import style from "./Navigation.module.scss";
 import { useSelector } from "react-redux";
 
-// @ts-ignore
 import { getName } from "@entities/cv/model/selectors";
 import { Title} from "../../templates";
-// @ts-ignore
 import { Container } from "@shared/components"
 
 function Navigation() {

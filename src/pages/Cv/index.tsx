@@ -4,7 +4,6 @@ import { getCvData } from "../../entities/cv/model/selectors";
 
 import { generatePDFandSave } from "../../shared/utils/generatePDF";
 
-// @ts-ignore
 import { Background } from "@shared/components";
 
 import { 

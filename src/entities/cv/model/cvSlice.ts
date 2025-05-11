@@ -3,7 +3,7 @@ import type { InitialCvSliceState } from "./types";
 
 const initialState: InitialCvSliceState = {
     aboutMe:
-        "Jestem młodym, ambitnym programistą z pasją do kodowania. Większość umiejętności zdobyłem sam, realizując własne projekty i ciągle ucząc się nowych technologii. Chcę rozwijać się dalej i zdobyć cenne doświadczenie w branży.",
+        "Jestem zaangażowanym programistą z pasją do tworzenia wydajnych i nowoczesnych rozwiązań. Doświadczenie zdobywałem, realizując różnorodne projekty i stale poszerzając swoją wiedzę technologiczną. Szukam możliwości dalszego rozwoju w środowisku, które stawia na jakość kodu, dobre praktyki i ciągłe doskonalenie.",
     name: "Kamil",
     surname: "Błoński",
     profession: "Junior Frontend Developer",
@@ -139,45 +139,30 @@ const initialState: InitialCvSliceState = {
                 // Docker
             ],
             familiar: [
-                { name: "C#", icon: "-" },
-                { name: ".NET", icon: "-" },
-                { name: "Wordpress", icon: "pi pi-wordpress" },
-                { name: "PHP", icon: "-" },
-                // { name: "PrestaShop", iconHref: "" },
-                {
-                    name: "NextJs",
-                    icon: "devicon-nextjs-original-wordmark colored",
-                },
-                {
-                    name: "React",
-                    icon: "devicon-react-original-wordmark colored",
-                },
+                { name: "C#", icon: "devicon-csharp-plain colored" },
+                // { name: ".NET", icon: "devicon-dotnetcore-plain colored" },
+                { name: "Wordpress", icon: "devicon-wordpress-plain-wordmark" },
+                { name: "PHP", icon: "devicon-php-plain colored" },
+                // { name: "PrestaShop", icon: "" },
+                { name: "React", icon: "devicon-react-original-wordmark colored" },
                 { name: "Redux", icon: "devicon-redux-original colored" }, 
+                { name: "NextJs",  icon: "devicon-nextjs-plain" },
                 { name: "Vue3", icon: "devicon-vuejs-plain colored" },
-                // { name: "Vuetify", icon: "devicon-vuetify-plain colored" }, // Ikona kółek, symbolizująca framework UI
-                // { name: "Pinia", icon: "pi pi-refresh" }, // Ikona odświeżenia, symbolizująca store management
+                // { name: "Vuetify", icon: "" }, 
+                // { name: "Pinia", icon: "" }, 
                 { name: "HTML5", icon: "devicon-html5-plain colored" },
                 { name: "CSS", icon: "devicon-css3-plain colored" },
-                { name: "JavaScript", icon: "devicon-javascript-plain" }, // Ikona pliku
+                { name: "JavaScript", icon: "devicon-javascript-plain colored" },
                 { name: "SCSS", icon: "devicon-sass-original colored" },
-                {
-                    name: "TypeScript",
-                    icon: "devicon-typescript-plain colored",
-                },
-                {
-                    name: "NodeJS",
-                    icon: "devicon-nodejs-plain-wordmark colored",
-                }, 
-                { name: "Express", icon: "devicon-express-original colored" },
+                { name: "TypeScript", icon: "devicon-typescript-plain colored"},
+                { name: "NodeJS", icon: "devicon-nodejs-plain-wordmark colored" }, 
+                { name: "Express", icon: "devicon-express-original" },
                 // { name: "Sequelize", icon: "pi pi-database" },
-                {
-                    name: "Git",
-                    icon: "devicon-github-original-wordmark colored",
-                }, // Ikona GitHub
-                { name: "MySQL", icon: "devicon-mysql-plain-wordmark colored" },
-                { name: "Python", icon: "fab fa-python" },
-                { name: "Visual Studio", icon: "devicon-vscode-plain colored" },
-                { name: "VSC", icon: "devicon-vscode-plain colored" },
+                { name: "Git",  icon: "devicon-github-original-wordmark" }, 
+                { name: "SQL", icon: "devicon-azuresqldatabase-plain colored" },
+                { name: "Python", icon: "devicon-python-plain-wordmark colored" },
+                { name: "Visual Studio Code", icon: "devicon-vscode-plain colored" },
+                { name: "Visual Studio", icon: "devicon-visualstudio-plain colored" },
             ],
         },
     },

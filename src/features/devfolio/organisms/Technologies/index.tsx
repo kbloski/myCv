@@ -1,6 +1,5 @@
 
 import style from './Technologies.module.scss'
-// @ts-ignore
 import { Container } from "@shared/components"
 import {
     Title,

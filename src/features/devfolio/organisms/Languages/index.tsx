@@ -1,6 +1,5 @@
 import style from './Languages.module.scss';
 
-// @ts-ignore
 import { Container } from '@shared/components';
 
 import  { useSelector } from 'react-redux';

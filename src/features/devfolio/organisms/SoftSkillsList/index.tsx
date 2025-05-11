@@ -2,7 +2,6 @@ import style from './SoftSkillsList.module.scss';
 
 import { useSelector } from "react-redux";
 
-// @ts-ignore
 import { Container } from "@shared/components";
 import { getSoftSkills } from "../../../../entities/cv/model/selectors";
 

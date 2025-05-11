@@ -1,7 +1,6 @@
 
 import style from './Educations.module.scss'
 
-// @ts-ignore
 import { Container, BulletList, BulletListItem } from "@shared/components"
 
 import { useSelector } from 'react-redux';
@@ -14,7 +13,7 @@ function MyJourney() {
 
     return (
         <Container className={style.myJourney}>
-            <BulletList title='Education'>
+            <BulletList>
                 {
                     educations.map((education, i) =>
                         <BulletListItem key={i} title={education.name} subtitle={education.years} />

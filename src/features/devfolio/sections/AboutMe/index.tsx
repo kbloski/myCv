@@ -1,6 +1,5 @@
 
 import style from './AboutMe.module.scss'
-// @ts-ignore
 import { Button, Container, SwiperScrollContainer } from "@shared/components";
 import {
     Title

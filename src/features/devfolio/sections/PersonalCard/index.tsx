@@ -4,7 +4,6 @@ import {
 } from '../../templates'
 import { useDispatch, useSelector } from 'react-redux';
 
-// @ts-ignore
 import {  Container, Button} from '@shared/components';
     
 
@@ -13,8 +12,7 @@ import {
     getProfession,
     getAboutMe,
 }
-    // @ts-ignore
-    from "@entities/cv/model/selectors";
+from "@entities/cv/model/selectors";
 import { navigateTo } from '../../../../app/router';
 
 function PersonalCard() {

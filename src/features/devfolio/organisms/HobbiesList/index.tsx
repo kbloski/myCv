@@ -2,9 +2,8 @@ import style from './HobbiesList.module.scss';
 
 import { useSelector } from "react-redux";
 
-// @ts-ignore
 import { Container } from "@shared/components";
-import { getHobbies } from "../../../../entities/cv/model/selectors";
+import { getHobbies } from "@entities/cv/model/selectors";
 
 function HobbiesList()
 {
